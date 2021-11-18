@@ -1,4 +1,4 @@
-# Tri-2-CSA-Project
+# Trimester 2 CSA - Rugged Boys 😠
 | Name | Github Username | Github Profile | Issue | Scrum Tasks | Journals | Commits |
 | - | - | - | - | - | - | - |
 | Rishi Peddakama | rpeddakama | [@rpeddakama](https://github.com/rpeddakama) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/rpeddakama) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Arpeddakama) | [Journal](https://docs.google.com/document/d/1vxzWnE3vU9BzimUlZjcTz79fNOBTLcT7G4B1LLMhNEw/edit?usp=sharing) | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=rpeddakama) |
