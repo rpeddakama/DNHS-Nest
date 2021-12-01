@@ -6,5 +6,8 @@
 | Arnav Palkhiwala | ArnavPalkhiwala | [@ArnavPalkhiwala](https://github.com/ArnavPalkhiwala) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/ArnavPalkhiwala) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3AArnavPalkhiwala) | [Journal](https://docs.google.com/document/d/14JUKWkG_LahbXd0Sn64hrhkVfYiie1kDjvrUdF9fts8/edit) | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=ArnavPalkhiwala) |
 | Alvin Zheng | alvinzhengq | [@alvinzhengq](https://github.com/alvinzhengq) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/alvinzhengq) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Aalvinzhengq) | [TODO]() | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=alvinzhengq) |
 
+# Deployment Guide
+- [Deployment Guide Wiki Page](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Deployment-Guide)
+
 # Project History
 - [Week 0](url)
