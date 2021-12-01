@@ -11,3 +11,6 @@
 
 # Project History
 - [Week 0](url)
+
+# Github Admins Policy Document
+- [Linked Here](https://docs.google.com/document/d/1o2t9mfTEV6JXODErKaMG_Cecv9VgEi5BkTt7QeLzkR4/edit)
