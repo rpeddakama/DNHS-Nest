@@ -20,7 +20,7 @@ public class Raadwan {
     @ResponseBody
     public String RaadData() throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://f1-drivers-2021.p.rapidapi.com/drivers/perez"))
+                .uri(URI.create("https://f1-drivers-2021.p.rapidapi.com/drivers/lewis"))
                 .header("x-rapidapi-host", "f1-drivers-2021.p.rapidapi.com")
                 .header("x-rapidapi-key", "baa94acf5cmshe987609acdfe8f6p170e61jsn5f2012c5dd83")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
