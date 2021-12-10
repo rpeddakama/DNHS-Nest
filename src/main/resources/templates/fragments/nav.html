@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>...</title>
+    </head>
+    <body>
+        <nav class="px-10 flex flex-row justify-between"
+            th:fragment="header">
+            <div class="nav-logo py-10">
+                <p class="text-2xl font-bold"><a href="/">THE NEST</a></p>
+            </div>
+            <div class="nav-links py-10 flex flex-row">
+                <div class="about-link">
+                    <p class="text-2xl font-medium mr-10">
+                        About</p>
+                    <div class="about-content">
+                        <p class="text-lg"><a href="/raadwan">Raadwan</a></p>
+                        <p class="text-lg"><a href="/alvin">Alvin</a></p>
+                        <p class="text-lg"><a href="/rishi">Rishi</a></p>
+                        <p class="text-lg"><a href="/arnav">Arnav</a></p>
+                    </div>
+                </div>
+                <div class="tpt-link">
+                    <p class="text-2xl font-medium mr-10">TPT</p>
+                    <div class="tpt-content">
+                        <p class="text-lg"><a href="/UnitTwoFrq">Unit 2 FRQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
