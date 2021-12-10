@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Arnav {
     @GetMapping("/arnav")
     public String ArnavAbout() {
-        return "Arnav";
+        return "arnav";
     }
 
     @GetMapping("/arnav-data")

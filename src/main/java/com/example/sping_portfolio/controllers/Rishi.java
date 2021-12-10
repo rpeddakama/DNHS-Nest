@@ -13,7 +13,7 @@ public class Rishi {
     @GetMapping("/rishi")
 
     public String RishiAbout() {
-        return "Rishi"; 
+        return "rishi"; 
     }
 
     @GetMapping("/rishi-data")

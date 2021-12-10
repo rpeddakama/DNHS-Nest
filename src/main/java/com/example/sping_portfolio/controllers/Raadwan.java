@@ -13,7 +13,7 @@ public class Raadwan {
     @GetMapping("/raadwan")
 
     public String RaadwanAbout() {
-        return "Raadwan"; 
+        return "raadwan"; 
     }
 
     @GetMapping("/raadwan-data")

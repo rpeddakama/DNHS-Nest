@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Alvin {
     @GetMapping("/alvin")
     public String AlvinAbout() {
-        return "Alvin";
+        return "alvin";
     }
 
     @GetMapping("/alvin-data")
