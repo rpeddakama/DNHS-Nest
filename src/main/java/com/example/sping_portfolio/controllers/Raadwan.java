@@ -16,7 +16,7 @@ public class Raadwan {
         return "Raadwan"; 
     }
 
-    @GetMapping("/raad-data")
+    @GetMapping("/raadwan-data")
     @ResponseBody
     public String RaadData() throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
