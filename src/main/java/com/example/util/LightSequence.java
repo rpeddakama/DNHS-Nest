@@ -6,6 +6,10 @@ public class LightSequence
 
 String seq;
 
+public String toString() {
+    return seq;
+}
+
 public LightSequence(String seq){ 
     this.seq = seq;
  }
