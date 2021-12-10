@@ -4,6 +4,18 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+button {
+  font-family: "Lato", sans-serif;
+}
+
 .blue-span {
   color: #52A0E0;
+}
+
+.blue-dcurve-btn {
+  background-color: #52A0E0;
+  padding: 7px 25px;
+  color: white;
+  border-radius: 30px 5px;
+  font-size: 20px;
 }
