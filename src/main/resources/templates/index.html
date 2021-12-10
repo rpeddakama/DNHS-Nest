@@ -1,19 +1,15 @@
-<!-- This page is illustrative and contains ideas about HTML formatting -->
 <!DOCTYPE HTML>
-<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
-<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{fragments/layout}" lang="en">
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.w3.org/1999/xhtml"
+    layout:decorate="~{fragments/layout}" lang="en">
+    <head>
+        <div layout:fragment="metadata" th:remove="tag">
+            <title>The Nest</title>
+        </div>
+    </head>
 
-<head><div layout:fragment="metadata" th:remove="tag">
-    <title>Spring Intro</title>
-</div></head>
-
-<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-<body><div layout:fragment="content" th:remove="tag">
-    <!-- Body of Page, the content details -->
-    <div id="spring_intro" class="articles" style="margin: 30px;">
-        <h1>The Nest</h1>
-    </div>
-</div></body>
-
+    <body>
+        <div layout:fragment="content" th:remove="tag">
+        </div>
+    </body>
 </html>
