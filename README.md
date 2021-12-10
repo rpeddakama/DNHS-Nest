@@ -6,6 +6,9 @@
 | Arnav Palkhiwala | ArnavPalkhiwala | [@ArnavPalkhiwala](https://github.com/ArnavPalkhiwala) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/ArnavPalkhiwala) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3AArnavPalkhiwala) | [Journal](https://docs.google.com/document/d/1AK-Ri786nF8B7l2KveAWyUsA_whhBFCN9nLohUo_6_Q/edit?usp=sharing) | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=ArnavPalkhiwala) |
 | Alvin Zheng | alvinzhengq | [@alvinzhengq](https://github.com/alvinzhengq) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/alvinzhengq) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Aalvinzhengq) | [TODO]() | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=alvinzhengq) |
 
+# Ideation
+- [Wireframe](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1)
+
 # Project Runtime
 - [Visit Our Project Here](https://dnhsnest.tk)
 
