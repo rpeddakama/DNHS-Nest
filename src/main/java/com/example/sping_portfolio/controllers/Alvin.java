@@ -19,7 +19,7 @@ public class Alvin {
     @ResponseBody
     public String AlvinData() throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://league-of-legends-stats.p.rapidapi.com/champions/ekko/stats"))
+                .uri(URI.create("https://league-of-legends-stats.p.rapidapi.com/champions/nasus/stats"))
                 .header("x-rapidapi-host", "league-of-legends-stats.p.rapidapi.com")
                 .header("x-rapidapi-key", "baa94acf5cmshe987609acdfe8f6p170e61jsn5f2012c5dd83")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
