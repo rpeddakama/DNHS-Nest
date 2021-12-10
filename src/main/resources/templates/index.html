@@ -10,12 +10,16 @@
 
     <body>
         <div layout:fragment="content" th:remove="tag">
-            <div class="flex flex-row w-full">
-                <div class="grow w-48">
-                    <p>Welcome to <span>The Nest</span></p>
-                    <p>For students, by students.</p>
-                    <p>Campus resources suck. The Nest is built by Del Norte students who understand the needs and wants of all Nighthawks.</p>
-                    <button>See More</button>
+            <div class="flex flex-row w-full h-full items-center">
+                <div class="grow w-48 h-full flex justify-center items-center">
+                    <div class="w-3/4">
+                        <p class="my-5 text-6xl font-semibold">Welcome to <span class="blue-span">The Nest</span></p>
+                        <p class="my-5 text-4xl">Resources for students, by students.</p>
+                        <p class="my-2.5 text-2xl">Campus resources suck. The Nest is built by Del Norte
+                            students who understand the needs and wants of all
+                            Nighthawks.</p>
+                        <button class="my-2.5">See More</button>
+                    </div>
                 </div>
                 <div class="grow w-48 flex justify-center">
                     <img src="/img/campus.png">
