@@ -7,7 +7,7 @@
 | Alvin Zheng | alvinzhengq | [@alvinzhengq](https://github.com/alvinzhengq) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/alvinzhengq) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Aalvinzhengq) | [TODO]() | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=alvinzhengq) |
 
 # Project Runtime
-- [Visit Our Project Here](http://ec2-18-190-152-109.us-east-2.compute.amazonaws.com/)
+- [Visit Our Project Here](https://dnhsnest.tk)
 
 # Project History
 - [Week 0](url)
