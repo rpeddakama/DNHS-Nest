@@ -1,15 +1,63 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.w3.org/1999/xhtml"
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
     layout:decorate="~{fragments/layout}" lang="en">
-    <head>
-        <div layout:fragment="metadata" th:remove="tag">
-            <title>The Nest - About Rishi</title>
-        </div>
-    </head>
 
-    <body>
-        <div layout:fragment="content" th:remove="tag">
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>The Nest - About Rishi</title>
+    </div>
+</head>
+
+<body>
+    <div layout:fragment="content" th:remove="tag">
+        <div class="flex flex-row w-full h-full items-center" style="margin-top: 4em;">
+            <div class="grow w-48 h-full flex justify-center items-center">
+                <div class="w-3/4">
+                    <p class="text-6xl font-semibold mb-3">Rishi Peddakama</p>
+                    <p class="text-4xl mb-6 font-bold text-red-600">Madman</p>
+                    <p class="text-2xl mb-2">
+                        I love learning about computer science and working on projects.
+                        If I am not coding, I am probably playing basketball with my friends or listening to music.
+                        I also like money and power.
+                    </p>
+                    <button class="blue-dcurve-btn my-1" onclick="changePicture()">Click Me! (mask)</button>
+                    <button class="blue-dcurve-btn my-1" onclick="getNflData()" style="margin-top: 1em; margin-left: 1em">NFL API</button>
+                    <p class="text-1xl mb-2 w-3/4" id="apiData">    
+                    <div class="flex flex-row">
+                        <div class="social-icon"><a href="https://github.com/rpeddakama" target="_blank"><img src="/img/github.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://www.linkedin.com/in/rishi-peddakama-07744a1a5/" target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://www.instagram.com/rishi_peddakama/" target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grow w-32 flex">
+                <img id="maskImage" class="w-3/4" src="/img/RishiNoMask.png">
+            </div>
         </div>
-    </body>
+        
+        <script>
+            function changePicture() {
+                var imagePath = document.getElementById("maskImage")
+                if(imagePath.src.match("/img/RishiNoMask.png")) imagePath.src = "/img/RishiMask.png"
+                else imagePath.src = "/img/RishiNoMask.png"
+            };
+            function getNflData() {
+                alert('Please wait while the API fetches the data, this might take a few seconds.')
+                axios.get('/rishi-data')
+                .then((res) => {
+                    var index = Math.floor(Math.random() * res.data.data.length)
+                    // cons/img/github.pngole.log(index)
+                    // console.log(res.data./img/linkedin.png"></data[index])
+                    document.getElementById("apiData").innerText = `
+                        There is a game on ${res.data.data[index]['date']} at ${res.data.data[index]['venue']}.
+                        The teams: ${res.data.data[index]['name']}
+                    `
+                })
+            };
+        </script>
+
+    </div>
+</body>
+
+
 </html>

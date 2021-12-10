@@ -2,14 +2,63 @@
 <html xmlns:layout="http://www.w3.org/1999/xhtml"
     xmlns:th="http://www.w3.org/1999/xhtml"
     layout:decorate="~{fragments/layout}" lang="en">
+
     <head>
         <div layout:fragment="metadata" th:remove="tag">
-            <title>The Nest - About Raadwan</title>
+            <title>The Nest - About Rishi</title>
         </div>
     </head>
 
     <body>
         <div layout:fragment="content" th:remove="tag">
+            <div class="flex flex-row w-full h-full items-center"
+                style="margin-top: 4em;">
+                <div class="grow w-48 h-full flex justify-center items-center">
+                    <div class="w-3/4">
+                        <p class="text-6xl font-semibold mb-3">Raadwan Masum</p>
+                        <p class="text-4xl mb-6 font-bold text-green-400">Psychopath</p>
+                        <p class="text-2xl mb-2">
+                            I like to make stuff. I like to build things. I like
+                            to create inventions. I like to explore new
+                            concepts. I want to rule the world.
+                        </p>
+                        <button class="blue-dcurve-btn my-3"
+                            onclick="changePicture()">Click Me! (mask)</button>
+                        <button class="blue-dcurve-btn my-3" style="margin-left: 1rem;"
+                            onclick="getFormulaOneData()">Formula 1 API</button>
+                            <p class="text-1xl mb-2 w-3/4" id="apiData">    
+
+                        <div class="flex flex-row">
+                            <div class="social-icon"><a href="https://github.com/raad1masum" target="_blank"><img src="/img/github.png" class="h-10 mt-2"></a></div>
+                            <div class="social-icon"><a href="https://www.linkedin.com/in/raadwan-masum/" target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
+                            <div class="social-icon"><a href="https://www.instagram.com/raad1masum/" target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grow w-32 flex">
+                    <img id="maskImage" class="w-3/4"
+                        src="/img/RaadwanNoMask.png">
+                </div>
+            </div>
+
+            <script>
+            function changePicture() {
+                var imagePath = document.getElementById("maskImage")
+                if(imagePath.src.match("/img/RaadwanNoMask.png")) imagePath.src = "/img/RaadwanMask.png"
+                else imagePath.src = "/img/RaadwanNoMask.png"
+                // console.log(imagePath.src)
+            };
+            
+            function getFormulaOneData() {
+                alert('Please wait while the API fetches the data, this might take a few seconds.')
+                axios.get('/raadwan-data')
+                .then((res) => {
+                    document.getElementById("apiData").innerText = `Lewis Hamilton drives for ${res.data[0].team} and is from ${res.data[0].country}.`
+                })
+            };
+        </script>
         </div>
     </body>
+
+
 </html>

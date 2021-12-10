@@ -1,15 +1,62 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.w3.org/1999/xhtml"
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
     layout:decorate="~{fragments/layout}" lang="en">
-    <head>
-        <div layout:fragment="metadata" th:remove="tag">
-            <title>The Nest - About Alvin</title>
-        </div>
-    </head>
 
-    <body>
-        <div layout:fragment="content" th:remove="tag">
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>The Nest - About Rishi</title>
+    </div>
+</head>
+
+<body>
+    <div layout:fragment="content" th:remove="tag">
+        <div class="flex flex-row w-full h-full items-center" style="margin-top: 4em;">
+            <div class="grow w-48 h-full flex justify-center items-center">
+                <div class="w-3/4">
+                    <p class="text-6xl font-semibold mb-3">Alvin Zheng</p>
+                    <p class="text-4xl mb-6"><b>Cracked</b></p>
+                    <p class="text-2xl mb-2 w-5/6">
+                        I love to code code code in Java and other programming languages,
+                        and I also love to play video games during my free time.
+                    </p>
+                    <button class="blue-dcurve-btn my-1" onclick="changePicture()" style="margin-top: 1em">Click Me! (mask)</button>
+                    <button class="blue-dcurve-btn my-1" onclick="getLeagueData()" style="margin-top: 1em; margin-left: 1em">League of Legends API</button>
+                    <p class="text-1xl mb-2 w-3/4" id="apiData">
+                    </p>
+                    <div class="flex flex-row">
+                        <div class="social-icon"><a href="#" target="_blank"><img src="/img/github.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="#" target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="#" target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grow w-32 flex">
+                <img id="maskImage" class="w-3/4" src="/img/AlvinNoMask.png">
+            </div>
         </div>
-    </body>
+        
+        <script>
+            function changePicture() {
+                var imagePath = document.getElementById("maskImage")
+                if(imagePath.src.match("/img/AlvinNoMask.png")) imagePath.src = "/img/AlvinMask.png"
+                else imagePath.src = "/img/AlvinNoMask.png"
+            };
+
+            function getLeagueData() {
+                alert('Please wait while the API fetches the data, this might take a few seconds.')
+                axios.get('/alvin-data')
+                .then((res) => {
+                    console.log(res.data)
+                    document.getElementById("apiData").innerText = `
+                        The League of Legends Champion ${res.data.name} has a base HP of ${res.data.hp}, base mana of ${res.data.mana}, 
+                        attack damage of ${res.data.attack_damage}, and armor of ${res.data.armor}
+                    `
+                })
+            };
+        </script>
+
+    </div>
+</body>
+
+
 </html>

@@ -1,15 +1,68 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.w3.org/1999/xhtml"
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
     layout:decorate="~{fragments/layout}" lang="en">
-    <head>
-        <div layout:fragment="metadata" th:remove="tag">
-            <title>The Nest - About Arnav</title>
-        </div>
-    </head>
 
-    <body>
-        <div layout:fragment="content" th:remove="tag">
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>The Nest - About Arnav</title>
+    </div>
+</head>
+
+<body>
+    <div layout:fragment="content" th:remove="tag">
+        <div class="flex flex-row w-full h-full items-center" style="margin-top: 4em;">
+            <div class="grow w-48 h-full flex justify-center items-center">
+                <div class="w-3/4">
+                    <p class="text-6xl font-semibold mb-3">Arnav Palkhiwala</p>
+                    <p class="text-4xl mb-6">GOAT</p>
+                    <p class="text-2xl mb-2">
+                        I enjoy learning about business and computer science and working with others to create projects.
+                        I also love watching and playing sports such as football, basketball, and tennis. In my free time, I listen
+                        to music and hang out with my friends. 
+                    </p>
+                    <button class="blue-dcurve-btn my-1" onclick="changePicture()">Click Me! (mask)</button>
+                    <button class="blue-dcurve-btn my-1" onclick="getNBAData()" style="margin-top: 1em; margin-left: 1em">NBA API</button>
+                    <p class="text-1xl mb-2 w-3/4" id="apiData">    
+
+                    <div class="flex flex-row">
+                        <div class="social-icon"><a href="https://github.com/ArnavPalkhiwala" target="_blank"><img src="/img/github.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grow w-32 flex">
+                <img id="maskImage" class="w-3/4" src="/img/ArnavNoMask.png">
+            </div>
         </div>
-    </body>
+
+        <br>
+
+        
+        <script>
+            function changePicture() {
+                var imagePath = document.getElementById("maskImage")
+                if(imagePath.src.match("/img/ArnavNoMask.png")) imagePath.src = "/img/ArnavMask.png"
+                else imagePath.src = "/img/ArnavNoMask.png"
+                // console.log(imagePath.src)
+            };
+            
+            function getNBAData() {
+                alert('Please wait while the API fetches the data, this might take a few seconds.')
+                axios.get('/arnav-data')
+                .then((res) => {
+                    console.log(res.data)
+                    document.getElementById("apiData").innerText = `
+                        The player's first name is ${res.data.first_name} and the last name is ${res.data.last_name}. His height is ${res.data.height_feet} feet and ${res.data.height_inches} inches. 
+                        His position is ${res.data.position} and his weight is ${res.data.weight_pounds} pounds. His team's abbreviation ${res.data.team.abbreviation} and the team's name is 
+                        ${res.data.team.full_name}.
+                    `
+                })
+            };
+        </script>
+
+    </div>
+</body>
+
+
 </html>
