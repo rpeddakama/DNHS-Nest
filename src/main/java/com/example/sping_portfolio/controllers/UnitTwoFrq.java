@@ -32,6 +32,6 @@ public class UnitTwoFrq {
         model.addAttribute("answer", answer);
 
         
-        return "UnitTwoFrq";
+        return "unittwofrq";
     }
 }
