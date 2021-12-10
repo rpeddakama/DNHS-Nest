@@ -10,7 +10,37 @@
 
     <body>
         <div layout:fragment="content" th:remove="tag">
-            <h1>Unit 2 FRQ</h1>
+            <div class="main-text">
+                <h1>Unit 2 FRQ</h1>
+            </div>          
+            
+            <img src = "/img/frqp1.png">
+            <img src = "/img/frqp2.png">
+            <img src = "/img/frqp3.png">
+
+            <br> 
+
+            <h1>Part e: Assume that the string oldSeq has been properly declared and 
+                initialized and contains the string segment. Write a code segment 
+                that will remove the first occurrence of segment from oldSeq and 
+                store it in the string newSeq. Consider the following examples.</h1>
+
+            <br> 
+            <h1> This is the old sequence: 1100000111 <h1>
+
+            <div class="frq-content">
+                <form action="/UnitTwoFrq" method="GET" id="frqForm">
+                  <div class="frq-form">
+                  <p for="frqField">Type in your segment to remove</p>
+                  <br />
+                  <input style="background-color: lightblue;" name="frq" id="frqField">
+                  <br />
+                  <button>Run!</button>
+                  <br />
+                  <p th:text="'New Sequence, ' + ${newSeq} + '!'"></p>
+                  </div>
+                </form>
+              </div>
         </div>
     </body>
 </html>
