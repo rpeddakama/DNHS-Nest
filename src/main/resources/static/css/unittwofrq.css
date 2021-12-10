@@ -1,3 +1,19 @@
-h1{
+.main-text{
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.part-e{
+    border-width: 4px;
+}
+
+.part-f{
+    border-width: 4px;
+}
+
+.image{
     text-align: center;
 }
