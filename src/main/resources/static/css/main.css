@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+:root {
+  --light-theme-text: #313638;
+  --dark-theme-text: #ffffff;
+  --blue: #52A0E0;
+}
+
 body {
   font-family: "Lato", sans-serif;
-  color: #313638;
+  color: var(--light-theme-text);
 }
 
 button {
@@ -10,11 +16,11 @@ button {
 }
 
 .blue-span {
-  color: #52A0E0;
+  color: var(--blue);
 }
 
 .blue-dcurve-btn {
-  background-color: #52A0E0;
+  background-color: var(--blue);
   padding: 7px 25px;
   color: white;
   border-radius: 30px 5px;
