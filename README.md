@@ -14,14 +14,14 @@
 | Alvin Zheng | alvinzhengq | [@alvinzhengq](https://github.com/alvinzhengq) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/alvinzhengq) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Aalvinzhengq) | [TODO]() | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=alvinzhengq) |
 
 ## Ideation
-Campus resources suck. The Nest is built by Del Norte students who understand the needs and wants of all Nighthawks. We hope to make this project a centralized repository of resources that all Del Norte students are looking for but they are not found or very hard to get to on Del Norte's website. Our overall design for the project can be seen in our [Wireframe](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1)
+Campus resources suck. The Nest is built by Del Norte students who understand the needs and wants of all Nighthawks. We hope to make this project a centralized repository of resources that all Del Norte students are looking for but they are not found or very hard to get to on Del Norte's website. Our overall design for the project can be seen in our [Wireframe](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1).
 
 ## Wiki Pages
 - [Linked Here](https://docs.google.com/document/d/1o2t9mfTEV6JXODErKaMG_Cecv9VgEi5BkTt7QeLzkR4/edit)
 - [Deployment Guide Wiki Page](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Deployment-Guide)
 
 ## Project History
-- [Week 2]()
+- [Week 2](https://github.com/rpeddakama/Tri-2-CSA-Project#week-2)
 
 ## Week 2
 | Name | Role | Task | Evidence |
