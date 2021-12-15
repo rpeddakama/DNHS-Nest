@@ -24,25 +24,60 @@
                         </p>
                         <button class="blue-dcurve-btn my-3"
                             onclick="changePicture()">Click Me! (mask)</button>
-                        <button class="blue-dcurve-btn my-3" style="margin-left: 1rem;"
+                        <button class="blue-dcurve-btn my-3" style="margin-left:
+                            1rem;"
                             onclick="getFormulaOneData()">Formula 1 API</button>
-                            <a href="https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/README.md"><button class="blue-dcurve-btn my-1" style="margin-top: 1em; margin-left: 1em">Timebox</button></a>
-                            <p class="text-1xl mb-2 w-3/4" id="apiData">    
+                        <a
+                            href="https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/README.md"><button
+                                class="blue-dcurve-btn my-1" style="margin-top:
+                                1em; margin-left: 1em">Timebox</button></a>
+                        <p class="text-1xl mb-2 w-3/4" id="apiData">
 
-                        <div class="flex flex-row">
-                            <div class="social-icon"><a href="https://github.com/raad1masum" target="_blank"><img src="/img/github.png" class="h-10 mt-2"></a></div>
-                            <div class="social-icon"><a href="https://www.linkedin.com/in/raadwan-masum/" target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
-                            <div class="social-icon"><a href="https://www.instagram.com/raad1masum/" target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
+                            <div class="flex flex-row">
+                                <div class="social-icon"><a
+                                        href="https://github.com/raad1masum"
+                                        target="_blank"><img
+                                            src="/img/github.png" class="h-10
+                                            mt-2"></a></div>
+                                <div class="social-icon"><a
+                                        href="https://www.linkedin.com/in/raadwan-masum/"
+                                        target="_blank"><img
+                                            src="/img/linkedin.png" class="h-10
+                                            mt-2"></a></div>
+                                <div class="social-icon"><a
+                                        href="https://www.instagram.com/raad1masum/"
+                                        target="_blank"><img
+                                            src="/img/instagram.png" class="h-10
+                                            mt-2"></a></div>
+                            </div>
                         </div>
                     </div>
+                    <div class="grow w-32 flex">
+                        <img id="maskImage" class="w-3/4"
+                            src="/img/RaadwanNoMask.png">
+                    </div>
                 </div>
-                <div class="grow w-32 flex">
-                    <img id="maskImage" class="w-3/4"
-                        src="/img/RaadwanNoMask.png">
-                </div>
-            </div>
 
-            <script>
+                <h1 class="text-center">Unit Three FRQ</h1>
+                <div class="container py-4 bg-primary"
+                    style="text-align:center;">
+                    <canvas id="canvas" width="512" height="384"></canvas>
+                </div>
+                <form action="/raadwan" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <br />
+                        <input style="background-color: lightblue;"
+                            name="length" id="frqField">
+                        <input style="background-color: lightblue;"
+                            name="x" id="frqField">
+                        <input style="background-color: lightblue;"
+                            name="y" id="frqField">
+                        <br />
+                        <button>Run!</button>
+                    </div>
+                </form>
+
+                <script>
             function changePicture() {
                 var imagePath = document.getElementById("maskImage")
                 if(imagePath.src.match("/img/RaadwanNoMask.png")) imagePath.src = "/img/RaadwanMask.png"
@@ -57,9 +92,84 @@
                     document.getElementById("apiData").innerText = `Lewis Hamilton drives for ${res.data[0].team} and is from ${res.data[0].country}.`
                 })
             };
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const length = urlParams.get('length');
+            const xpos = urlParams.get('x');
+            const ypos = urlParams.get('y');
+
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const unit = 16;   // unit block size
+
+
+            // grid based off of width, height
+            function grid(){
+                // color and pen width
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 1;
+                // make graph paper look
+                for (let col = 0; col < width; col += unit) {
+                    for (let row = 0; row < height; row += unit) {
+                        ctx.strokeRect(col, row, unit, unit);
+                    }
+                }
+            }
+
+            // axis lines
+            function axis() {
+                // color and pen width
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 3;
+
+                // x & y zero midpoints of grid
+                const x0 = width*.5;
+                const y0 = height*.5;
+                // x-axis
+                ctx.moveTo(0, y0);
+                ctx.lineTo(width, y0);
+                ctx.stroke();
+                // y-axis
+                ctx.moveTo(x0, 0);
+                ctx.lineTo(x0, height);
+                ctx.stroke();
+            }
+
+            // square using lines
+            function square() {
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 5;
+
+                const x0 = 0.5*width;
+                const y0 = 0.5*height;
+
+                // length of sides is 4 units
+                const l = unit*length;
+
+                // starting coordinates
+                const x = x0 + xpos*unit;
+                const y = y0 - ypos*unit;
+
+                // draw a square
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x, y-l);
+                ctx.lineTo(x+l, y-l);
+                ctx.lineTo(x+l, y);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+            // three actions
+            grid();
+            axis();
+            // hack 1: make square according to grid positioning
+            square();
+            // hack 2: plot line or square on grid from user input according
         </script>
-        </div>
-    </body>
+            </div>
+        </body>
 
 
-</html>
+    </html>
