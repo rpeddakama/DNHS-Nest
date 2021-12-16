@@ -15,11 +15,18 @@ public class Raadwan {
     @GetMapping("/raadwan")
 
     public String RaadwanAbout(
+        @RequestParam(name="sequence", required=true, defaultValue="None") String sequence, 
+        @RequestParam(name="newSequence", required=true, defaultValue="None") String newSequence, 
+        @RequestParam(name="insertSequence", required=true, defaultValue="None") String insertSequence, 
         @RequestParam(name="length", required=true, defaultValue="4") int length, 
         @RequestParam(name="x", required=true, defaultValue="1") int x, 
         @RequestParam(name="y", required=true, defaultValue="1") int y, 
         Model model
     ) {
+        LightSequence lightSequence = new LightSequence(sequence);
+
+        model.addAttribute("sequence", lightSequence.getSequence());
+
         model.addAttribute("length", length);
         model.addAttribute("x", x);
         model.addAttribute("y", y);
@@ -49,6 +56,10 @@ class LightSequence {
         this.seq = seq;
     }
 
+    public String getSequence() {
+        return this.seq;
+    }
+
     public void display() {
         System.out.println(seq);
     }
@@ -58,10 +69,10 @@ class LightSequence {
     }
 
     public String insertString(String segment, int ind) {
-        return seq.substring(0, ind + 1) + segment + seq.substring(ind + 1);
+        return this.seq.substring(0, ind + 1) + segment + this.seq.substring(ind + 1);
     }
 
     public String binaryToText() {
-        return String.valueOf((char)Integer.parseInt(seq, 2));
+        return String.valueOf((char)Integer.parseInt(this.seq, 2));
     }
 }
