@@ -63,7 +63,7 @@
     <img src="/img/frqp2.png">
 
     <br>
-    <div class="part-e">
+    <div style="text-align: center;" class="part-e">
         <h1>Part e: Assume that the string oldSeq has been properly
             declared and
             initialized and contains the string segment. Write a code
@@ -98,7 +98,7 @@
                 <br>
     </div>
 
-    <div class="part-e">
+    <div style="text-align: center;" class="part-e">
 
         <div class="frq-content">
             <form action="/arnav" method="GET"
@@ -118,7 +118,7 @@
             </form>
         </div>
     </div>
-    <div class="part-f">
+    <div style="text-align: center;" class="part-f">
         <h1>Part f: Two lights will be arranged on a
             two-dimensional plane. The vertical distance
             between the two lights is stored in the double
@@ -151,20 +151,49 @@
 
 
     </div>
-    <br>
-    <h1 class="main-text">Coding Work in Repo for Questions a-d (not taking user input)</h1>
-
-    <br/>
 
     <div>
 
-    <hr>
-    <br>
+        <hr>
+
+        <br>
+
+        <h1 style="text-align: center; font-weight: bold;"><b>Unit 3 FRQ Question 1 - RSVP and Selection Implemented</b>
+        </h1>
+
+        <br>
+        <h1 style="text-align: center; font-weight: bold;">First check off the box if you have did RSVP. Then type in
+            your selection
+            with a whole number ex. 1, 2, 3.</h1>
+
+        <div style="text-align: center;" class="part-e">
+
+            <div class="frq-content">
+                <form action="/arnav" method="GET"
+                      id="frqForm">
+                    <div class="frq-form">
+                        <br/>
+
+                        <input type="checkbox" checked="checked" name="rsvp"/>
+                        <label> Yes, I did RSVP</label><br>
 
 
+                        <br>
+
+                        <p for="frqField">Type in the selection! </p>
+
+                        <input style="background-color: lightblue;"
+                               name="selection" id="frqField">
+                        <br/>
+                        <button>Run!</button>
+                        <br/>
+                        <p th:text="'Result: ' + ${option1}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </div>
-
     <hr>
 
     <br>
@@ -172,7 +201,8 @@
     <div style="text-align: center; width: 60em; margin: auto">
         <h1><b>Unit 3 FRQ Question 2</b></h1>
         <h1 class="text-center">JavaScript - Draw on Canvas</h1>
-        <canvas id="canvas" width="512" height="512" style="margin: auto; margin-top: 2em; margin-bottom: 2em"></canvas>
+        <canvas id="canvas" width="512" height="512"
+                style="margin: auto; margin-top: 2em; margin-bottom: 2em"></canvas>
         <form action="/arnav" method="GET" id="frqForm">
             <div class="frq-form">
                 <br/>
