@@ -21,13 +21,18 @@
                         I also like money and power.
                     </p>
                     <button class="blue-dcurve-btn my-1" onclick="changePicture()">Click Me! (mask)</button>
-                    <button class="blue-dcurve-btn my-1" onclick="getNflData()" style="margin-top: 1em; margin-left: 1em">NFL API</button>
-                    <a href="https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/README.md"><button class="blue-dcurve-btn my-1" style="margin-top: 1em; margin-left: 1em">Timebox</button></a>
-                    <p class="text-1xl mb-2 w-3/4" id="apiData">    
+                    <button class="blue-dcurve-btn my-1" onclick="getNflData()"
+                        style="margin-top: 1em; margin-left: 1em">NFL API</button>
+                    <a href="https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/README.md"><button
+                            class="blue-dcurve-btn my-1" style="margin-top: 1em; margin-left: 1em">Timebox</button></a>
+                    <p class="text-1xl mb-2 w-3/4" id="apiData">
                     <div class="flex flex-row">
-                        <div class="social-icon"><a href="https://github.com/rpeddakama" target="_blank"><img src="/img/github.png" class="h-10 mt-2"></a></div>
-                        <div class="social-icon"><a href="https://www.linkedin.com/in/rishi-peddakama-07744a1a5/" target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
-                        <div class="social-icon"><a href="https://www.instagram.com/rishi_peddakama/" target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://github.com/rpeddakama" target="_blank"><img
+                                    src="/img/github.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://www.linkedin.com/in/rishi-peddakama-07744a1a5/"
+                                target="_blank"><img src="/img/linkedin.png" class="h-10 mt-2"></a></div>
+                        <div class="social-icon"><a href="https://www.instagram.com/rishi_peddakama/"
+                                target="_blank"><img src="/img/instagram.png" class="h-10 mt-2"></a></div>
                     </div>
                 </div>
             </div>
@@ -35,129 +40,245 @@
                 <img id="maskImage" class="w-3/4" src="/img/RishiNoMask.png">
             </div>
         </div>
-        
+
         <script>
             function changePicture() {
                 var imagePath = document.getElementById("maskImage")
-                if(imagePath.src.match("/img/RishiNoMask.png")) imagePath.src = "/img/RishiMask.png"
+                if (imagePath.src.match("/img/RishiNoMask.png")) imagePath.src = "/img/RishiMask.png"
                 else imagePath.src = "/img/RishiNoMask.png"
             };
             function getNflData() {
                 alert('Please wait while the API fetches the data, this might take a few seconds.')
                 axios.get('/rishi-data')
-                .then((res) => {
-                    var index = Math.floor(Math.random() * res.data.data.length)
-                    // cons/img/github.pngole.log(index)
-                    // console.log(res.data./img/linkedin.png"></data[index])
-                    document.getElementById("apiData").innerText = `
+                    .then((res) => {
+                        var index = Math.floor(Math.random() * res.data.data.length)
+                        // cons/img/github.pngole.log(index)
+                        // console.log(res.data./img/linkedin.png"></data[index])
+                        document.getElementById("apiData").innerText = `
                         There is a game on ${res.data.data[index]['date']} at ${res.data.data[index]['venue']}.
                         The teams: ${res.data.data[index]['name']}
                     `
-                })
+                    })
             };
         </script>
 
-<div class="main-text">
-    <h1>Unit 2 FRQ - All Group Members found the Same Solutions</h1>
-    <br>
-    <h1> Parts a-d were simply coding exercises which is why images of the solutions are shown. <br> Problems e and
-        f take user input </h1>
-</div>
+        <div class="main-text">
+            <h1>Unit 2 FRQ - All Group Members found the Same Solutions</h1>
+            <br>
+            <h1> Parts a-d were simply coding exercises which is why images of the solutions are shown. <br> Problems e
+                and
+                f take user input </h1>
+        </div>
 
-<br>
+        <br>
 
-<img src="/img/frqp1.png">
-<img src="/img/frqp2.png">
+        <img src="/img/frqp1.png">
+        <img src="/img/frqp2.png">
 
-<br><div style="text-align: center;" class="part-e">
-    <h1>Part e: Assume that the string oldSeq has been properly
-        declared and
-        initialized and contains the string segment. Write a code
-        segment
-        <br>that will remove the first occurrence of segment from oldSeq
-        and
-        store it in the string newSeq. Consider the following
-        examples.</h1>
+        <br>
+        <div style="text-align: center;" class="part-e">
+            <h1>Part e: Assume that the string oldSeq has been properly
+                declared and
+                initialized and contains the string segment. Write a code
+                segment
+                <br>that will remove the first occurrence of segment from oldSeq
+                and
+                store it in the string newSeq. Consider the following
+                examples.
+            </h1>
 
-    <br>
-    <h1> This is the old sequence: 0011 0011 0011
-        <h1>
+            <br>
+            <h1> This is the old sequence: 0011 0011 0011
+                <h1>
+
+                    <div class="frq-content">
+                        <form action="/arnav" method="GET" id="frqForm">
+                            <div class="frq-form">
+                                <p for="frqField">Type in your segment to
+                                    remove</p>
+                                <br />
+                                <input style="background-color: lightblue;" name="segment" id="frqField">
+                                <br />
+                                <button>Run!</button>
+                                <br />
+                                <p th:text="'New Sequence: ' + ${newSeq} +
+                                    '!'"></p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <br>
+        </div>
+
+        <div style="text-align: center;" class="part-e">
 
             <div class="frq-content">
-                <form action="/arnav" method="GET"
-                      id="frqForm">
+                <form action="/arnav" method="GET" id="frqForm">
                     <div class="frq-form">
                         <p for="frqField">Type in your segment to
-                            remove</p>
-                        <br/>
-                        <input style="background-color: lightblue;"
-                               name="segment" id="frqField">
-                        <br/>
+                            add (to the end) </p>
+                        <br />
+                        <input style="background-color: lightblue;" name="segment" id="frqField">
+                        <br />
                         <button>Run!</button>
-                        <br/>
-                        <p th:text="'New Sequence: ' + ${newSeq} +
-                                    '!'"></p>
+                        <br />
+                        <p th:text="'Added Sequence: ' + ${addedSeq} +
+                                        '!'"></p>
                     </div>
                 </form>
             </div>
+        </div>
+        <div style="text-align: center;" class="part-f">
+            <h1>Part f: Two lights will be arranged on a
+                two-dimensional plane. The vertical distance
+                between the two lights is stored in the double
+                variable a. The horizontal distance <br> between
+                the two lights is stored in the double variable b.
+                The straight-line distance between the two lights
+                is given by the formula square root of the quantity <br>
+                a squared plus b squared. Write a code segment that
+                prints the straight-line distance between the two
+                lights according to the formula above.</h1>
 
             <br>
-</div>
 
-<div style="text-align: center;" class="part-e">
+            <form action="/arnav" method="GET" id="frqForm">
+                <div class="frq-form">
+                    <p for="frqField">Type in your values for a and</p>
+                    <br />
+                    <input style="background-color: lightblue;" name="a" id="frqField">
+                    <input style="background-color: lightblue;" name="b" id="frqField">
 
-    <div class="frq-content">
-        <form action="/arnav" method="GET"
-              id="frqForm">
-            <div class="frq-form">
-                <p for="frqField">Type in your segment to
-                    add (to the end) </p>
-                <br/>
-                <input style="background-color: lightblue;"
-                       name="segment" id="frqField">
-                <br/>
-                <button>Run!</button>
-                <br/>
-                <p th:text="'Added Sequence: ' + ${addedSeq} +
-                                        '!'"></p>
-            </div>
-        </form>
-    </div>
-</div>
-<div style="text-align: center;" class="part-f">
-    <h1>Part f: Two lights will be arranged on a
-        two-dimensional plane. The vertical distance
-        between the two lights is stored in the double
-        variable a. The horizontal distance <br> between
-        the two lights is stored in the double variable b.
-        The straight-line distance between the two lights
-        is given by the formula square root of the quantity <br>
-        a squared plus b squared. Write a code segment that
-        prints the straight-line distance between the two
-        lights according to the formula above.</h1>
+                    <br />
+                    <button>Run!</button>
+                    <br />
+                    <p th:text="'Answer: ' + ${answer} + '!'"></p>
+                </div>
+            </form>
 
-    <br>
 
-    <form action="/arnav" method="GET" id="frqForm">
-        <div class="frq-form">
-            <p for="frqField">Type in your values for a and
-                b</p>
-            <br/>
-            <input style="background-color: lightblue;"
-                   name="a" id="frqField">
-            <input style="background-color: lightblue;"
-                   name="b" id="frqField">
-
-            <br/>
-            <button>Run!</button>
-            <br/>
-            <p th:text="'Answer: ' + ${answer} + '!'"></p>
         </div>
-    </form>
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <h1><b>Unit 3 FRQ Question 2</b></h1>
+            <h1 class="text-center">JavaScript - Draw on Canvas</h1>
+            <canvas id="canvas" width="512" height="512"
+                style="margin: auto; margin-top: 2em; margin-bottom: 2em"></canvas>
+            <form action="/arnav" method="GET" id="frqForm">
+                <div class="frq-form">
+                    <br />
+                    <input style="background-color: lightblue;" name="length" id="frqField" placeholder="length">
+                    <input style="background-color: lightblue;" name="x" id="frqField" placeholder="x">
+                    <input style="background-color: lightblue;" name="y" id="frqField" placeholder="y">
+                    <br />
+                    <button>Run!</button>
+                </div>
+            </form>
+
+            <script th:inline="javascript">
+                /*<![CDATA[*/
+                // https://www.w3schools.com/graphics/canvas_intro.asp
+                const urlParams = new URLSearchParams(window.location.search);
+                const length = urlParams.get('length');
+                const xpos = urlParams.get('x');
+                const ypos = urlParams.get('y');
+
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+                const width = canvas.width;
+                const height = canvas.height;
+                const unit = 16;   // unit block size
 
 
-</div>
+                // grid based off of width, height
+                function grid() {
+                    // color and pen width
+                    ctx.strokeStyle = 'gray';
+                    ctx.lineWidth = 1;
+                    // make graph paper look
+                    for (let col = 0; col < width; col += unit) {
+                        for (let row = 0; row < height; row += unit) {
+                            ctx.strokeRect(col, row, unit, unit);
+                        }
+                    }
+                }
 
+                // axis lines
+                function axis() {
+                    // color and pen width
+                    ctx.strokeStyle = 'red';
+                    ctx.lineWidth = 3;
+
+                    // x & y zero midpoints of grid
+                    const x0 = width * .5;
+                    const y0 = height * .5;
+                    // x-axis
+                    ctx.moveTo(0, y0);
+                    ctx.lineTo(width, y0);
+                    ctx.stroke();
+                    // y-axis
+                    ctx.moveTo(x0, 0);
+                    ctx.lineTo(x0, height);
+                    ctx.stroke();
+                }
+
+                // square using lines
+                function square() {
+                    ctx.strokeStyle = 'black';
+                    ctx.lineWidth = 5;
+
+                    const x0 = 0.5 * width;
+                    const y0 = 0.5 * height;
+
+                    // length of sides is 4 units
+                    const l = unit * length;
+
+                    // starting coordinates
+                    const x = x0 + xpos * unit;
+                    const y = y0 - ypos * unit;
+
+                    // draw a square
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                    ctx.lineTo(x, y - l);
+                    ctx.lineTo(x + l, y - l);
+                    ctx.lineTo(x + l, y);
+                    ctx.lineTo(x, y);
+                    ctx.stroke();
+                }
+
+                // three actions
+                grid();
+                axis();
+                // hack 1: make square according to grid positioning
+                square();
+                // hack 2: plot line or square on grid from user input according
+                /*]]>*/
+            </script>
+
+            <script>
+                function changePicture() {
+                    var imagePath = document.getElementById("maskImage")
+                    if (imagePath.src.match("/img/ArnavNoMask.png")) imagePath.src = "/img/ArnavMask.png"
+                    else imagePath.src = "/img/ArnavNoMask.png"
+                    // console.log(imagePath.src)
+                };
+
+                function getNBAData() {
+                    alert('Please wait while the API fetches the data, this might take a few seconds.')
+                    axios.get('/arnav-data')
+                        .then((res) => {
+                            console.log(res.data)
+                            document.getElementById("apiData").innerText = `
+                            The player's first name is ${res.data.first_name} and the last name is ${res.data.last_name}. His height is ${res.data.height_feet} feet and ${res.data.height_inches} inches. 
+                            His position is ${res.data.position} and his weight is ${res.data.weight_pounds} pounds. His team's abbreviation ${res.data.team.abbreviation} and the team's name is 
+                            ${res.data.team.full_name}.
+                        `
+                        })
+                };
+            </script>
+
+        </div>
 
     </div>
 </body>
