@@ -23,6 +23,16 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 
 ## Project History
 - [Week 2](https://github.com/rpeddakama/Tri-2-CSA-Project#week-2)
+- [Week 2](https://github.com/rpeddakama/Tri-2-CSA-Project#week-3)
+
+## Week 3
+| Name | Role | Task | Evidence |
+| - | - | - | - |
+| Rishi Peddakama | Scrum Master | Organize Scrum Board, work on design, work on project, Add Unit 2,3 FRQ to about page | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits/master), [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Arpeddakama+label%3A%22week+3%22), [Design](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1) |
+| Raadwan Masum | Designer | Work on design, Add Unit 2,3 FRQ to about page | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits/master), [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Araad1masum+label%3A%22week+3%22), [Design](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1) |
+| Arnav Palkhiwala | GitHub Admin | Create a plan and ensure the organization of commits and pull requests; prevent merge conflicts. Add Unit 2,3 FRQ to about page | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits/master), [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3AArnavPalkhiwala+label%3A%22week+3%22), [Design](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1) |
+| Alvin Zheng | Deployment Manager | Add Unit 2,3 FRQ to about page, deployment (DNS for the website and hosted on AWS) | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits/master), [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Aalvinzhengq+label%3A%22week+3%22), [Design](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1) |
+| Paul Bokelman | Technical Officer | Add Unit 2,3 FRQ to about page | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits/master), [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Apaul-bokelman+label%3A%22week+3%22), [Design](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1) |
 
 ## Week 2
 | Name | Role | Task | Evidence |
