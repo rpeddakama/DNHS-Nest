@@ -18,6 +18,10 @@ public class Arnav {
             @RequestParam(name="segment", required=false, defaultValue="") String segment,
             @RequestParam(name="a", required=false, defaultValue="0.0") double a,
             @RequestParam(name="b", required=false, defaultValue="0.0") double b,
+            @RequestParam(name="rsvp", required=false, defaultValue="false") boolean rsvp,
+            @RequestParam(name="selection", required=false, defaultValue="0") int selection,
+            @RequestParam(name="option1", required=false, defaultValue="") String option1,
+
             Model model
     ) {
         //Unit 2 FRQ
@@ -35,6 +39,27 @@ public class Arnav {
         double answer = Math.sqrt(a*a + b*b);
 
         model.addAttribute("answer", answer);
+
+        if (rsvp){
+            if (selection == 1){
+                option1 = "Thanks for attending. You will be served beef.";
+            }
+            else if (selection == 2){
+                option1 = "Thanks for attending. You will be served chicken.";
+            }
+            else if (selection == 3){
+                option1 = "Thanks for attending. You will be served pasta.";
+            }
+            else{    option1 = "Thanks for attending. You will be served fish.";
+            }
+        }
+
+        else{
+            option1 = "Sorry you can't make it.";
+        }
+
+        model.addAttribute("option1", option1);
+
         return "arnav";
     }
 
