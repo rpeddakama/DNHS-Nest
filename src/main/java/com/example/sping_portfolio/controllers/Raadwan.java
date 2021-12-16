@@ -60,4 +60,8 @@ class LightSequence {
     public String insertString(String segment, int ind) {
         return seq.substring(0, ind + 1) + segment + seq.substring(ind + 1);
     }
+
+    public String binaryToText() {
+        return String.valueOf((char)Integer.parseInt(seq, 2));
+    }
 }
