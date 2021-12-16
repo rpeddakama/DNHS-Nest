@@ -27,6 +27,10 @@ public class Raadwan {
 
         model.addAttribute("sequence", lightSequence.getSequence());
 
+        lightSequence.changeSequence(newSequence);
+
+        model.addAttribute("newSequence", lightSequence.getSequence());
+
         model.addAttribute("length", length);
         model.addAttribute("x", x);
         model.addAttribute("y", y);
