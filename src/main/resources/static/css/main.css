@@ -27,3 +27,8 @@ button {
   border-radius: 30px 5px;
   font-size: 20px;
 }
+
+.weekly-calendar {
+  margin: auto;
+  margin-top: 20px;
+}
