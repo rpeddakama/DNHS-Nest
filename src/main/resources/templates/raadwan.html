@@ -62,6 +62,7 @@
                     <h1 class="text-center">Unit Two FRQ</h1>
                     <p th:text="'Sequence: ' + ${sequence}"></p>
                     <p th:text="'New Sequence: ' + ${newSequence}"></p>
+                    <p th:text="'Replaced Sequence: ' + ${replaceSequence}"></p>
                     <p th:text="'Sequence with Insert: ' + ${insertSequence}"></p>
                     <form action="/raadwan" method="GET" id="frqForm">
                         <div class="frq-form">
@@ -70,6 +71,8 @@
                                 name="sequence" id="frqField">
                             <input style="background-color: lightblue;"
                                 name="newSequence" id="frqField">
+                            <input style="background-color: lightblue;"
+                                name="replaceSequence" id="frqField">
                             <input style="background-color: lightblue;"
                                 name="insertSequence" id="frqField">
                             <input style="background-color: lightblue;"
