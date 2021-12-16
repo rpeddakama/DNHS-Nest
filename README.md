@@ -14,7 +14,7 @@
 | Alvin Zheng | alvinzhengq | [@alvinzhengq](https://github.com/alvinzhengq) | Deployment Manager | [Deployment Guide, Nginx Config, Service File](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Deployment-Guide) | [FRQ Runtime](https://dnhsnest.tk/alvin), [FRQ Java](https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/java/com/example/sping_portfolio/controllers/Alvin.java), [FRQ Frontend](https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/resources/templates/alvin.html) |
 | Paul Bokelman | paul-bokelman | [@paul-bokelman](https://github.com/paul-bokelman) | Technical Officer | TODO | [FRQ Runtime](https://dnhsnest.tk/paul), [FRQ Java](https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/java/com/example/sping_portfolio/controllers/Paul.java), [FRQ Frontend](https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/resources/templates/paul.html) |
 
-## Timebox
+## General Timebox
 | Name | Github Username | Github Profile | Issue | Scrum Tasks | Journals | Commits |
 | - | - | - | - | - | - | - |
 | Rishi Peddakama | rpeddakama | [@rpeddakama](https://github.com/rpeddakama) | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/rpeddakama) | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3Arpeddakama) | [Journal](https://docs.google.com/document/d/1vxzWnE3vU9BzimUlZjcTz79fNOBTLcT7G4B1LLMhNEw/edit?usp=sharing) | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=rpeddakama) |
