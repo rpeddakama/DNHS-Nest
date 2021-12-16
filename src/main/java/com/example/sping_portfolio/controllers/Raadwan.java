@@ -41,3 +41,23 @@ public class Raadwan {
         return response.body();
     }
 }
+
+class LightSequence {
+    String seq;
+
+    public LightSequence(String seq) {
+        this.seq = seq;
+    }
+
+    public void display() {
+        System.out.println(seq);
+    }
+
+    public void changeSequence(String seq) {
+        this.seq = seq;
+    }
+
+    public String insertString(String segment, int ind) {
+        return seq.substring(0, ind + 1) + segment + seq.substring(ind + 1);
+    }
+}
