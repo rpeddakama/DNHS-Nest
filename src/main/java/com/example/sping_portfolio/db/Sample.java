@@ -13,7 +13,7 @@ public class Sample
     try
     {
       // create a database connection
-      connection = DriverManager.getConnection("jdbc:sqlite:/src/main/java/com/example/sping_portfolio/db/sample.db");
+      connection = DriverManager.getConnection("jdbc:sqlite:sample.db");
       Statement statement = connection.createStatement();
       statement.setQueryTimeout(30);  // set timeout to 30 sec.
 
@@ -21,6 +21,7 @@ public class Sample
       statement.executeUpdate("create table person (id integer, name string)");
       statement.executeUpdate("insert into person values(1, 'leo')");
       statement.executeUpdate("insert into person values(2, 'yui')");
+      statement.executeUpdate("insert into person values(3, 'john')");
       ResultSet rs = statement.executeQuery("select * from person");
       while(rs.next())
       {
