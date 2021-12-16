@@ -104,6 +104,28 @@
             <br>
 </div>
 
+<div style="text-align: center;" class="part-e">
+
+    <div class="frq-content">
+        <form action="/arnav" method="GET"
+              id="frqForm">
+            <div class="frq-form">
+                <p for="frqField">Type in your segment to
+                    add (to the end) </p>
+                <br/>
+                <input style="background-color: lightblue;"
+                       name="segment" id="frqField">
+                <br/>
+                <button>Run!</button>
+                <br/>
+                <p th:text="'Added Sequence: ' + ${addedSeq} +
+                                        '!'"></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
 
     </div>
 </body>
