@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.w3.org/1999/xhtml"
+    layout:decorate="~{fragments/layout}" lang="en">
+    <head>
+        <div layout:fragment="metadata" th:remove="tag">
+            <title>The Nest - Map</title>
+        </div>
+    </head>
+
+    <body>
+        <div layout:fragment="content" th:remove="tag">
+            <div class="flex flex-row w-full h-full items-center">
+                <div class="m-auto">
+                    <img src="/img/map.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
