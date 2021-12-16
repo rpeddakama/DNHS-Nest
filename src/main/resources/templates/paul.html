@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html
+  xmlns:layout="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.w3.org/1999/xhtml"
+  layout:decorate="~{fragments/layout}"
+  lang="en"
+>
+  <head>
+    <div layout:fragment="metadata" th:remove="tag">
+      <title>The Nest - About Paul Bokelman</title>
+    </div>
+  </head>
+
+  <body>
+    <div layout:fragment="content" th:remove="tag">
+      <div
+        class="flex flex-row w-full h-full items-center"
+        style="margin-top: 4em"
+      >
+        <div class="grow w-48 h-full flex justify-center items-center">
+          <div class="w-3/4">
+            <p class="text-6xl font-semibold mb-3">Paul Bokelman</p>
+            <p class="text-4xl mb-6 font-bold text-red-600">
+              m221p2 impoder at heart
+            </p>
+            <p class="text-2xl mb-2 w-5/6">
+              Talk is cheap show me the code. - some dude that liked comp sci i
+              think
+            </p>
+            <button
+              class="blue-dcurve-btn my-1"
+              onclick="changePicture()"
+              style="margin-top: 1em"
+            >
+              Click Me! (mask)
+            </button>
+            <button
+              class="blue-dcurve-btn my-1"
+              onclick="getETHPrice()"
+              style="margin-top: 1em; margin-left: 1em"
+            >
+              Get current ETH price
+            </button>
+            <a
+              href="https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/README.md"
+              ><button
+                class="blue-dcurve-btn my-1"
+                style="margin-top: 1em; margin-left: 1em"
+              >
+                Timebox
+              </button></a
+            >
+            <p class="text-1xl mb-2 w-3/4" id="apiData"></p>
+            <div class="flex flex-row">
+              <div class="social-icon">
+                <a href="https://github.com/paul-bokelman" target="_blank"
+                  ><img src="/img/github.png" class="h-10 mt-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grow w-32 flex">
+          <img id="maskImage" class="w-3/4" src="/img/PaulNoMask.JPG" />
+        </div>
+      </div>
+
+      <script>
+        function changePicture() {
+          var imagePath = document.getElementById("maskImage")
+          if (imagePath.src.match("/img/PaulNoMask.JPG"))
+            imagePath.src = "/img/PaulMask.png"
+          else imagePath.src = "/img/PaulNoMask.JPG"
+        }
+
+        const getETHPrice = async () => {
+          const {
+            data: { BTC, USD },
+          } = await axios.get("/paul-data")
+
+          const r = `The current price of ETH is ${BTC} BTC and ${USD} USD`
+
+          document.getElementById("apiData").innerHTML = r
+        }
+      </script>
+    </div>
+  </body>
+</html>

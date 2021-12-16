@@ -1,54 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>...</title>
-    </head>
-    <body>
-        <nav class="px-20 flex flex-row justify-between"
-            th:fragment="header">
-            <div class="nav-logo py-10" style="padding-left: 1.8em;">
-                <p class="text-2xl font-bold"><a href="/">THE NEST</a></p>
-            </div>
-            <div class="nav-links py-10 flex flex-row">
-                <div class="about-link">
-                    <p class="text-2xl font-medium mr-10">
-                        About</p>
-                    <div class="about-content">
-                        <p class="text-lg"><a href="/raadwan">Raadwan</a></p>
-                        <p class="text-lg"><a href="/alvin">Alvin</a></p>
-                        <p class="text-lg"><a href="/rishi">Rishi</a></p>
-                        <p class="text-lg"><a href="/arnav">Arnav</a></p>
-                    </div>
-                </div>
-                <div class="tpt-link">
-                    <p class="text-2xl font-medium mr-10">TPT</p>
-                    <div class="tpt-content">
-                        <p class="text-lg"><a href="/UnitTwoFrq">Unit 2 FRQ</a></p>
-                    </div>
-                </div>
-                <div>
-                    <label class="switch">
-                        <input onclick="changeTheme()" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </div>
+  <head>
+    <title>...</title>
+  </head>
+  <body>
+    <nav class="px-20 flex flex-row justify-between" th:fragment="header">
+      <div class="nav-logo py-10" style="padding-left: 1.8em">
+        <p class="text-2xl font-bold"><a href="/">THE NEST</a></p>
+      </div>
+      <div class="nav-links py-10 flex flex-row">
+        <div class="about-link">
+          <p class="text-2xl font-medium mr-10">About</p>
+          <div class="about-content dark:text-black">
+            <p class="text-lg"><a href="/raadwan">Raadwan</a></p>
+            <p class="text-lg"><a href="/alvin">Alvin</a></p>
+            <p class="text-lg"><a href="/rishi">Rishi</a></p>
+            <p class="text-lg"><a href="/arnav">Arnav</a></p>
+            <p class="text-lg"><a href="/paul">Paul</a></p>
+          </div>
+        </div>
+        <div class="tpt-link">
+          <p class="text-2xl font-medium mr-10">TPT</p>
+          <div class="tpt-content">
+            <p class="text-lg dark:text-black">
+              <a href="/UnitTwoFrq">Unit 2 FRQ</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <label class="switch">
+            <input onclick="changeTheme()" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
 
-            <script>
-                function changeTheme() {
-                    console.log(window.getComputedStyle(document.body, null).getPropertyValue('background-color'))
-                    if (window.getComputedStyle(document.body, null).getPropertyValue('background-color') == "rgb(255, 255, 255)") {
-                        console.log("Going dark")
-                        document.body.style.color = "#ffffff"
-                        document.body.style.backgroundColor = "black"
-                    } else if (window.getComputedStyle(document.body, null).getPropertyValue('background-color') == "rgb(0, 0, 0)") {
-                        console.log("Light it up")
-                        document.body.style.color = "#313638"
-                        document.body.style.backgroundColor = "white"
-                    }
-                }
-            </script>
-        </nav>
-    </body>
+      <script>
+        function changeTheme() {
+          console.log(
+            window
+              .getComputedStyle(document.body, null)
+              .getPropertyValue("background-color")
+          )
+          if (
+            window
+              .getComputedStyle(document.body, null)
+              .getPropertyValue("background-color") == "rgb(255, 255, 255)"
+          ) {
+            console.log("Going dark")
+            document.body.style.color = "#ffffff"
+            document.body.style.backgroundColor = "black"
+          } else if (
+            window
+              .getComputedStyle(document.body, null)
+              .getPropertyValue("background-color") == "rgb(0, 0, 0)"
+          ) {
+            console.log("Light it up")
+            document.body.style.color = "#313638"
+            document.body.style.backgroundColor = "white"
+          }
+        }
+      </script>
+    </nav>
+  </body>
 </html>
