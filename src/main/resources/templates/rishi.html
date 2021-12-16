@@ -124,7 +124,39 @@
         </form>
     </div>
 </div>
+<div style="text-align: center;" class="part-f">
+    <h1>Part f: Two lights will be arranged on a
+        two-dimensional plane. The vertical distance
+        between the two lights is stored in the double
+        variable a. The horizontal distance <br> between
+        the two lights is stored in the double variable b.
+        The straight-line distance between the two lights
+        is given by the formula square root of the quantity <br>
+        a squared plus b squared. Write a code segment that
+        prints the straight-line distance between the two
+        lights according to the formula above.</h1>
 
+    <br>
+
+    <form action="/arnav" method="GET" id="frqForm">
+        <div class="frq-form">
+            <p for="frqField">Type in your values for a and
+                b</p>
+            <br/>
+            <input style="background-color: lightblue;"
+                   name="a" id="frqField">
+            <input style="background-color: lightblue;"
+                   name="b" id="frqField">
+
+            <br/>
+            <button>Run!</button>
+            <br/>
+            <p th:text="'Answer: ' + ${answer} + '!'"></p>
+        </div>
+    </form>
+
+
+</div>
 
 
     </div>
