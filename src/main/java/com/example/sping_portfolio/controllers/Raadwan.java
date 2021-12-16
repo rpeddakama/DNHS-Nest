@@ -17,7 +17,9 @@ public class Raadwan {
     public String RaadwanAbout(
         @RequestParam(name="sequence", required=true, defaultValue="None") String sequence, 
         @RequestParam(name="newSequence", required=true, defaultValue="None") String newSequence, 
-        @RequestParam(name="insertSequence", required=true, defaultValue="None") String insertSequence, 
+        @RequestParam(name="replaceSequence", required=true, defaultValue="") String replaceSequence, 
+        @RequestParam(name="insertSequence", required=true, defaultValue="") String insertSequence, 
+        @RequestParam(name="insertIndex", required=true, defaultValue="0") String insertIndex, 
         @RequestParam(name="length", required=true, defaultValue="4") int length, 
         @RequestParam(name="x", required=true, defaultValue="1") int x, 
         @RequestParam(name="y", required=true, defaultValue="1") int y, 
@@ -26,6 +28,10 @@ public class Raadwan {
         LightSequence lightSequence = new LightSequence(sequence);
 
         model.addAttribute("sequence", lightSequence.getSequence());
+
+        model.addAttribute("replaceSequence", sequence.replaceFirst(replaceSequence, ""));
+
+        model.addAttribute("insertSequence", lightSequence.insertString(insertSequence, Integer.parseInt(insertIndex)));
 
         lightSequence.changeSequence(newSequence);
 
