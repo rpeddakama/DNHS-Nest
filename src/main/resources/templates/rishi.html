@@ -158,6 +158,30 @@
 
 
         </div>
+        <div style="text-align: center;" class="part-e">
+
+            <div class="frq-content">
+                <form action="/arnav" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <br />
+
+                        <input type="checkbox" checked="checked" name="rsvp" />
+                        <label> Yes, I did RSVP</label><br>
+
+
+                        <br>
+
+                        <p for="frqField">Type in the selection! </p>
+
+                        <input style="background-color: lightblue;" name="selection" id="frqField">
+                        <br />
+                        <button>Run!</button>
+                        <br />
+                        <p th:text="'Result: ' + ${option1}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div style="text-align: center; width: 60em; margin: auto">
             <h1><b>Unit 3 FRQ Question 2</b></h1>
