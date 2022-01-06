@@ -1,5 +1,6 @@
 ---
-title: Period 2 Rugged Boys
+title: Super Rugged Blog
+description: Welcome to our blog!
 layout: default
 ---
 
