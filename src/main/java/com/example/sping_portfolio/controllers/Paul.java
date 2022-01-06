@@ -16,10 +16,9 @@ public class Paul {
     @GetMapping("/paul")
     public String PaulAbout(
             Model model,
-            @RequestParam(name="segment", required=false, defaultValue="") String segment,
-            @RequestParam(name="a", required=false, defaultValue="0.0") double a,
-            @RequestParam(name="b", required=false, defaultValue="0.0") double b
-    ) {
+            @RequestParam(name = "segment", required = false, defaultValue = "") String segment,
+            @RequestParam(name = "a", required = false, defaultValue = "0.0") double a,
+            @RequestParam(name = "b", required = false, defaultValue = "0.0") double b) {
         model = UnitTwoFrqPage(segment, a, b, model);
         return "paul";
     }
@@ -38,8 +37,7 @@ public class Paul {
 
     public Model UnitTwoFrqPage(
             String segment, double a, double b,
-            Model model
-    ) {
+            Model model) {
         LightSequence gradShow = new LightSequence("0101 0101 0101");
         gradShow.display();
         gradShow.changeSequence("0011 0011 0011");
@@ -49,7 +47,7 @@ public class Paul {
 
         model.addAttribute("newSeq", newSeq);
 
-        double answer = Math.sqrt(a*a + b*b);
+        double answer = Math.sqrt(a * a + b * b);
 
         model.addAttribute("answer", answer);
 
