@@ -1,5 +1,6 @@
 ---
-title: Period 2 Rugged Boys
+title: Rugged Boys Home Page
+description: Hello there!
 layout: default
 ---
 
@@ -25,4 +26,4 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 
 ## Blog
 
-[View blog here](/blog)
+[View blog here]({% link blog.md %})
