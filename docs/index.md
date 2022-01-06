@@ -12,9 +12,11 @@ layout: default
 | Paul Bokelman    | paul-bokelman   | [@paul-bokelman](https://github.com/paul-bokelman)     | [Issues](https://github.com/rpeddakama/Tri-2-CSA-Project/issues/assigned/paul-bokelman)   | [Tasks](https://github.com/rpeddakama/Tri-2-CSA-Project/projects/1?card_filter_query=assignee%3APaul-Bokelman)   | [TODO]()                                                                                                    | [Commits](https://github.com/rpeddakama/Tri-2-CSA-Project/commits?author=paul-bokelman)   |
 
 ## Ideation
+
 Campus resources suck. The Nest is built by Del Norte students who understand the needs and wants of all Nighthawks. We hope to make this project a centralized repository of resources that all Del Norte students are looking for but they are not found or very hard to get to on Del Norte's website. Our overall design for the project can be seen in our [Wireframe](https://www.figma.com/file/MXRw08pdG3NeZhkbbfcwWg/Website?node-id=0%3A1).
 
 ## Wiki Pages
+
 - [Linked Here](https://docs.google.com/document/d/1o2t9mfTEV6JXODErKaMG_Cecv9VgEi5BkTt7QeLzkR4/edit)
 - [Deployment Guide Wiki Page](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Deployment-Guide)
 - [Branching Procedure](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Branching-Procedure)
@@ -22,15 +24,5 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 - [Management Plan](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Management-Plan)
 
 ## Blog
-> this blog is still in development
 
-> goals for this blog: track our progress as we making our product
-
-(1/6/2022) Implementations of FRQs are shown under the `About` section, for example: [dnhsnest.tk/raadwan](https://dnhsnest.tk/raadwan)
-
-(12/16/2021) We added a [map](https://dnhsnest.tk/map) and [calendar](https://dnhsnest.tk/calendar)!
-
-(12/10/2021) Procrastination :100:
-
-![image](https://user-images.githubusercontent.com/39575185/148398719-a36e5215-2b42-4020-af33-826c3d07c051.png)
-
+[View blog here](/blog)
