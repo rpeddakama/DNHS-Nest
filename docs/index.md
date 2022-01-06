@@ -17,3 +17,11 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 ## Wiki Pages
 - [Linked Here](https://docs.google.com/document/d/1o2t9mfTEV6JXODErKaMG_Cecv9VgEi5BkTt7QeLzkR4/edit)
 - [Deployment Guide Wiki Page](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Deployment-Guide)
+
+## Blog
+> still in development
+
+Procrastination :100:
+
+![image](https://user-images.githubusercontent.com/39575185/148398719-a36e5215-2b42-4020-af33-826c3d07c051.png)
+
