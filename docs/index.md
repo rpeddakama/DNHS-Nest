@@ -26,9 +26,9 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 
 > goals for this blog: track our progress as we making our product
 
-We added a [map](https://dnhsnest.tk/map) and [calendar](https://dnhsnest.tk/calendar)!
+(12/16/2021) We added a [map](https://dnhsnest.tk/map) and [calendar](https://dnhsnest.tk/calendar)!
 
-Procrastination :100:
+(12/10/2021) Procrastination :100:
 
 ![image](https://user-images.githubusercontent.com/39575185/148398719-a36e5215-2b42-4020-af33-826c3d07c051.png)
 
