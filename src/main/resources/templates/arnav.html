@@ -191,7 +191,11 @@
                     </div>
                 </form>
             </div>
+
         </div>
+
+        <br>
+
 
     </div>
     <hr>
@@ -216,6 +220,31 @@
                 <button>Run!</button>
             </div>
         </form>
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <br>
+            <br>
+            <h1><b>Unit 4 FRQ Question 1</b></h1>
+            <div class="frq-content">
+                <form action="/arnav" method="GET"
+                      id="frqForm">
+                    <div class="frq-form">
+                        <br/>
+
+
+                        <p for="frqField">Type in your segment to find the longest streak! </p>
+
+                        <input style="background-color: lightblue;"
+                               name="word" id="frqField">
+                        <br/>
+                        <button>Run!</button>
+                        <br/>
+                        <p th:text="'Result: ' + ${word}"></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
 
         <script th:inline="javascript">
             /*<![CDATA[*/
