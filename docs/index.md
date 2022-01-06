@@ -26,4 +26,4 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 
 ## Blog
 
-[View blog here]({% link blog.md %})
+[View blog here]({{ site.baseurl }}{% link blog.md %})
