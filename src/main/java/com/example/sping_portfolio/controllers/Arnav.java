@@ -21,6 +21,8 @@ public class Arnav {
             @RequestParam(name="rsvp", required=false, defaultValue="false") boolean rsvp,
             @RequestParam(name="selection", required=false, defaultValue="0") int selection,
             @RequestParam(name="option1", required=false, defaultValue="") String option1,
+            @RequestParam(name="word", required=false, defaultValue="AAAAABBB") String word,
+
 
             Model model
     ) {
@@ -59,6 +61,39 @@ public class Arnav {
         }
 
         model.addAttribute("option1", option1);
+
+        int longestCount = 1;
+        char longestChar = ' ';
+
+        int currentCount = 1;
+        char currentChar = ' ';
+
+        int indexInitial = 0;
+        int indexFinal = 0;
+
+        for(int i = 1; i < word.length(); i++){
+            if(word.charAt(i) == word.charAt(i-1)){
+                currentChar = word.charAt(0);
+                currentCount++;
+                currentChar = word.charAt(i);
+                if(currentCount == 2){
+                    indexInitial = i-1;
+                }
+            }
+            else{
+                indexFinal = i;
+                currentCount = 1;
+            }
+            if(currentCount > longestCount){
+                longestCount = currentCount;
+                longestChar = currentChar;
+            }
+        }
+        word = "The longest streak was " + longestCount + " and the character of this streak was " + longestChar;
+//        System.out.println(longestCount);
+//        System.out.println(longestChar);
+
+        model.addAttribute("word", word);
 
         return "arnav";
     }
