@@ -22,7 +22,7 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 - [Management Plan](https://github.com/rpeddakama/Tri-2-CSA-Project/wiki/Management-Plan)
 
 ## Blog
-> still in development
+> this blog is still in development
 
 > goals for this blog: track our progress as we making our product
 
