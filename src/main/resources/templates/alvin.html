@@ -275,6 +275,64 @@
             /*]]>*/
           </script>
         </div>
+
+        <hr
+          style="margin: auto; margin-top: 8em; margin-bottom: 4em; width: 80%"
+        />
+
+        <div style="text-align: center; width: 60em; margin: auto">
+          <h1><b>Unit 4 FRQ</b></h1>
+
+          <div class="part-f">
+            <form action="/alvin" method="GET" id="frqForm">
+              <div class="frq-form">
+                <p for="frqField">Type in a String: </p>
+                <br />
+                <input
+                        style="background-color: lightblue"
+                        name="testStr"
+                        id="frqField"
+                />
+
+                <br />
+                <button>Run!</button>
+                <br />
+                <p th:text="'New String: ' + ${str}"></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="part-f">
+            <form action="/alvin" method="GET" id="frqForm">
+              <div class="frq-form">
+                <p for="frqField">Type in the Number of Rounds, Coins, and your Move: </p>
+                <br />
+                <input
+                        style="background-color: lightblue"
+                        name="numRounds"
+                        id="frqField"
+                />
+
+                <input
+                        style="background-color: lightblue"
+                        name="numCoins"
+                        id="frqField"
+                />
+
+                <input
+                        style="background-color: lightblue"
+                        name="move"
+                        id="frqField"
+                />
+
+                <br />
+                <button>Run!</button>
+                <br />
+                <p th:text="'Game Result: ' + ${game_winner}"></p>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
       <script>
