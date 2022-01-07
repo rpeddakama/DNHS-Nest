@@ -1,14 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:layout="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{fragments/layout}" lang="en">
 <head>
     <div layout:fragment="metadata" th:remove="tag">
-        <title>The Nest - Calendar</title>
+        <title>The Nest - Bell Schedule</title>
     </div>
 </head>
 
 <body>
+<div layout:fragment="content" th:remove="tag">
+    <div class="flex flex-row w-full h-full items-center">
+        <div class="grow w-32 flex">
+            <img id="maskImage" class="w-3/4" src="/img/schedule0.png" />
+        </div>
+        </div>
+    <div class="flex flex-row w-full h-full items-center">
+        <div class="grow w-32 flex">
+            <img  class="w-3/4" src="/img/schedule1.png" />
+        </div>
+        </div>
+        <div class="grow w-32 flex">
+            <img  class="w-3/4" src="/img/schedule2.png" />
+        </div>
 
+</div>
 </body>
 </html>
