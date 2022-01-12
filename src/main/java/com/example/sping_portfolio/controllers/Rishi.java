@@ -13,13 +13,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 
 class CoinGame {
-
-    private int startingCoins;
     private int maxRounds;
     private int player1 = 0, player2 = 0;
 
     public CoinGame(int s, int r) {
-        startingCoins = s;
+        System.out.println(" INITIALIZE COIN GAME ");
         maxRounds = r;
     }
 
@@ -130,8 +128,8 @@ public class Rishi {
         model.addAttribute("word", word);
 
         // Unit 5
-        CoinGame game = new CoinGame(coins, rounds);
-        model.addAttribute("winner", game.playGame());
+        CoinGame coinGame = new CoinGame(coins, rounds);
+        model.addAttribute("winner", coinGame.playGame());
 
         return "rishi";
 
