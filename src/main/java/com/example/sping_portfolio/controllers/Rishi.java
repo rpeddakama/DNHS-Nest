@@ -112,12 +112,12 @@ class PasswordGenerator {
     }
 }
 
-class CoinGame {
+class Coingame {
     private int startingCoins;
     private int maxRounds;
     private int player1 = 0, player2 = 0;
 
-    public CoinGame(int s, int r) {
+    public Coingame(int s, int r) {
         startingCoins = s;
         maxRounds = r;
     }

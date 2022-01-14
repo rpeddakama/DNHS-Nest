@@ -185,8 +185,45 @@
           </div>
         </form>
         <div>
+          <h1><b>Unit 4 FRQ</b></h1>
+        </div>
+        <div>
           <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@LucaPinto/ImpoderGang?lite=true#Main.java"></iframe>
           </div>
+        <div style="text-align: center; width: 60em; margin: auto">
+          <div class="part-f">
+            <h1>Unit 5 FRQ</h1>
+            <form action="/rishi" method="GET" id="frqForm">
+              <div class="frq-form">
+                <p for="frqField">Type in your name and address</p>
+                <br />
+                <input style="background-color: lightcoral" name="inviteName" id="frqField" />
+                <input style="background-color: lightcoral" name="inviteAddress" id="frqField" />
+                <br />
+                <button>Run!</button>
+                <br />
+                <p th:text="${invite}"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div style="text-align: center; width: 60em; margin: auto">
+          <div class="part-f">
+            <form action="/rishi" method="GET" id="frqForm">
+              <div class="frq-form">
+                <p for="frqField">Type in prefix and length</p>
+                <br />
+                <input style="background-color: lightcoral" name="pwPrefix" id="frqField" />
+                <input style="background-color: lightcoral" name="pwLength" id="frqField" />
+                <br />
+                <button>Run!</button>
+                <br />
+                <p th:text="'Your generated password: ' + ${pwPassword}"></p>
+                <p th:text="'Number of passwords generated: ' + ${pwCount}"></p>
+              </div>
+            </form>
+          </div>
+        </div>
         <script th:inline="javascript">
           /*<![CDATA[*/
           // https://www.w3schools.com/graphics/canvas_intro.asp
@@ -267,6 +304,7 @@
         </script>
       </div>
     </div>
+
 
       <script>
         function changePicture() {
