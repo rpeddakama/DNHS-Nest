@@ -12,6 +12,29 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Random;
 
+public class Invitation {
+    private String hostName;
+    private String address;
+
+    public Invitation(String n, String a) {
+        hostName = n;
+        address = a;
+    }
+
+    public String getHost() {
+        return hostName;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String invite(String person) {
+        return ("Dear " + person + ", please attend my event at " + address + ". See you then, " + hostName + ".");
+    }
+
+}
+
 class PasswordGenerator {
     private String prefix;
     private int len, count = 0;
