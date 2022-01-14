@@ -62,11 +62,10 @@ class DonutShop {
 }
 
 class Invitation {
-    private String hostName;
+    private String hostName = "Rishi";
     private String address;
 
-    public Invitation(String n, String a) {
-        hostName = n;
+    public Invitation(String a) {
         address = a;
     }
 
@@ -103,7 +102,6 @@ class PasswordGenerator {
     }
 
     public String pwGen() {
-        Random rnd = new Random();
         count++;
 
         int Min = (int) Math.pow(10, len - 1);
@@ -172,6 +170,10 @@ public class Rishi {
             @RequestParam(name = "coins", required = false, defaultValue = "5") int coins,
             @RequestParam(name = "rounds", required = false, defaultValue = "3") int rounds,
             @RequestParam(name = "move", required = false, defaultValue = "2") int move,
+            @RequestParam(name = "pwPrefix", required = false, defaultValue = "A") String pwPrefix,
+            @RequestParam(name = "pwLength", required = false, defaultValue = "1") int pwLength,
+            @RequestParam(name = "inviteName", required = false, defaultValue = "Bob") String inviteName,
+            @RequestParam(name = "inviteAddress", required = false, defaultValue = "Wall Street") String inviteAddress,
 
             Model model) {
 
@@ -230,9 +232,17 @@ public class Rishi {
         word = "The longest streak is " + ans + " and the character is " + cLong;
         model.addAttribute("word", word);
 
-        // Unit 5
+        // Unit 4
         CoinGame game = new CoinGame(coins, rounds);
-        model.addAttribute("winner", game.playGame());
+        // model.addAttribute("winner", game.playGame());
+
+        // Unit 5
+        PasswordGenerator passwordGenerator = new PasswordGenerator(pwPrefix, pwLength);
+        model.addAttribute("pwPassword", passwordGenerator.pwGen());
+        model.addAttribute("pwCount", passwordGenerator.pwCount());
+
+        Invitation invitation = new Invitation(inviteAddress);
+        model.addAttribute("invite", invitation.invite(inviteName));
 
         return "rishi";
 
