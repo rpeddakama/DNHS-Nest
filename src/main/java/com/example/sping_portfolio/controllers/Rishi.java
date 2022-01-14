@@ -12,8 +12,37 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Random;
 
-class CoinGame {
+class PasswordGenerator {
+    private String prefix;
+    private int len, count = 0;
 
+    public PasswordGenerator(int len) {
+        this.prefix = "A";
+        this.len = len;
+    }
+
+    public PasswordGenerator(String prefix, int len) {
+        this.prefix = prefix;
+        this.len = len;
+    }
+
+    public int pwCount() {
+        return count;
+    }
+
+    public String pwGen() {
+        Random rnd = new Random();
+        count++;
+
+        int Min = (int) Math.pow(10, len - 1);
+        int Max = (int) Math.pow(10, len) - 1;
+        int num = Min + (int) (Math.random() * ((Max - Min) + 1));
+
+        return (prefix + num);
+    }
+}
+
+class CoinGame {
     private int startingCoins;
     private int maxRounds;
     private int player1 = 0, player2 = 0;
