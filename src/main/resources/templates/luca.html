@@ -193,14 +193,14 @@
         <div style="text-align: center; width: 60em; margin: auto">
           <div class="part-f">
             <h1>Unit 5 FRQ</h1>
-            <form action="/rishi" method="GET" id="frqForm">
+            <form action="/luca" method="GET" id="frqForm">
               <div class="frq-form">
-                <p for="frqField">Type in your name and address</p>
+                <p for="frqField">Type Name and Address</p>
                 <br />
                 <input style="background-color: lightcoral" name="inviteName" id="frqField" />
                 <input style="background-color: lightcoral" name="inviteAddress" id="frqField" />
                 <br />
-                <button>Run!</button>
+                <button>Run</button>
                 <br />
                 <p th:text="${invite}"></p>
               </div>
@@ -209,17 +209,17 @@
         </div>
         <div style="text-align: center; width: 60em; margin: auto">
           <div class="part-f">
-            <form action="/rishi" method="GET" id="frqForm">
+            <form action="/luca" method="GET" id="frqForm">
               <div class="frq-form">
-                <p for="frqField">Type in prefix and length</p>
+                <p for="frqField">Prefix and Length</p>
                 <br />
                 <input style="background-color: lightcoral" name="pwPrefix" id="frqField" />
                 <input style="background-color: lightcoral" name="pwLength" id="frqField" />
                 <br />
                 <button>Run!</button>
                 <br />
-                <p th:text="'Your generated password: ' + ${pwPassword}"></p>
-                <p th:text="'Number of passwords generated: ' + ${pwCount}"></p>
+                <p th:text="'Generated Password: ' + ${pwPassword}"></p>
+                <p th:text="'# of Passwords: ' + ${pwCount}"></p>
               </div>
             </form>
           </div>
