@@ -136,7 +136,7 @@ class Coingame {
         return 1;
     }
 
-    public String playGame() {
+    public String playgame() {
         for (int i = 1; i <= maxRounds; i++) {
             int p1 = getPlayer1Move();
             int p2 = getPlayer2Move(i);
@@ -233,7 +233,7 @@ public class Rishi {
         model.addAttribute("word", word);
 
         // Unit 4
-        CoinGame game = new CoinGame(coins, rounds);
+        Coingame game = new Coingame(coins, rounds);
         // model.addAttribute("winner", game.playGame());
 
         // Unit 5
