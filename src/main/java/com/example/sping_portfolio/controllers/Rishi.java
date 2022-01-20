@@ -128,8 +128,8 @@ public class Rishi {
         model.addAttribute("word", word);
 
         // Unit 5
-        CoinGame coinGame = new CoinGame(coins, rounds);
-        model.addAttribute("winner", coinGame.playGame());
+        // CoinGame coinGame = new CoinGame(coins, rounds);
+        // model.addAttribute("winner", coinGame.playGame());
 
         return "rishi";
 
