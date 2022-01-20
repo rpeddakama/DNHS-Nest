@@ -65,6 +65,15 @@
         </div>
       </div>
 
+      <h1 class="text-3xl font-bold ml-40">Unit 5 FRQ</h1>
+      <br>
+      <div class="frq-content" style="align-items: center;">
+          <iframe height="400px" width="100%" src="https://replit.com/@PaulBokelman/paul-unit5-frq?lite=true"
+              scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      </div>
+      <br>
+
+
       <h1 class="text-3xl font-bold ml-40">Unit 4 FRQ</h1>
       <br>
       <div class="frq-content" style="align-items: center;">
@@ -270,28 +279,26 @@
           square()
           // hack 2: plot line or square on grid from user input according
           /*]]>*/
+
+          function changePicture() {
+            var imagePath = document.getElementById("maskImage")
+            if (imagePath.src.match("/img/PaulNoMask.JPG"))
+              imagePath.src = "/img/PaulMask.png"
+            else imagePath.src = "/img/PaulNoMask.JPG"
+          }
+  
+          const getETHPrice = async () => {
+            const {
+              data: { BTC, USD },
+            } = await axios.get("/paul-data")
+  
+            const r = `The current price of ETH is ${BTC} BTC and ${USD} USD`
+  
+            document.getElementById("apiData").innerHTML = r
+          }
         </script>
       </div>
     </div>
-
-      <script>
-        function changePicture() {
-          var imagePath = document.getElementById("maskImage")
-          if (imagePath.src.match("/img/PaulNoMask.JPG"))
-            imagePath.src = "/img/PaulMask.png"
-          else imagePath.src = "/img/PaulNoMask.JPG"
-        }
-
-        const getETHPrice = async () => {
-          const {
-            data: { BTC, USD },
-          } = await axios.get("/paul-data")
-
-          const r = `The current price of ETH is ${BTC} BTC and ${USD} USD`
-
-          document.getElementById("apiData").innerHTML = r
-        }
-      </script>
     </div>
   </body>
 </html>

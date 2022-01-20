@@ -11,13 +11,114 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Random;
+import java.util.ArrayList;
 
-class CoinGame {
+class DonutShop {
+    private ArrayList<String> flavors;
+
+    public static int flavorMultiplier = 3;
+    private double newFlavorMultiplier;
+    private int dozens = 1;
+    private double price = 0;
+
+    public DonutShop(int dozens, ArrayList<String> flavors) {
+        this.flavors = flavors;
+        this.dozens = dozens;
+        this.newFlavorMultiplier = flavorMultiplier - dozens * 0.1;
+    }
+
+    public void shippingFee() {
+        price += 15 * dozens;
+    }
+
+    public String finalOrder() {
+        String toppingsList = "";
+        this.price = flavors.size() * newFlavorMultiplier * dozens;
+        for (String flavor : flavors)
+            toppingsList = toppingsList + flavor + " ";
+
+        return ("To buy " + dozens + " dozen donuts, with the following topings: " + toppingsList
+                + "ordered. It is going to cost you " + price + " dollars");
+    }
+
+    public String getFlavorMultiplier() {
+        return ("The flavor multiplier constant as set by the company is " + flavorMultiplier
+                + " but since you are ordering in bulk with " + dozens
+                + " boxes, we decided to offer you a discount at " + newFlavorMultiplier);
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getDozens() {
+        return dozens;
+    }
+
+    public String toString() {
+        return "Donut Shop is located in Manhattan underneath the Empire State Building";
+    }
+
+}
+
+class Invitation {
+    private String hostName = "Rishi";
+    private String address;
+
+    public Invitation(String a) {
+        address = a;
+    }
+
+    public String getHost() {
+        return hostName;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String invite(String person) {
+        return ("Dear " + person + ", please attend my event at " + address + ". See you then, " + hostName + ".");
+    }
+
+}
+
+class PasswordGenerator {
+    private String prefix;
+    private int len, count = 0;
+
+    public PasswordGenerator(int len) {
+        this.prefix = "A";
+        this.len = len;
+    }
+
+    public PasswordGenerator(String prefix, int len) {
+        this.prefix = prefix;
+        this.len = len;
+    }
+
+    public int pwCount() {
+        return count;
+    }
+
+    public String pwGen() {
+        count++;
+
+        int Min = (int) Math.pow(10, len - 1);
+        int Max = (int) Math.pow(10, len) - 1;
+        int num = Min + (int) (Math.random() * ((Max - Min) + 1));
+
+        return (prefix + num);
+    }
+}
+
+class Coingame {
+    private int startingCoins;
     private int maxRounds;
     private int player1 = 0, player2 = 0;
 
-    public CoinGame(int s, int r) {
-        System.out.println(" INITIALIZE COIN GAME ");
+    public Coingame(int s, int r) {
+        startingCoins = s;
         maxRounds = r;
     }
 
@@ -35,7 +136,7 @@ class CoinGame {
         return 1;
     }
 
-    public String playGame() {
+    public String playgame() {
         for (int i = 1; i <= maxRounds; i++) {
             int p1 = getPlayer1Move();
             int p2 = getPlayer2Move(i);
@@ -69,6 +170,10 @@ public class Rishi {
             @RequestParam(name = "coins", required = false, defaultValue = "5") int coins,
             @RequestParam(name = "rounds", required = false, defaultValue = "3") int rounds,
             @RequestParam(name = "move", required = false, defaultValue = "2") int move,
+            @RequestParam(name = "pwPrefix", required = false, defaultValue = "A") String pwPrefix,
+            @RequestParam(name = "pwLength", required = false, defaultValue = "1") int pwLength,
+            @RequestParam(name = "inviteName", required = false, defaultValue = "Bob") String inviteName,
+            @RequestParam(name = "inviteAddress", required = false, defaultValue = "Wall Street") String inviteAddress,
 
             Model model) {
 
@@ -127,9 +232,17 @@ public class Rishi {
         word = "The longest streak is " + ans + " and the character is " + cLong;
         model.addAttribute("word", word);
 
+        // Unit 4
+        Coingame game = new Coingame(coins, rounds);
+        // model.addAttribute("winner", game.playGame());
+
         // Unit 5
-        // CoinGame coinGame = new CoinGame(coins, rounds);
-        // model.addAttribute("winner", coinGame.playGame());
+        PasswordGenerator passwordGenerator = new PasswordGenerator(pwPrefix, pwLength);
+        model.addAttribute("pwPassword", passwordGenerator.pwGen());
+        model.addAttribute("pwCount", passwordGenerator.pwCount());
+
+        Invitation invitation = new Invitation(inviteAddress);
+        model.addAttribute("invite", invitation.invite(inviteName));
 
         return "rishi";
 

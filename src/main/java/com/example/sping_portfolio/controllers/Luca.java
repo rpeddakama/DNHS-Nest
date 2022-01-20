@@ -16,7 +16,7 @@ import java.net.http.HttpResponse;
 @Controller
 public class Luca {
     @GetMapping("/luca")
-    public String PaulAbout(
+    public String LucaAbout(
             Model model,
             @RequestParam(name="segment", required=false, defaultValue="") String segment,
             @RequestParam(name="a", required=false, defaultValue="0.0") double a,
