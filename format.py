@@ -5,4 +5,4 @@ with open('terms.txt') as f:
 
 with open("formatted.txt", "w") as f2:
     for t in terms:
-        f2.write("(" + t + ")[] <br>\n")
+        f2.write("[" + t + "]() <br>\n")
