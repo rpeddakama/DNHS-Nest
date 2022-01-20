@@ -21,8 +21,15 @@
 title: "Period 2 Rugged Boys"
 email: your-email@example.com
 description: "Hello!" # this means to ignore newlines until "baseurl:"
-baseurl: "/Tri-2-CSA-Project" # the subpath of your site, e.g. /blog
+
+# Use these lines for deployment
+baseurl: "Tri-2-CSA-Project" # the subpath of your site, e.g. /blog
 url: "https://rpeddakama.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Use these lines for local development
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 twitter_username: jekyllrb
 github_username: jekyll
 
