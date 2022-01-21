@@ -1,5 +1,5 @@
 ---
-title: Vocabulary Profficiency
+title: Vocabulary Profficiency: Rishi/Arnav
 description: Bunch of Vocab Stuff
 layout: default
 ---
