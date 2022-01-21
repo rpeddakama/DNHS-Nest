@@ -39,3 +39,10 @@ layout: default
 |[Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();]() |Late binding explained below. A reference to a super class object is used in a sub class that inherits the super class (if they are related. Methods for it explained below  | https://user-images.githubusercontent.com/39575185/150365181-a1b2e91c-5087-483f-bc37-635c081e7e76.png |
 | [Polymorphism: any of overloading, overriding, late binding]() | It is where inheritance is used to relate multiple classes. Method overloading is where there are multiople methods in a class by the same name but have different parameters. Overriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. Late binding is when binding occurs after runtime. | class SpaceX extends Spaceship
  |
+ | [Web API]() | Fetching from RAPID API | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/java/com/example/sping_portfolio/controllers/Rishi.java#L329 |
+ | [Rest]() | Restful APIS | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/java/com/example/sping_portfolio/controllers/Rishi.java#L329 |
+ | [Fetch]() | Fetching APIS with axios library in js | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/resources/templates/rishi.html#L24 |
+ | [Async] () | Asynchronous functions run in the background | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/resources/templates/rishi.html#L24 |
+ | [Request] () | API Request | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/resources/templates/rishi.html#L24 |
+ | [Response] () | Json data received | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/resources/templates/rishi.html#L58 |
+ | [CRUD] () | Sql database | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/master/src/main/java/com/example/sping_portfolio/controllers/AddPerson.java#L44 |
