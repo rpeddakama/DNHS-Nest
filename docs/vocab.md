@@ -7,7 +7,7 @@ layout: default
 ## Vocab Table
 | Word | Definition | Tangible Artifacts |
 | - | - | - | 
-| [Casting, specifically for Division]()| Casting allows for integer division to be saved to a double or another data type that supports decimal values because integer division truncates because ints have to be whole numbers. This is very useful for division where values are often decimals and not whole numbers.| |
+| [Casting, specifically for Division]()| Casting allows for integer division to be saved to a double or another data type that supports decimal values because integer division truncates because ints have to be whole numbers. This is very useful for division where values are often decimals and not whole numbers.| public Main() {name = “Raadwan”; }|
 |[Casting, specifically for Truncating or Rounding]() |Casting for Truncating and Rounding can convert decimal values into integers and basically can Truncate them if it is saved to a long or double rather than rounding.
 |[Wrapper Classes, why wrap int, double]() |Wrapper classes to convert primitive types such as an int to objects -- ex. int's wrapper class is Integer and double is Double. int and double are wrapped because it converts them, respectively, to Integer and Double which allows the arguments passed into a method to be changed. These objects can be used as methods and use the Java Quick Reference's methods such as Integer's toString() or something similar for Double. These methods can be accessed and used to conduct operations on the variables. | |
 |Concatenation, rules on mixed type Concatenation]()| Concatenation is adjoining two Strings or two variables together into a single variable or a Syso statement. Parenthesees can be used to group similar items together such as ints because if there are ints added to each other and there are no parenthesees, they are treated like Strings. Strings being typed are put in quotes and + is used to combine the variables. Parentheeses keep different types different, otherwise, if they are after Strings, they become Strings. | |
@@ -24,51 +24,18 @@ layout: default
 | [Big O notation (Hash map, Binary Search, Single loop, Nested Loop)]() |Big 0 notations are algorithms. Hash maps contain keys and values and they are tables that maps the keys and values; simmilar to an array, it is a collection of data essentially. Binary search is a search algorithm that can sort an algorithm and find a specific item from it. A single loop is just a regular loop that occurs and runs whereas for loops are where multiple loops inside of each other.  |  | 
 | [Creating a Class, describe Naming Conventions]() | A class is created by using the word class or public class followed by the name. In Java, naming is typically done in camel case where after the first word, every first letter of the following words are capitalized. For class nams, the same applies, but the first word's first letter is also capitalized. |  | 
 | [Constructor, describe why there is no return]() | A construcotr is a method called after an object is instantiated and sets parameters for the object of the class to be created. (initializes object) There is no return type because this runs during runtime and get called one time **internally** |  | 
-| [Accessor methods, relationship to getter]() |Accesor methods allow one to get the values of instance variables outside a class; it is commonly known as a getter.  |  | 
-| [Mutator methods, relationship to setter, describe void return type]()| Mutator methods are methods when variables in the class' values are changed, generally called setters. Void return types is where not value in specific is returend from the method; rather, in the method, print statements or other actions are carried out. |  | 
-|[Static variables, Class variables]() | Static variables are used when the variables are not really used in any other methods and this memory happens only once. Whereas, class variables can be updated and sued well in methods. |  | 
-| [Static methods, Class methods]() |Static methods are methods that can be called without an instance of a class being created while class methods require that instance.  |  | 
-| [this Keyword]() |The this keyword is a reference to the current object being in a method and *not* a parameter if they have the same name.  |  | 
-|[main method, tester methods]() |The main method is a tester method that is essentially used in order to to run the class and methods in it. Main method: public static void main(String[] args) {}  |  | 
-| [Inheritance, extends]() | In Java, inheritance  is crucial to connect classes that are similar. The child class inherits methods and variables from this parent class. Extends is the keyword used to make one class a subclass of another. |  | 
-| [Subclass constructor, super Keyword]()| When a class is inherited, constructors from the super class are not inherited. As a result, teh super keyword is used in order to make them the same. |  | 
-| [Overloading a method, same name different parameters]() | Method overloading is where there are multiople methods in a class by the same name but have different parameters. |  | 
-| [Overriding a method, same signature of a method]()|verriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. | |
-|[Abstract Class, Abstract Method]() | Abstract classes are classes that are inherited by other classes if they are related -- cannot create objects. Abstract methods are used in abstract classes/sub classes. |  | 
-|[Object superclass methods: toString(), compare(), clone()]() |A toString() method is very simple that gives out a value as a String. compare() gives 0 if two variables are qual and 1  if the first one is less than the other. clone() duplicates variables and object references |  | 
-|[Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();]() |Late binding explained below. A reference to a super class object is used in a sub class that inherits the super class (if they are related. Methods for it explained below  | |
-| [Polymorphism: any of overloading, overriding, late binding]() | It is where inheritance is used to relate multiple classes. Method overloading is where there are multiople methods in a class by the same name but have different parameters. Overriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. Late binding is when binding occurs after runtime. | |
-
-
-
-[Casting, specifically for Division]() <br>
-[Casting, specifically for Truncating or Rounding]() <br>
-[Wrapper Classes, why wrap int, double]() <br>
-[Concatenation, rules on mixed type Concatenation]() <br>
-[Math class, specifically Random usage]() <br>
-[Compound Boolean Expression]() <br>
-[Truth Tables]() <br>
-[De Morgan's Law]() <br>
-[Comparing Numbers]() <br>
-[Comparing Strings]() <br>
-[Comparing Objects]() <br>
-[for loop, enhanced for loop]() <br>
-[while loop versus do while loop]() <br>
-[nested loops]() <br>
-[Big O notation (Hash map, Binary Search, Single loop, Nested Loop)]() <br>
-[Creating a Class, describe Naming Conventions]() <br>
-[Constructor, describe why there is no return]() <br>
-[Accessor methods, relationship to getter]() <br>
-[Mutator methods, relationship to setter, describe void return type]() <br>
-[Static variables, Class variables]() <br>
-[Static methods, Class methods]() <br>
-[this Keyword]() <br>
-[main method, tester methods]() <br>
-[Inheritance, extends]() <br>
-[Subclass constructor, super Keyword]() <br>
-[Overloading a method, same name different parameters]() <br>
-[Overriding a method, same signature of a method]() <br>
-[Abstract Class, Abstract Method]() <br>
-[Object superclass methods: toString(), compare(), clone()]() <br>
-[Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();]() <br>
-[Polymorphism: any of overloading, overriding, late binding]() <br>
+| [Accessor methods, relationship to getter]() |Accesor methods allow one to get the values of instance variables outside a class; it is commonly known as a getter.  | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/808f2efb334eb1e1d4cb67f717e3bb590a2daa18/src/main/java/com/example/sping_portfolio/controllers/Raadwan.java#L65-L79 | 
+| [Mutator methods, relationship to setter, describe void return type]()| Mutator methods are methods when variables in the class' values are changed, generally called setters. Void return types is where not value in specific is returend from the method; rather, in the method, print statements or other actions are carried out. | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/808f2efb334eb1e1d4cb67f717e3bb590a2daa18/src/main/java/com/example/sping_portfolio/controllers/Raadwan.java#L77-L79 | 
+|[Static variables, Class variables]() | Static variables are used when the variables are not really used in any other methods and this memory happens only once. Whereas, class variables can be updated and sued well in methods. |  https://github.com/rpeddakama/Tri-2-CSA-Project/blob/e73b844208562bc261caad1ab87970d5a519a10e/src/main/java/com/example/sping_portfolio/controllers/Rishi.java#L19 | 
+| [Static methods, Class methods]() |Static methods are methods that can be called without an instance of a class being created while class methods require that instance.  | https://user-images.githubusercontent.com/39575185/150364242-18c3f980-6ae0-4e49-8664-6a36506c0ee1.png | 
+| [this Keyword]() |The this keyword is a reference to the current object being in a method and *not* a parameter if they have the same name.  | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/808f2efb334eb1e1d4cb67f717e3bb590a2daa18/src/main/java/com/example/sping_portfolio/controllers/Raadwan.java#L65-L79 | 
+|[main method, tester methods]() |The main method is a tester method that is essentially used in order to to run the class and methods in it. Main method: public static void main(String[] args) {}  | https://user-images.githubusercontent.com/39575185/150364863-4d0c50e4-afb9-4456-9fb8-a25533542f6c.png | 
+| [Inheritance, extends]() | In Java, inheritance  is crucial to connect classes that are similar. The child class inherits methods and variables from this parent class. Extends is the keyword used to make one class a subclass of another. | class Drill extends Tool | 
+| [Subclass constructor, super Keyword]()| When a class is inherited, constructors from the super class are not inherited. As a result, teh super keyword is used in order to make them the same. | super.printInfo() | 
+| [Overloading a method, same name different parameters]() | Method overloading is where there are multiople methods in a class by the same name but have different parameters. | https://user-images.githubusercontent.com/39575185/150364969-7c9325ce-d0f5-4419-9ec9-9f665a1ec4a6.png | 
+| [Overriding a method, same signature of a method]()|verriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. | https://user-images.githubusercontent.com/39575185/150365041-9752ad1c-4a0c-4861-a4f3-39189a203725.png |
+|[Abstract Class, Abstract Method]() | Abstract classes are classes that are inherited by other classes if they are related -- cannot create objects. Abstract methods are used in abstract classes/sub classes. | https://user-images.githubusercontent.com/39575185/150365095-125d5f80-8b96-4623-a7f7-898343f9ecf2.png | 
+|[Object superclass methods: toString(), compare(), clone()]() |A toString() method is very simple that gives out a value as a String. compare() gives 0 if two variables are qual and 1  if the first one is less than the other. clone() duplicates variables and object references | https://github.com/rpeddakama/Tri-2-CSA-Project/blob/6c39c5e874bb25d9419228cfa929d6ff6b32d688/src/main/java/com/example/util/LightSequence.java#L9-L11 | 
+|[Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();]() |Late binding explained below. A reference to a super class object is used in a sub class that inherits the super class (if they are related. Methods for it explained below  | https://user-images.githubusercontent.com/39575185/150365181-a1b2e91c-5087-483f-bc37-635c081e7e76.png |
+| [Polymorphism: any of overloading, overriding, late binding]() | It is where inheritance is used to relate multiple classes. Method overloading is where there are multiople methods in a class by the same name but have different parameters. Overriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. Late binding is when binding occurs after runtime. | class SpaceX extends Spaceship
+ |
