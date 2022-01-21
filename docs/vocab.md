@@ -8,7 +8,25 @@ layout: default
 | Word | Definition | Tangible Artifacts |
 | - | - | - | 
 |  |  |  | 
-|[Object superclass methods: toString(), compare(), clone()]() |A toString() method is very simple that gives out a value as a String.  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+| [Creating a Class, describe Naming Conventions]() | A class is created by using the word class or public class followed by the name. In Java, naming is typically done in camel case where after the first word, every first letter of the following words are capitalized. For class nams, the same applies, but the first word's first letter is also capitalized. |  | 
+| [Constructor, describe why there is no return]() | A construcotr is a method called after an object is instantiated and sets parameters for the object of the class to be created. (initializes object) There is no return type because this runs during runtime and get called one time **internally** |  | 
+| [Accessor methods, relationship to getter]() |Accesor methods allow one to get the values of instance variables outside a class; it is commonly known as a getter.  |  | 
+| [Mutator methods, relationship to setter, describe void return type]()| Mutator methods are methods when variables in the class' values are changed, generally called setters. Void return types is where not value in specific is returend from the method; rather, in the method, print statements or other actions are carried out. |  | 
+|[Static variables, Class variables]() | Static variables are used when the variables are not really used in any other methods and this memory happens only once. Whereas, class variables can be updated and sued well in methods. |  | 
+| [Static methods, Class methods]() |Static methods are methods that can be called without an instance of a class being created while class methods require that instance.  |  | 
+| [this Keyword]() |The this keyword is a reference to the current object being in a method and *not* a parameter if they have the same name.  |  | 
+|[main method, tester methods]() |The main method is a tester method that is essentially used in order to to run the class and methods in it. Main method: public static void main(String[] args) {}  |  | 
+| [Inheritance, extends]() | In Java, inheritance  is crucial to connect classes that are similar. The child class inherits methods and variables from this parent class. Extends is the keyword used ot make one class a subclass of another. |  | 
+| [Subclass constructor, super Keyword]()| When a class is inherited, constructors from the super class are not inherited. As a result, teh super keyword is used in order to make them the same. |  | 
+| [Overloading a method, same name different parameters]() | Method overloading is where there are multiople methods in a class by the same name but have different parameters. |  | 
+| [Overriding a method, same signature of a method]()|verriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. | |
+|[Abstract Class, Abstract Method]() | Abstract classes are classes that are inherited by other classes if they are related -- cannot create objects. Abstract methods are used in abstract classes/sub classes. |  | 
+|[Object superclass methods: toString(), compare(), clone()]() |A toString() method is very simple that gives out a value as a String. compare() gives 0 if two variables are qual and 1  if the first one is less than the other. clone() duplicates variables and object references |  | 
 |[Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();]() |Late binding explained below. A reference to a super class object is used in a sub class that inherits the super class (if they are related. Methods for it explained below  | |
 | [Polymorphism: any of overloading, overriding, late binding]() | It is where inheritance is used to relate multiple classes. Method overloading is where there are multiople methods in a class by the same name but have different parameters. Overriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. Late binding is when binding occurs after runtime. | |
 
