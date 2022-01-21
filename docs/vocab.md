@@ -1,8 +1,18 @@
 ---
-title: Vocabulary Profficiency
+Word: Vocabulary Profficiency
 description: Bunch of Vocab Stuff
 layout: default
 ---
+
+## Vocab Table
+| Word | Definition | Tangible Artifacts |
+| - | - | - | 
+|  |  |  | 
+|[Object superclass methods: toString(), compare(), clone()]() |A toString() method is very simple that gives out a value as a String.  |  | 
+|[Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();]() |Late binding explained below. A reference to a super class object is used in a sub class that inherits the super class (if they are related. Methods for it explained below  | |
+| [Polymorphism: any of overloading, overriding, late binding]() | It is where inheritance is used to relate multiple classes. Method overloading is where there are multiople methods in a class by the same name but have different parameters. Overriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. Late binding is when binding occurs after runtime. | |
+
+
 
 [Casting, specifically for Division]() <br>
 [Casting, specifically for Truncating or Rounding]() <br>
