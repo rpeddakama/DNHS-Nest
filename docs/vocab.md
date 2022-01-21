@@ -7,13 +7,14 @@ layout: default
 ## Vocab Table
 | Word | Definition | Tangible Artifacts |
 | - | - | - | 
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-|[De Morgan's Law]() |De Morgan's Laws realte to the and (&&) and or operators in Java. It states that !(x && y) is the same as !x || !y. Also, !(x || y) = !x && !y which makes a lot of sense and shows how the statements are equivalent. | |
+| [Casting, specifically for Division]()| Casting allows for integer division to be saved to a double or another data type that supports decimal values because integer division truncates because ints have to be whole numbers. This is very useful for division where values are often decimals and not whole numbers.| |
+|[Casting, specifically for Truncating or Rounding]() |Casting for Truncating and Rounding can convert decimal values into integers and basically can Truncate them if it is saved to a long or double rather than rounding.
+|[Wrapper Classes, why wrap int, double]() |Wrapper classes to convert primitive types such as an int to objects -- ex. int's wrapper class is Integer and double is Double. int and double are wrapped because it converts them, respectively, to Integer and Double which allows the arguments passed into a method to be changed. These objects can be used as methods and use the Java Quick Reference's methods such as Integer's toString() or something similar for Double. These methods can be accessed and used to conduct operations on the variables. | |
+|Concatenation, rules on mixed type Concatenation]()| Concatenation is adjoining two Strings or two variables together into a single variable or a Syso statement. Parenthesees can be used to group similar items together such as ints because if there are ints added to each other and there are no parenthesees, they are treated like Strings. Strings being typed are put in quotes and + is used to combine the variables. Parentheeses keep different types different, otherwise, if they are after Strings, they become Strings. | |
+| [Math class, specifically Random usage]() |The math class in Java gives programmers the opportunity to conduct math functions such as absolute value and power from a Java library already that needs to be importanted. A random number can be created: double r = Math.random(); | |
+|[Compound Boolean Expression]() |In one line, this is able to check if a given situation is true. Ex. x == 5 && y == 5 | |
+|[Truth Tables]() |This is a table with a column for each variable inputted and one column that shows the results of the logical operation. This is like x and y or x or y. For each box in the table itself, it gives True or False dependent on the situation. | |
+|[De Morgan's Law]() |De Morgan's Laws realte to the and (&&) and or operators in Java. It states that !(x && y) is the same as !x OR !y. Also, !(x OR y) = !x && !y which makes a lot of sense and shows how the statements are equivalent. | |
 |[Comparing Numbers]() | Two numbers can be compared by using double equals and doing Object1 == Object2; true is returned if ture and otherwise, false. | |
 | [Comparing Strings]() | Two Strings can be compared by doing Object1.equals(Object2); true is returned if ture and otherwise, false.  |  | 
 | [Comparing Objects]() | Two objects can be compared by doing Object1.equals(Object2); true is returned if ture and otherwise, false.  |  | 
@@ -29,7 +30,7 @@ layout: default
 | [Static methods, Class methods]() |Static methods are methods that can be called without an instance of a class being created while class methods require that instance.  |  | 
 | [this Keyword]() |The this keyword is a reference to the current object being in a method and *not* a parameter if they have the same name.  |  | 
 |[main method, tester methods]() |The main method is a tester method that is essentially used in order to to run the class and methods in it. Main method: public static void main(String[] args) {}  |  | 
-| [Inheritance, extends]() | In Java, inheritance  is crucial to connect classes that are similar. The child class inherits methods and variables from this parent class. Extends is the keyword used ot make one class a subclass of another. |  | 
+| [Inheritance, extends]() | In Java, inheritance  is crucial to connect classes that are similar. The child class inherits methods and variables from this parent class. Extends is the keyword used to make one class a subclass of another. |  | 
 | [Subclass constructor, super Keyword]()| When a class is inherited, constructors from the super class are not inherited. As a result, teh super keyword is used in order to make them the same. |  | 
 | [Overloading a method, same name different parameters]() | Method overloading is where there are multiople methods in a class by the same name but have different parameters. |  | 
 | [Overriding a method, same signature of a method]()|verriding used to achieve polymorphism and when a subclass and super class have methods with the same name, override will override the method from the super class. | |
