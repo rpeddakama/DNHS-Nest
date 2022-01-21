@@ -7,12 +7,20 @@ layout: default
 ## Vocab Table
 | Word | Definition | Tangible Artifacts |
 | - | - | - | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+|[De Morgan's Law]() |De Morgan's Laws realte to the and (&&) and or operators in Java. It states that !(x && y) is the same as !x || !y. Also, !(x || y) = !x && !y which makes a lot of sense and shows how the statements are equivalent. | |
+|[Comparing Numbers]() | Two numbers can be compared by using double equals and doing Object1 == Object2; true is returned if ture and otherwise, false. | |
+| [Comparing Strings]() | Two Strings can be compared by doing Object1.equals(Object2); true is returned if ture and otherwise, false.  |  | 
+| [Comparing Objects]() | Two objects can be compared by doing Object1.equals(Object2); true is returned if ture and otherwise, false.  |  | 
+| [for loop, enhanced for loop]() | A for loop is an iterative tool that goes through a variable or collection of data; using the iterative variable i, for each value of i until the limit is reached (generally set to the length), certain code will run. An enhanced for loop is similar in ways but it occurs for each variable in a set; for instance, for each character in a String or each String in an array. |  | 
+| [while loop versus do while loop]() |In Java, while loops check a certain condition and if it is true, the code inside will run. A do while loop runs the code first and then checks the condition to see if it is true; if it is, the code above will run again. Therefore, a do while loop always runs at least once, but a while loop does not.  |  | 
+| [nested loops]() | Nested loops are when at least one loop is inside of another and they all run; for each time the outer loop runs, the inner completely runs for instance.|  | 
+| [Big O notation (Hash map, Binary Search, Single loop, Nested Loop)]() |Big 0 notations are algorithms. Hash maps contain keys and values and they are tables that maps the keys and values; simmilar to an array, it is a collection of data essentially. Binary search is a search algorithm that can sort an algorithm and find a specific item from it. A single loop is just a regular loop that occurs and runs whereas for loops are where multiple loops inside of each other.  |  | 
 | [Creating a Class, describe Naming Conventions]() | A class is created by using the word class or public class followed by the name. In Java, naming is typically done in camel case where after the first word, every first letter of the following words are capitalized. For class nams, the same applies, but the first word's first letter is also capitalized. |  | 
 | [Constructor, describe why there is no return]() | A construcotr is a method called after an object is instantiated and sets parameters for the object of the class to be created. (initializes object) There is no return type because this runs during runtime and get called one time **internally** |  | 
 | [Accessor methods, relationship to getter]() |Accesor methods allow one to get the values of instance variables outside a class; it is commonly known as a getter.  |  | 
