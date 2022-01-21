@@ -1,5 +1,5 @@
 ---
-title: Vocabulary Profficiency:
+title: Vocabulary Profficiency
 description: Bunch of Vocab Stuff
 layout: default
 ---
