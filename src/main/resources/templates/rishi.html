@@ -72,6 +72,41 @@
 
         <div style="text-align: center; width: 60em; margin: auto">
             <div class="part-f">
+                <h1>Unit 6 FRQ Question 2</h1>
+                <form action="/rishi" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in fixed-wage and per-item-wage</p>
+                        <br />
+                        <input style="background-color: lightcoral" name="fixedWage" id="frqField" />
+                        <input style="background-color: lightcoral" name="perItemWage" id="frqField" />
+                        <br />
+                        <button>Run!</button>
+                        <br />
+                        <p th:text="'Here are the wages of each employee: ' + ${wages}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <div class="part-f">
+                <h1>Unit 6 FRQ Question 1</h1>
+                <form action="/rishi" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in a sentence</p>
+                        <br />
+                        <input style="background-color: lightcoral" name="sentence" id="frqField" />
+                        <br />
+                        <button>Run!</button>
+                        <br />
+                        <p th:text="'Words in that sentence that end with ing: ' + ${suffixWords}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <div class="part-f">
                 <h1>Unit 5 FRQ Question 2</h1>
                 <form action="/rishi" method="GET" id="frqForm">
                     <div class="frq-form">
@@ -101,7 +136,7 @@
                         <button>Run!</button>
                         <br />
                         <p th:text="'Your generated password: ' + ${pwPassword}"></p>
-                        <p th:text="'Number of passwords generated: ' + ${pwCount}"></p>
+                        <!-- <p th:text="'Number of passwords generated: ' + ${pwCount}"></p> -->
                     </div>
                 </form>
             </div>
@@ -112,11 +147,7 @@
                 <h1>Unit 4 FRQ Question 1</h1>
                 <form action="/rishi" method="GET" id="frqForm">
                     <div class="frq-form">
-<<<<<<< HEAD
-                        <p for="frqField">Type in the Number of Rounds and Coins</p>
-=======
                         <p for="frqField">Type in the Number of Rounds and Coins: </p>
->>>>>>> a30426cef347c9570dea801ca45395e272f5a5f2
                         <br />
                         <input style="background-color: lightcoral" name="rounds" id="frqField" />
                         <input style="background-color: lightcoral" name="coins" id="frqField" />

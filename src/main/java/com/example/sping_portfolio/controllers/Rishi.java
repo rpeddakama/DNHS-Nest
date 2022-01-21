@@ -13,6 +13,68 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
+class Payroll {
+    private double fixedWage = 10.0, perItemWage = 1.5;
+    private int[] itemsSold = { 48, 50, 37, 62, 38, 70, 55, 37, 64, 60 };
+    private double[] wages = new double[10];
+
+    public Payroll(double fixedWage, double perItemWage) {
+        this.fixedWage = fixedWage;
+        this.perItemWage = perItemWage;
+    }
+
+    public double computeBonusThreshold() {
+        int min = Integer.MAX_VALUE, max = 0, sum = 0;
+        for (int i : itemsSold) {
+            min = Math.min(min, i);
+            max = Math.max(max, i);
+            sum += 0;
+        }
+
+        return (double) ((sum - max - min) / (double) itemsSold.length);
+    }
+
+    public String computeWages() {
+        String ans = "";
+        double thresh = computeBonusThreshold();
+        for (int i = 0; i < 10; i++) {
+            if (itemsSold[i] > thresh)
+                wages[i] = (fixedWage + perItemWage * itemsSold[i]) * 1.1;
+            else
+                wages[i] = fixedWage + perItemWage * itemsSold[i];
+
+            wages[i] = Math.floor(wages[i] * 100) / 100;
+            ans = ans + wages[i] + ", ";
+        }
+        ans = ans.substring(0, ans.length() - 2);
+        return ans;
+    }
+}
+
+class stringSuffixes {
+    String sentence;
+    private String suffix = "ing";
+
+    public stringSuffixes(String sentence) {
+        this.sentence = sentence;
+    }
+
+    public String getWords() {
+        String ans = "";
+        String[] splitted = sentence.split("\\s+");
+        for (String s : splitted) {
+            if (s.length() >= 3) {
+                if (s.substring(s.length() - 3).equals(suffix))
+                    ans = ans + s + ", ";
+            }
+        }
+
+        ans = ans.substring(0, ans.length() - 2);
+        return ans;
+    }
+
+}
+
 class DonutShop {
     private ArrayList<String> flavors;
 
@@ -174,6 +236,9 @@ public class Rishi {
             @RequestParam(name = "pwLength", required = false, defaultValue = "1") int pwLength,
             @RequestParam(name = "inviteName", required = false, defaultValue = "Bob") String inviteName,
             @RequestParam(name = "inviteAddress", required = false, defaultValue = "Wall Street") String inviteAddress,
+            @RequestParam(name = "sentence", required = false, defaultValue = "A brown fox is jumping over a green log") String sentence,
+            @RequestParam(name = "fixedWage", required = false, defaultValue = "15.0") double fixedWage,
+            @RequestParam(name = "perItemWage", required = false, defaultValue = "1.5") double perItemWage,
 
             Model model) {
 
@@ -233,7 +298,7 @@ public class Rishi {
         model.addAttribute("word", word);
 
         // Unit 4
-        Coingame game = new Coingame(coins, rounds);
+        // Coingame game = new Coingame(coins, rounds);
         // model.addAttribute("winner", game.playGame());
 
         // Unit 5
@@ -243,6 +308,13 @@ public class Rishi {
 
         Invitation invitation = new Invitation(inviteAddress);
         model.addAttribute("invite", invitation.invite(inviteName));
+
+        // Unit 6
+        stringSuffixes sS = new stringSuffixes(sentence);
+        model.addAttribute("suffixWords", sS.getWords());
+
+        Payroll payroll = new Payroll(fixedWage, perItemWage);
+        model.addAttribute("wages", payroll.computeWages());
 
         return "rishi";
 
