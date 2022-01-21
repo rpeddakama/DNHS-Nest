@@ -174,12 +174,12 @@ class PasswordGenerator {
     }
 }
 
-class Coingame {
+class CoinGame {
     private int startingCoins;
     private int maxRounds;
     private int player1 = 0, player2 = 0;
 
-    public Coingame(int s, int r) {
+    public CoinGame(int s, int r) {
         startingCoins = s;
         maxRounds = r;
     }
@@ -198,7 +198,11 @@ class Coingame {
         return 1;
     }
 
-    public String playgame() {
+    public String test() {
+        return "work";
+    }
+
+    public String playGame() {
         for (int i = 1; i <= maxRounds; i++) {
             int p1 = getPlayer1Move();
             int p2 = getPlayer2Move(i);
@@ -298,8 +302,8 @@ public class Rishi {
         model.addAttribute("word", word);
 
         // Unit 4
-        // Coingame game = new Coingame(coins, rounds);
-        // model.addAttribute("winner", game.playGame());
+        CoinGame cG = new CoinGame(5, 3);
+        model.addAttribute("winner", cG.playGame());
 
         // Unit 5
         PasswordGenerator passwordGenerator = new PasswordGenerator(pwPrefix, pwLength);
