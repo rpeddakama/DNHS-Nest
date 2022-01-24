@@ -24,6 +24,7 @@ Campus resources suck. The Nest is built by Del Norte students who understand th
 [View TT6 Vocab here]({{ site.baseurl }}{% link vocab.md %})
 
 ## Vocab - Raadwan & Alvin
+
 | Term                                                                                                       | Definition                                                                                                                                                               | Example                                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Constructor, describe why there is no return                                                               | Special method that initializes object attributes and is called when the object is created.                                                                              | public Main() {name = “Raadwan”; }                                                                                                                                       |
