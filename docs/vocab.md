@@ -4,10 +4,28 @@ description: Bunch of Vocab Stuff
 layout: default
 ---
 
+<style>
+td, th {
+   border: 1px white solid;
+}
+
+/* table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 60%;
+}
+table th:nth-of-type(3) {
+    width: 20%;
+} */
+
+</style>
+
 ## Vocab Table
+
 | Word | Definition | Tangible Artifacts |
 | - | - | - | 
-| [Casting, specifically for Division]()| Casting allows for integer division to be saved to a double or another data type that supports decimal values because integer division truncates because ints have to be whole numbers. This is very useful for division where values are often decimals and not whole numbers.| public Main() {name = "Rishi; }|
+| [Casting, specifically for Division]() | Casting allows for integer division to be saved to a double or another data type that supports decimal values because integer division truncates because ints have to be whole numbers. This is very useful for division where values are often decimals and not whole numbers.| public Main() {name = "Rishi; }|
 |[Casting, specifically for Truncating or Rounding]() |Casting for Truncating and Rounding can convert decimal values into integers and basically can Truncate them if it is saved to a long or double rather than rounding. | Math.floor((x*100)/100); |
 |[Wrapper Classes, why wrap int, double]() |Wrapper classes to convert primitive types such as an int to objects -- ex. int's wrapper class is Integer and double is Double. int and double are wrapped because it converts them, respectively, to Integer and Double which allows the arguments passed into a method to be changed. These objects can be used as methods and use the Java Quick Reference's methods such as Integer's toString() or something similar for Double. These methods can be accessed and used to conduct operations on the variables. | x = 5.0; System.out.println(int(x)); |
 |[Concatenation, rules on mixed type Concatenation]()| Concatenation is adjoining two Strings or two variables together into a single variable or a Syso statement. Parenthesees can be used to group similar items together such as ints because if there are ints added to each other and there are no parenthesees, they are treated like Strings. Strings being typed are put in quotes and + is used to combine the variables. Parentheeses keep different types different, otherwise, if they are after Strings, they become Strings. | System.out.println("Hello" + name + " nice to meet you"); |
