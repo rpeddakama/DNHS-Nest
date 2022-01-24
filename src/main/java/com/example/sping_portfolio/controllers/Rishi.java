@@ -13,6 +13,32 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
+class UserName{
+    private ArrayList<String> possibleNames;
+    public UserName(String firstName, String lastName){
+        for(int i=0; i<firstName.length(); i++){
+            possibleNames.add(lastName + firstName.substring(0, i));
+        }
+    }
+
+    public boolean isUsed(String name, String[] arr){
+
+    }
+
+    public void setAvailableUserNames(String[] usedNames){
+        for(String used : usedNames){
+            isUsed()
+        }
+    }
+
+    public String getAvaliableUserNames(){
+        String ret = "";
+        for(String s : possibleNames)ret += s;
+        return ret;
+    }
+
+}
+
 class DonutShop {
     private ArrayList<String> flavors;
 
