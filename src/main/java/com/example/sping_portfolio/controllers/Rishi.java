@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.http.*;
 
+import com.example.util.LightSequence;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,27 +14,33 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
-class UserName{
-    private ArrayList<String> possibleNames;
-    public UserName(String firstName, String lastName){
-        for(int i=0; i<firstName.length(); i++){
+class UserName {
+    private ArrayList<String> possibleNames = new ArrayList<String>();
+    private String[] usedNames = { "SmithB", "CoolJ" };
+
+    public UserName(String firstName, String lastName) {
+        for (int i = 1; i <= firstName.length(); i++) {
             possibleNames.add(lastName + firstName.substring(0, i));
         }
     }
 
-    public boolean isUsed(String name, String[] arr){
-
-    }
-
-    public void setAvailableUserNames(String[] usedNames){
-        for(String used : usedNames){
-            isUsed()
+    public void setAvailableUserNames() {
+        for (String used : usedNames) {
+            if (possibleNames.contains(used))
+                possibleNames.remove(used);
         }
     }
 
-    public String getAvaliableUserNames(){
+    public String getAvaliableUserNames() {
         String ret = "";
-        for(String s : possibleNames)ret += s;
+        for (String s : possibleNames) {
+            ret += s;
+            ret += ", ";
+        }
+
+        ret = ret.substring(0, ret.length() - 2);
+
+        System.out.println("NAMES: " + ret);
         return ret;
     }
 }
@@ -199,12 +206,12 @@ class PasswordGenerator {
     }
 }
 
-class CoinGame {
+class CoinGame1 {
     private int startingCoins;
     private int maxRounds;
     private int player1 = 0, player2 = 0;
 
-    public CoinGame(int s, int r) {
+    public CoinGame1(int s, int r) {
         startingCoins = s;
         maxRounds = r;
     }
@@ -223,10 +230,6 @@ class CoinGame {
         return 1;
     }
 
-    public String test() {
-        return "work";
-    }
-
     public String playGame() {
         for (int i = 1; i <= maxRounds; i++) {
             int p1 = getPlayer1Move();
@@ -241,8 +244,7 @@ class CoinGame {
             return ("tie game.");
         else if (player1 > player2)
             return ("Player 1 wins.");
-        else
-            return ("Player 2 wins.");
+        return ("Player 2 wins.");
     }
 
 }
@@ -268,6 +270,8 @@ public class Rishi {
             @RequestParam(name = "sentence", required = false, defaultValue = "A brown fox is jumping over a green log") String sentence,
             @RequestParam(name = "fixedWage", required = false, defaultValue = "15.0") double fixedWage,
             @RequestParam(name = "perItemWage", required = false, defaultValue = "1.5") double perItemWage,
+            @RequestParam(name = "firstName", required = false, defaultValue = "Bob") String firstName,
+            @RequestParam(name = "lastName", required = false, defaultValue = "Smith") String lastName,
 
             Model model) {
 
@@ -327,7 +331,7 @@ public class Rishi {
         model.addAttribute("word", word);
 
         // Unit 4
-        CoinGame cG = new CoinGame(5, 3);
+        CoinGame1 cG = new CoinGame1(coins, rounds);
         model.addAttribute("winner", cG.playGame());
 
         // Unit 5
@@ -344,6 +348,11 @@ public class Rishi {
 
         Payroll payroll = new Payroll(fixedWage, perItemWage);
         model.addAttribute("wages", payroll.computeWages());
+
+        // Unit 7
+        UserName user = new UserName(firstName, lastName);
+        user.setAvailableUserNames();
+        model.addAttribute("userNames", user.getAvaliableUserNames());
 
         return "rishi";
 

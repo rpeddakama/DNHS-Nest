@@ -72,6 +72,24 @@
 
         <div style="text-align: center; width: 60em; margin: auto">
             <div class="part-f">
+                <h1>Unit 7 FRQ</h1>
+                <form action="/rishi" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in Firstname and Lastname to generate usernames</p>
+                        <br />
+                        <input style="background-color: lightcoral" name="firstName" id="frqField" />
+                        <input style="background-color: lightcoral" name="lastName" id="frqField" />
+                        <br />
+                        <button>Run!</button>
+                        <br />
+                        <p th:text="'Here are your possible usernames: ' + ${userNames}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <div class="part-f">
                 <h1>Unit 6 FRQ Question 2</h1>
                 <form action="/rishi" method="GET" id="frqForm">
                     <div class="frq-form">
