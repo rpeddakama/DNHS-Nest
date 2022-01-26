@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+    layout:decorate="~{fragments/layout}" lang="en">
+
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>The Nest - Map</title>
+    </div>
+</head>
+
+<body>
+    <div layout:fragment="content" th:remove="tag">
+        <div style="text-align: center; width: 60em; margin: auto">
+            <table class="table">
+                <tr>
+                    <th scope="col">Method</th>
+                    <th scope="col">Time</th>
+                    <th scope="col"># Of Compares</th>
+                    <th scope="col"># Of Swaps</th>
+                    <th scope="col">Big O Notation</th>
+                </tr>
+                <tr th:each="x : ${arr}">
+                    <td th:text="${x}"></td>
+                    <td th:text="${x}"></td>
+                    <td th:text="${x}"></td>
+                    <td th:text="${x}"></td>
+                    <td th:text="${x}"></td>
+                </tr>
+                <!-- <tr th:each="algo: ${sortingAlgorithms}"> -->
+                <!-- <td th:text="${algo.getMethod()}"></td> -->
+                <!-- <td th:text="${algo.}"></td> -->
+                <!-- </tr> -->
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
