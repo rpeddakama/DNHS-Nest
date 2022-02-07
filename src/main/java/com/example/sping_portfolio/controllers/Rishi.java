@@ -1,5 +1,6 @@
 package com.example.sping_portfolio.controllers;
 
+import java.beans.DesignMode;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.*;
@@ -14,8 +15,27 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
-class Elephant extends Herbivore {
+class NumberSystem {
 
+    public static int gcf(int a, int b) {
+        if (a % b == 0)
+            return b;
+        return gcf(b, a % b);
+    }
+
+    public static String reduceFraction(int numerator, int denominator) {
+        if (numerator % denominator == 0)
+            return String.valueOf(numerator / denominator);
+        int gcf_ = gcf(numerator, denominator);
+        numerator /= gcf_;
+        denominator /= gcf_;
+
+        return (numerator + "/" + denominator);
+    }
+
+}
+
+class Elephant extends Herbivore {
     private double tuskLength;
 
     public Elephant(String name, double tuskLength) {
@@ -51,7 +71,6 @@ class Animal {
 }
 
 class BookListing {
-
     private Book book;
     private double price;
 
@@ -67,7 +86,6 @@ class BookListing {
 }
 
 class PictureBook extends Book {
-
     private String illustrator;
 
     public PictureBook(String t, String a, String i) {
@@ -81,7 +99,6 @@ class PictureBook extends Book {
 }
 
 class Book {
-
     public String title;
     public String author;
 
@@ -115,7 +132,6 @@ class Plot {
 }
 
 class ExperimentalFarm {
-
     private Plot[][] farmPlots;
 
     public ExperimentalFarm(Plot[][] p) {
@@ -245,7 +261,6 @@ class stringSuffixes {
 
 class DonutShop {
     private ArrayList<String> flavors;
-
     public static int flavorMultiplier = 3;
     private double newFlavorMultiplier;
     private int dozens = 1;
@@ -410,6 +425,8 @@ public class Rishi {
             @RequestParam(name = "lastName", required = false, defaultValue = "Smith") String lastName,
             @RequestParam(name = "cropInput", required = false, defaultValue = "corn") String cropInput,
             @RequestParam(name = "columnInput", required = false, defaultValue = "2") int columnInput,
+            @RequestParam(name = "numerator", required = false, defaultValue = "8") int numerator,
+            @RequestParam(name = "denominator", required = false, defaultValue = "12") int denominator,
 
             Model model) {
 
@@ -522,6 +539,10 @@ public class Rishi {
         // Unit 9 Q2
         Elephant elephant = new Elephant("Percy", 2.0);
         model.addAttribute("elephant", elephant.toString());
+
+        // Unit 10
+        NumberSystem nS = new NumberSystem();
+        model.addAttribute("reducedFraction", nS.reduceFraction(numerator, denominator));
 
         return "rishi";
 
