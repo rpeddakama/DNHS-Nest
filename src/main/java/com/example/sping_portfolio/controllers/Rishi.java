@@ -14,6 +14,60 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
+class Plot {
+    private String cropType;
+    private int cropYield;
+
+    public Plot(String crop, int yield) {
+        this.cropType = crop;
+        this.cropYield = yield;
+    }
+
+    public String getCropType() {
+        return cropType;
+    }
+
+    public int getCropYield() {
+        return cropYield;
+    }
+}
+
+class ExperimentalFarm {
+
+    private Plot[][] farmPlots;
+
+    public ExperimentalFarm(Plot[][] p) {
+        this.farmPlots = p;
+    }
+
+    public Plot getHighestYield(String c) {
+        int a = 0, b = 0, most = -1;
+        for (int i = 0; i < farmPlots.length; i++) {
+            for (int j = 0; j < farmPlots[i].length; j++) {
+                if (farmPlots[i][j].getCropType().equals(c)) {
+                    if (farmPlots[i][j].getCropYield() > most) {
+                        most = farmPlots[i][j].getCropYield();
+                        a = i;
+                        b = j;
+                    }
+                }
+            }
+        }
+        if (most == -1)
+            return null;
+        return farmPlots[a][b];
+    }
+
+    public String sameCrop(int col) {
+        String type = farmPlots[0][col].getCropType();
+        for (int i = 0; i < farmPlots.length; i++)
+            if (!farmPlots[i][col].equals(type))
+                return "false";
+        return "true";
+    }
+
+}
+
 class UserName {
     private ArrayList<String> possibleNames = new ArrayList<String>();
     private String[] usedNames = { "SmithB", "CoolJ" };
@@ -40,7 +94,7 @@ class UserName {
 
         ret = ret.substring(0, ret.length() - 2);
 
-        System.out.println("NAMES: " + ret);
+        // System.out.println(" " + ret);
         return ret;
     }
 }
@@ -272,6 +326,8 @@ public class Rishi {
             @RequestParam(name = "perItemWage", required = false, defaultValue = "1.5") double perItemWage,
             @RequestParam(name = "firstName", required = false, defaultValue = "Bob") String firstName,
             @RequestParam(name = "lastName", required = false, defaultValue = "Smith") String lastName,
+            @RequestParam(name = "cropInput", required = false, defaultValue = "corn") String cropInput,
+            @RequestParam(name = "columnInput", required = false, defaultValue = "2") int columnInput,
 
             Model model) {
 
@@ -353,6 +409,24 @@ public class Rishi {
         UserName user = new UserName(firstName, lastName);
         user.setAvailableUserNames();
         model.addAttribute("userNames", user.getAvaliableUserNames());
+
+        // Unit 8
+        String[] crops = { "corn", "peas", "wheat", "barley", "rice", "beans" };
+        int[] yields = { 25, 32, 48, 16, 69, 72, 100, 88, 2 };
+        Plot[][] farmInput = new Plot[4][4];
+        for (int i = 0; i < farmInput.length; i++) {
+            for (int j = 0; j < farmInput[i].length; j++) {
+                int cIdx = (int) (Math.random() * crops.length);
+                int yIdx = (int) (Math.random() * yields.length);
+                Plot tempPlot = new Plot(crops[cIdx], yields[yIdx]);
+                farmInput[i][j] = tempPlot;
+            }
+        }
+
+        ExperimentalFarm eF = new ExperimentalFarm(farmInput);
+        model.addAttribute("highestYield",
+                (eF.getHighestYield(cropInput).getCropType() + ", " + eF.getHighestYield(cropInput).getCropYield()));
+        model.addAttribute("sameCrop", eF.sameCrop(Math.min(columnInput, farmInput.length - 1)));
 
         return "rishi";
 

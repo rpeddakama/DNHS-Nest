@@ -72,6 +72,26 @@
 
         <div style="text-align: center; width: 60em; margin: auto">
             <div class="part-f">
+                <h1>Unit 8 FRQ</h1>
+                <form action="/rishi" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in Crop name and Field column</p>
+                        <br />
+                        <input style="background-color: lightcoral" name="cropInput" id="frqField" />
+                        <input style="background-color: lightcoral" name="columnInput" id="frqField" />
+                        <br />
+                        <button>Run!</button>
+                        <br />
+                        <p th:text="'The highest yield: ' + ${highestYield}"></p>
+                        <p th:text="'Everything in that column is the same : ' + ${sameCrop}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <div class="part-f">
                 <h1>Unit 7 FRQ</h1>
                 <form action="/rishi" method="GET" id="frqForm">
                     <div class="frq-form">
