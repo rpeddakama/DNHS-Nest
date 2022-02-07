@@ -33,19 +33,5 @@ public class LightSequence {
 
 }
 
-class Display {
-    public static void main(String[] args) {
-        LightSequence gradShow = new LightSequence("0101 0101 0101");
-        gradShow.display();
 
-        gradShow.changeSequence("0011 0011 0011");
 
-        String resultSeq = gradShow.insertSegment("1111 1111", 4);
-
-        String oldSequence = gradShow.toString();
-        String newSeq = oldSequence.replaceFirst("11", "");
-
-        double a = 1, b = 2;
-        double answer = Math.sqrt(a*a + b*b);
-    }
-}

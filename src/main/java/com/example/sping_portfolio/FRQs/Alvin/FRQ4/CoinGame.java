@@ -73,7 +73,7 @@ public class CoinGame {
     }
 }
 
-class FRQ4 {
+class Display {
     public String longestStreak(String str) {
         int longestCount = 1;
         char longestChar = str.charAt(0);
