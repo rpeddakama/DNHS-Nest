@@ -14,6 +14,42 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
+class Elephant extends Herbivore {
+
+    private double tuskLength;
+
+    public Elephant(String name, double tuskLength) {
+        super("elephant", name);
+        this.tuskLength = tuskLength;
+    }
+
+    @Override
+    public String toString() {
+        return (super.toString() + " with tusks 2.0 meters long");
+    }
+}
+
+class Herbivore extends Animal {
+    public Herbivore(String species, String name) {
+        super("herbivore", species, name);
+    }
+}
+
+class Animal {
+    private String type, species, name;
+
+    public Animal(String type, String species, String name) {
+        this.type = type;
+        this.species = species;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return (name + " the " + species + " is a " + type);
+    }
+}
+
 class BookListing {
 
     private Book book;
@@ -474,7 +510,7 @@ public class Rishi {
                 (eF.getHighestYield(cropInput).getCropType() + ", " + eF.getHighestYield(cropInput).getCropYield()));
         model.addAttribute("sameCrop", eF.sameCrop(Math.min(columnInput, farmInput.length - 1)));
 
-        // Unit 9
+        // Unit 9 Q1
         ArrayList<Book> myLibrary = new ArrayList<Book>();
         Book book1 = new Book("Frankenstein", "Mary Shelley");
         Book book2 = new PictureBook("The Wonderful Wizard of Oz", "L. Frank Baum", "W.W. Denslow");
@@ -482,6 +518,10 @@ public class Rishi {
         myLibrary.add(book2);
         model.addAttribute("book1", book1.printBookInfo());
         model.addAttribute("book2", book2.printBookInfo());
+
+        // Unit 9 Q2
+        Elephant elephant = new Elephant("Percy", 2.0);
+        model.addAttribute("elephant", elephant.toString());
 
         return "rishi";
 
