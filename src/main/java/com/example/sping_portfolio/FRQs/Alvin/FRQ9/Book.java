@@ -45,7 +45,7 @@ class BookListing {
     }
 }
 
-class Display {
+class FRQ9 {
     public static void main(String[] args) {
         Book book1 = new Book("Frankenstein", "Mary Shelley");
         PictureBook book2 = new PictureBook("The Wonderful Wizard of Oz", "L. Frank Baum", "W.W. Denslow");
