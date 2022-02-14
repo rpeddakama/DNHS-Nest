@@ -1,5 +1,6 @@
 package com.example.sping_portfolio.controllers;
 
+import java.beans.DesignMode;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.*;
@@ -14,39 +15,156 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
+class NumberSystem {
+
+    public static int gcf(int a, int b) {
+        if (a % b == 0)
+            return b;
+        return gcf(b, a % b);
+    }
+
+    public static String reduceFraction(int numerator, int denominator) {
+        if (numerator % denominator == 0)
+            return String.valueOf(numerator / denominator);
+        int gcf_ = gcf(numerator, denominator);
+        numerator /= gcf_;
+        denominator /= gcf_;
+
+        return (numerator + "/" + denominator);
+    }
+
+}
+
+class Elephant extends Herbivore {
+    private double tuskLength;
+
+    public Elephant(String name, double tuskLength) {
+        super("elephant", name);
+        this.tuskLength = tuskLength;
+    }
+
+    @Override
+    public String toString() {
+        return (super.toString() + " with tusks 2.0 meters long");
+    }
+}
+
+class Herbivore extends Animal {
+    public Herbivore(String species, String name) {
+        super("herbivore", species, name);
+    }
+}
+
+class Animal {
+    private String type, species, name;
+
+    public Animal(String type, String species, String name) {
+        this.type = type;
+        this.species = species;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return (name + " the " + species + " is a " + type);
+    }
+}
+
+class BookListing {
+    private Book book;
+    private double price;
+
+    public BookListing(Book book, double price) {
+        this.book = book;
+        this.price = price;
+    }
+
+    public String printDescription() {
+        return (book.printBookInfo() + ", " + price);
+    };
+
+}
+
+class PictureBook extends Book {
+    private String illustrator;
+
+    public PictureBook(String t, String a, String i) {
+        super(t, a);
+        illustrator = i;
+    }
+
+    public String printBookInfo() {
+        return (super.title + ", written by " + super.author + ", illustrated by " + illustrator);
+    }
+}
+
+class Book {
+    public String title;
+    public String author;
+
+    public Book(String t, String a) {
+        title = t;
+        author = a;
+    }
+
+    public String printBookInfo() {
+        return (title + ", written by " + author);
+    }
+
+}
+
 class Plot {
     private String cropType;
     private int cropYield;
 
-    public Plot(String crop, int yield){
-
+    public Plot(String crop, int yield) {
+        this.cropType = crop;
+        this.cropYield = yield;
     }
 
-    public String getCropType(){
-            return cropType;
+    public String getCropType() {
+        return cropType;
     }
 
-    public int getCropYield(){
+    public int getCropYield() {
         return cropYield;
     }
 }
 
-// class ExperimentalFarm{
-//     private Plot[][] farmPlots;
+class ExperimentalFarm {
+    private Plot[][] farmPlots;
 
-//     public ExperimentalFarm(Plot[][] p){
+    public ExperimentalFarm(Plot[][] p) {
+        this.farmPlots = p;
+    }
 
-//     }
+    public Plot getHighestYield(String c) {
+        int a = 0, b = 0, most = -1;
+        for (int i = 0; i < farmPlots.length; i++) {
+            for (int j = 0; j < farmPlots[i].length; j++) {
+                if (farmPlots[i][j].getCropType().equals(c)) {
+                    if (farmPlots[i][j].getCropYield() > most) {
+                        most = farmPlots[i][j].getCropYield();
+                        a = i;
+                        b = j;
+                    }
+                }
+            }
+        }
+        if (most == -1)
+            return null;
+        return farmPlots[a][b];
+    }
 
-//     public Plot getHighestYield(String c){
+    public String sameCrop(int col) {
+        String type = farmPlots[0][col].getCropType();
+        for (int i = 0; i < farmPlots.length; i++)
+            if (!farmPlots[i][col].equals(type))
+                return "false";
+        return "true";
+    }
 
-//     }
-
-//     public boolean sameCrop(int col){
-
-//     }
-
-// }
+}
 
 class UserName {
     private ArrayList<String> possibleNames = new ArrayList<String>();
@@ -74,7 +192,7 @@ class UserName {
 
         ret = ret.substring(0, ret.length() - 2);
 
-        System.out.println("NAMES: " + ret);
+        // System.out.println(" " + ret);
         return ret;
     }
 }
@@ -143,7 +261,6 @@ class stringSuffixes {
 
 class DonutShop {
     private ArrayList<String> flavors;
-
     public static int flavorMultiplier = 3;
     private double newFlavorMultiplier;
     private int dozens = 1;
@@ -306,6 +423,10 @@ public class Rishi {
             @RequestParam(name = "perItemWage", required = false, defaultValue = "1.5") double perItemWage,
             @RequestParam(name = "firstName", required = false, defaultValue = "Bob") String firstName,
             @RequestParam(name = "lastName", required = false, defaultValue = "Smith") String lastName,
+            @RequestParam(name = "cropInput", required = false, defaultValue = "corn") String cropInput,
+            @RequestParam(name = "columnInput", required = false, defaultValue = "2") int columnInput,
+            @RequestParam(name = "numerator", required = false, defaultValue = "8") int numerator,
+            @RequestParam(name = "denominator", required = false, defaultValue = "12") int denominator,
 
             Model model) {
 
@@ -387,6 +508,41 @@ public class Rishi {
         UserName user = new UserName(firstName, lastName);
         user.setAvailableUserNames();
         model.addAttribute("userNames", user.getAvaliableUserNames());
+
+        // Unit 8
+        String[] crops = { "corn", "peas", "wheat", "barley", "rice", "beans" };
+        int[] yields = { 25, 32, 48, 16, 69, 72, 100, 88, 2 };
+        Plot[][] farmInput = new Plot[4][4];
+        for (int i = 0; i < farmInput.length; i++) {
+            for (int j = 0; j < farmInput[i].length; j++) {
+                int cIdx = (int) (Math.random() * crops.length);
+                int yIdx = (int) (Math.random() * yields.length);
+                Plot tempPlot = new Plot(crops[cIdx], yields[yIdx]);
+                farmInput[i][j] = tempPlot;
+            }
+        }
+
+        ExperimentalFarm eF = new ExperimentalFarm(farmInput);
+        model.addAttribute("highestYield",
+                (eF.getHighestYield(cropInput).getCropType() + ", " + eF.getHighestYield(cropInput).getCropYield()));
+        model.addAttribute("sameCrop", eF.sameCrop(Math.min(columnInput, farmInput.length - 1)));
+
+        // Unit 9 Q1
+        ArrayList<Book> myLibrary = new ArrayList<Book>();
+        Book book1 = new Book("Frankenstein", "Mary Shelley");
+        Book book2 = new PictureBook("The Wonderful Wizard of Oz", "L. Frank Baum", "W.W. Denslow");
+        myLibrary.add(book1);
+        myLibrary.add(book2);
+        model.addAttribute("book1", book1.printBookInfo());
+        model.addAttribute("book2", book2.printBookInfo());
+
+        // Unit 9 Q2
+        Elephant elephant = new Elephant("Percy", 2.0);
+        model.addAttribute("elephant", elephant.toString());
+
+        // Unit 10
+        NumberSystem nS = new NumberSystem();
+        model.addAttribute("reducedFraction", nS.reduceFraction(numerator, denominator));
 
         return "rishi";
 
