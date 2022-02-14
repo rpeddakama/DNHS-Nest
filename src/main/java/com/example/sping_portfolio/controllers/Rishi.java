@@ -14,6 +14,40 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Random;
 import java.util.ArrayList;
 
+class Plot {
+    private String cropType;
+    private int cropYield;
+
+    public Plot(String crop, int yield){
+
+    }
+
+    public String getCropType(){
+            return cropType;
+    }
+
+    public int getCropYield(){
+        return cropYield;
+    }
+}
+
+// class ExperimentalFarm{
+//     private Plot[][] farmPlots;
+
+//     public ExperimentalFarm(Plot[][] p){
+
+//     }
+
+//     public Plot getHighestYield(String c){
+
+//     }
+
+//     public boolean sameCrop(int col){
+
+//     }
+
+// }
+
 class UserName {
     private ArrayList<String> possibleNames = new ArrayList<String>();
     private String[] usedNames = { "SmithB", "CoolJ" };
