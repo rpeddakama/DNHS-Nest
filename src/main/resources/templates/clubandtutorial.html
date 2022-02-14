@@ -9,9 +9,30 @@
 </head>
 
 <body>
-    <h1>Club/Tutorial Calendar</h1>
     <div layout:fragment="content" th:remove="tag">
+
+        <div class="heading">
+            <h1>Club and Tutorial Calendar</h1>
+        </div>
+
+        <br>
+
+        <div class="description">
+            <h3>On this page, you can see the daily schedule of tutorials and see which teacher is available. <br>
+                After that, you can also view a list of clubs that are meeting today, the timings, location, and other
+                important details.</h3>
+
+            <br>
+
+            <button onclick="makeEvent()">Click here to add an event</button>
+        </div>
+
+        <br>
+        <br>
+
         <div id='calendar' class="calendar"></div>
+
+
         <script>
 
             document.addEventListener('DOMContentLoaded', function () {
@@ -25,58 +46,66 @@
                         center: 'title',
                         right: 'dayGridMonth,timeGridWeek,timeGridDay'
                     },
-                    events: [
-                        {
-                            title: 'All Day Event',
-                            start: '2022-02-01'
-                        },
-                        {
-                            title: 'Long Event',
-                            start: '2022-02-07',
-                            end: '2022-02-10'
-                        },
-                        {
-                            groupId: '999',
-                            title: 'Repeating Event',
-                            start: '2022-02-09T16:00:00'
-                        },
-                        {
-                            groupId: '999',
-                            title: 'Repeating Event',
-                            start: '2022-02-16T16:00:00'
-                        },
-                        {
-                            title: 'Conference',
-                            start: '2022-02-11',
-                            end: '2022-02-13'
-                        },
-                        {
-                            title: 'Meeting',
-                            start: '2022-02-12T10:30:00',
-                            end: '2022-02-12T12:30:00'
-                        },
-                        {
-                            title: 'Lunch',
-                            start: '2022-02-12T12:00:00'
-                        },
-                        {
-                            title: 'Meeting',
-                            start: '2022-02-12T14:30:00'
-                        },
-                        {
-                            title: 'Birthday Party',
-                            start: '2022-02-13T07:00:00'
-                        },
-                        {
-                            title: 'Click for Google',
-                            url: 'http://google.com/',
-                            start: '2022-02-28'
-                        }
-                    ]
+                    // events: [
+                    //     {
+                    //         title: 'All Day Event',
+                    //         start: '2022-02-01'
+                    //     },
+                    //     {
+                    //         title: 'Long Event',
+                    //         start: '2022-02-07',
+                    //         end: '2022-02-10'
+                    //     },
+                    //     {
+                    //         groupId: '999',
+                    //         title: 'Repeating Event',
+                    //         start: '2022-02-09T16:00:00'
+                    //     },
+                    //     {
+                    //         groupId: '999',
+                    //         title: 'Repeating Event',
+                    //         start: '2022-02-16T16:00:00'
+                    //     },
+                    //     {
+                    //         title: 'Conference',
+                    //         start: '2022-02-11',
+                    //         end: '2022-02-13'
+                    //     },
+                    //     {
+                    //         title: 'Meeting',
+                    //         start: '2022-02-12T10:30:00',
+                    //         end: '2022-02-12T12:30:00'
+                    //     },
+                    //     {
+                    //         title: 'Lunch',
+                    //         start: '2022-02-12T12:00:00'
+                    //     },
+                    //     {
+                    //         title: 'Meeting',
+                    //         start: '2022-02-12T14:30:00'
+                    //     },
+                    //     {
+                    //         title: 'Birthday Party',
+                    //         start: '2022-02-13T07:00:00'
+                    //     },
+                    //     {
+                    //         title: 'Click for Google',
+                    //         url: 'http://google.com/',
+                    //         start: '2022-02-28'
+                    //     }
+                    // ]
                 });
-
                 calendar.render();
             });
+            var testEvent = { // this object will be "parsed" into an Event Object
+                title: 'The Title', // a property!
+                start: '2022-02-16', // a property!
+                end: '2022-02-19' // a property! ** see important note below about 'end' **
+            }
+            function makeEvent() {
+                console.log("im fucking here")
+                calendar.addEvent(testEvent)
+            }
 
             // document.addEventListener('DOMContentLoaded', function () {
             //     var calendarEl = document.getElementById('calendar');
