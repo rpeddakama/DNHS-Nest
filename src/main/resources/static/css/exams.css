@@ -1,0 +1,9 @@
+:root {
+  --light-theme-text: #313638;
+  --dark-theme-text: #ffffff;
+  --blue: #52A0E0;
+}
+
+.calendar {
+    margin: 0 10%;
+}
