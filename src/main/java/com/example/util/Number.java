@@ -5,12 +5,13 @@ import java.util.ArrayList;
 
 public class Number {
     int squirrels;
-    int index = 0;
+    static int counter = 0;
+    int index = counter;
 
     public Number() {
         Random rand = new Random();
         squirrels = rand.nextInt(36 - 3) + 3;
-        index++;
+        counter++;
     }
 
     public int getSquirrels() {
@@ -18,7 +19,7 @@ public class Number {
     }
 
     public int getIndex() {
-        return this.index;
+        return index;
     }
 
     public static void main(String[] args) {
