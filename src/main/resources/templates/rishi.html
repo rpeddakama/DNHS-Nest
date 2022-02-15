@@ -72,6 +72,72 @@
 
         <div style="text-align: center; width: 60em; margin: auto">
             <div class="part-f">
+                <code style="display: block; white-space: pre-wrap; text-align: left;">
+                    import java.util.ArrayList;
+                    import java.util.Random;
+
+                    public class Main {
+                        // tester method
+                        public static void main(String[] args) {
+                            ArrayList<Number> squirrels = new ArrayList<Number>();
+                            
+                            // initialize arraylist of 10 squirrels
+                            for(int i = 0; i < 10; i++){
+                            Number temp = new Number();
+                            temp.setIndex(i);
+                            squirrels.add(temp);
+                            }
+
+                            // bubble sort with 2d array
+                            for(int i = 0; i < squirrels.size(); i++){
+                            for(int j = i; j < squirrels.size(); j++){
+                                if(squirrels.get(i).getNumber() > squirrels.get(j).getNumber()){
+                                Number temp = squirrels.get(i);
+                                squirrels.set(i, squirrels.get(j));
+                                squirrels.set(j, temp);
+                                }
+                            }
+                            }
+
+                            // print formatted string
+                            for(Number n : squirrels){
+                            System.out.println("Squirrels: " + n.getNumber() + " Day: " + n.getIndex());
+                            }   
+                        }
+                    }
+
+                    class Number {
+                        // instance variables
+                        private int numSquirrels, index;
+
+                        // constructor
+                        public Number() {
+                        int max=36, min=3;
+                        Random random = new Random();
+                        int x = random.nextInt(max - min + 1) + min;
+                        this.numSquirrels = x;
+                        } 
+
+                        // setter
+                        public void setIndex(int index){
+                        this.index = index;
+                        }
+
+                        // getters
+                        public int getNumber(){
+                        return numSquirrels;
+                        }   
+                        
+                        public int getIndex(){
+                        return index;
+                        }
+                    }
+                </code>
+            </div>
+        </div>
+
+        <div style="text-align: center; width: 60em; margin: auto">
+            <div class="part-f">
                 <h1>Unit 10 FRQ</h1>
                 <form action="/rishi" method="GET" id="frqForm">
                     <div class="frq-form">
