@@ -96,14 +96,16 @@
                     // ]
                 });
                 calendar.render();
+            
             });
             var testEvent = { // this object will be "parsed" into an Event Object
                 title: 'The Title', // a property!
                 start: '2022-02-16', // a property!
                 end: '2022-02-19' // a property! ** see important note below about 'end' **
             }
+
             function makeEvent() {
-                console.log("im fucking here")
+                alert("Your event was saved!")
                 calendar.addEvent(testEvent)
             }
 
