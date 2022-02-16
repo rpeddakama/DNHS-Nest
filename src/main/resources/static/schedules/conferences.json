@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:05"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "8:10",
+            "end": "8:56"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "9:01",
+            "end": "9:47"
+        },
+
+        {
+            "name": "Break",
+            "start": "9:47",
+            "end": "9:57"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "10:02",
+            "end": "10:48"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "10:53",
+            "end": "11:39"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "11:39",
+            "end": "12:09"
+        },
+
+        {
+            "name": "Period 5",
+            "start": "12:14",
+            "end": "13:00"
+        },
+
+        {
+            "name": "Conferences",
+            "start": "13:30",
+            "end": "16:30"
+        }
+    ]
+}

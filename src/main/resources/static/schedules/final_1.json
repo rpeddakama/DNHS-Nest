@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:05"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "8:10",
+            "end": "9:01"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "9:06",
+            "end": "9:59"
+        },
+
+        {
+            "name": "Break",
+            "start": "9:59",
+            "end": "10:09"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "10:14",
+            "end": "11:05"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "11:10",
+            "end": "12:01"
+        },
+
+        {
+            "name": "Period 5",
+            "start": "12:06",
+            "end": "12:57"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "12:57",
+            "end": "13:27"
+        },
+
+        {
+            "name": "Period 5 Final",
+            "start": "13:32",
+            "end": "15:32"
+        }
+    ]
+}

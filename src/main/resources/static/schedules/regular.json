@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:05"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "8:10",
+            "end": "9:20"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "9:25",
+            "end": "10:37"
+        },
+
+        {
+            "name": "Break",
+            "start": "10:37",
+            "end": "10:47"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "10:52",
+            "end": "12:02"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "12:07",
+            "end": "13:17"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "13:17",
+            "end": "13:47"
+        },
+
+        {
+            "name": "Period 5",
+            "start": "13:52",
+            "end": "15:02"
+        },
+
+        {
+            "name": "Tutorial",
+            "start": "15:02",
+            "end": "15:32"
+        }
+    ]
+}
