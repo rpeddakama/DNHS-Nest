@@ -30,6 +30,14 @@
     font-size: 20px;
   }
 
+.buttons {
+    background-color: var(--blue);
+    padding: 7px 25px;
+    color: black;
+    border-radius: 12px 5px;
+    font-size: 10x;
+  }
+
 input{
     border-top-style: hidden;
     border-right-style: hidden;
