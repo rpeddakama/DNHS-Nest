@@ -23,11 +23,9 @@
                 important details.</h3>
 
             <br>
-            <form id="createEventForm">
-                <input type="text" name="title">
-                <input type="text" name="start">
-                <input type="text" name="end">
-            </form>
+            <input type="text" id="title">
+            <input type="text" id="start">
+            <input type="text" id="end">
             <button onclick="makeEvent()">Click here to add an event</button>
         </div>
 
@@ -101,19 +99,26 @@
             });
             calendar.render();
 
+            var dynamicEvent = {
+                // title: document.getElementById("createEventForm").elements["title"].value,
+                // start: document.getElementById("createEventForm").elements["start"],
+                // end: document.getElementById("createEventForm").elements["end"],
+                title: document.getElementById("title").value.toString(),
+                start: document.getElementById("start").value,
+                end: document.getElementById("end").value,
+            }
             var testEvent = {
-                title: document.getElementById("createEventForm").elements["title"],
-                start: document.getElementById("createEventForm").elements["start"],
-                end: document.getElementById("createEventForm").elements["end"],
-                // title: 'The Title',
-                // start: '2022-02-16',
-                // end: '2022-02-19'
+                title: 'The Title',
+                start: '2022-02-16',
+                end: '2022-02-19'
             }
 
             function makeEvent() {
-                alert("Your event was saved!")
-                console.log(testEvent)
-                calendar.addEvent(testEvent)
+                console.log(document.getElementById("title").value.toString())
+                console.log("at make event")
+                // alert("Your event was saved!")
+                console.log(dynamicEvent)
+                calendar.addEvent(dynamicEvent)
             }
             // });
 
