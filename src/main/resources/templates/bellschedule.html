@@ -1,78 +1,137 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{fragments/layout}" lang="en">
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+    layout:decorate="~{fragments/layout}" lang="en">
+
 <head>
     <div layout:fragment="metadata" th:remove="tag">
         <title>The Nest - Bell Schedule</title>
+
+        <style>
+            table {
+                width: 40vw;
+                margin: auto;
+
+                border: 1px solid black;
+            }
+
+            table td {
+                border: 1px solid black;
+                padding: 1em;
+            }
+
+            .text {
+                text-align: center;
+            }
+
+            .text .title {
+                font-size: 28px !important;
+            }
+
+            .text .subtitle {
+                font-size: 18px !important;
+                margin-top: 1em;
+            }
+        </style>
     </div>
 </head>
 
 <body>
-<h1>DNHS Daily Bell Schedule</h1>
-<br>
-<div layout:fragment="content" th:remove="tag">
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img id="maskImage" class="w-3/4" src="/img/schedule0.png" />
+    <div layout:fragment="content" th:remove="tag">
+        <div class="text">
+            <h1 class="title">DNHS Daily Bell Schedule</h1>
+            <h2 id="cur_period" class="subtitle"></h2>
+            <br>
         </div>
-        </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule1.png" />
-        </div>
-        </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule2.png" />
-        </div>
-        </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule3.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule4.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule5.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule6.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule7.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule8.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule9.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule10.png" />
-        </div>
-    </div>
-    <div class="flex flex-row w-full h-full items-center">
-        <div class="grow w-32 flex">
-            <img  class="w-3/4" src="/img/schedule11.png" />
-        </div>
-    </div>
 
-</div>
+
+        <script>
+            (async function () {
+                let tbl = document.createElement('table');
+
+                let cur_day = new Date().getDay();
+                let res = null;
+
+                if (cur_day == "1" || cur_day == "3" || cur_day == "4") {
+                    res = await axios('/schedules/regular.json');
+
+                } else if (cur_day == "2") {
+                    res = await axios('/schedules/late_start.json');
+
+                } else if (cur_day == "5") {
+                    res = await axios('/schedules/homeroom.json');
+
+                }
+
+                let periods = res.data.data;
+                let in_class = false;
+
+                for (let i = 0; i < periods.length; i++) {
+                    const tr = tbl.insertRow();
+
+                    for (let j = 0; j < 3; j++) {
+                        const td = tr.insertCell();
+                        let key = Object.keys(periods[i])[j];
+
+                        if (j == 1 || j == 2) {
+                            let time = periods[i][key];
+                            let hour = parseInt(time.split(':')[0]);
+                            let minute = time.split(':')[1];
+
+                            td.appendChild(document.createTextNode(
+                                ((hour > 12) ? (hour - 12) : (hour))
+                                +
+                                (":" + minute)
+                                +
+                                ((hour < 12) ? " AM" : " PM")
+                            ))
+                        } else {
+                            let curTime = new Date();
+
+                            let startTime = new Date(curTime.getTime());
+                            startTime.setHours(periods[i]['start'].split(":")[0])
+                            startTime.setMinutes(periods[i]['start'].split(":")[1])
+                            startTime.setSeconds(0);
+
+                            let endTime = new Date(curTime.getTime());
+                            endTime.setHours(periods[i]['end'].split(":")[0])
+                            endTime.setMinutes(periods[i]['end'].split(":")[1])
+                            endTime.setSeconds(0);
+
+                            td.appendChild(document.createTextNode(periods[i][key]))
+                            if (startTime <= curTime && endTime >= curTime) {
+                                td.style.fontWeight = 'bold';
+                                document.getElementById('cur_period').innerText = `Current Period: ${periods[i][key]}`;
+                                in_class = true;
+                            }
+
+                        }
+                    }
+                }
+
+                let curTime = new Date();
+
+                let startTime = new Date(curTime.getTime());
+                startTime.setHours(periods[0]['start'].split(":")[0])
+                startTime.setMinutes(periods[0]['start'].split(":")[1])
+                startTime.setSeconds(0);
+
+                let endTime = new Date(curTime.getTime());
+                endTime.setHours(periods[periods.length - 1]['end'].split(":")[0])
+                endTime.setMinutes(periods[periods.length - 1]['end'].split(":")[1])
+                endTime.setSeconds(0);
+
+                if (startTime <= curTime && endTime >= curTime && !in_class) {
+                    document.getElementById('cur_period').innerText = 'Current Period: Passing Period';
+
+                } else if(startTime > curTime || endTime < curTime){
+                    document.getElementById('cur_period').innerText = 'School is Not in Session.';
+
+                }
+
+                document.body.appendChild(tbl);
+            })();
+        </script>
+    </div>
 </body>
+
 </html>
