@@ -23,8 +23,12 @@
                 important details.</h3>
 
             <br>
-
-            <button onclick="makeEvent()">Click here to add an event</button>
+            <form id="createEventForm">
+                <input value="Date" type="text" name="title">
+                <input value="Month" type="text" name="start">
+                <input value="Year" type="text" name="end">
+            </form>
+            <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
         </div>
 
         <br>
@@ -32,80 +36,85 @@
 
         <div id='calendar' class="calendar"></div>
 
-
         <script>
 
-            document.addEventListener('DOMContentLoaded', function () {
-                var calendarEl = document.getElementById('calendar');
+            // document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
 
-                var calendar = new FullCalendar.Calendar(calendarEl, {
-                    initialView: 'dayGridMonth',
-                    initialDate: '2022-02-07',
-                    headerToolbar: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                    },
-                    // events: [
-                    //     {
-                    //         title: 'All Day Event',
-                    //         start: '2022-02-01'
-                    //     },
-                    //     {
-                    //         title: 'Long Event',
-                    //         start: '2022-02-07',
-                    //         end: '2022-02-10'
-                    //     },
-                    //     {
-                    //         groupId: '999',
-                    //         title: 'Repeating Event',
-                    //         start: '2022-02-09T16:00:00'
-                    //     },
-                    //     {
-                    //         groupId: '999',
-                    //         title: 'Repeating Event',
-                    //         start: '2022-02-16T16:00:00'
-                    //     },
-                    //     {
-                    //         title: 'Conference',
-                    //         start: '2022-02-11',
-                    //         end: '2022-02-13'
-                    //     },
-                    //     {
-                    //         title: 'Meeting',
-                    //         start: '2022-02-12T10:30:00',
-                    //         end: '2022-02-12T12:30:00'
-                    //     },
-                    //     {
-                    //         title: 'Lunch',
-                    //         start: '2022-02-12T12:00:00'
-                    //     },
-                    //     {
-                    //         title: 'Meeting',
-                    //         start: '2022-02-12T14:30:00'
-                    //     },
-                    //     {
-                    //         title: 'Birthday Party',
-                    //         start: '2022-02-13T07:00:00'
-                    //     },
-                    //     {
-                    //         title: 'Click for Google',
-                    //         url: 'http://google.com/',
-                    //         start: '2022-02-28'
-                    //     }
-                    // ]
-                });
-                calendar.render();
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                initialDate: '2022-02-07',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                // events: [
+                //     {
+                //         title: 'All Day Event',
+                //         start: '2022-02-01'
+                //     },
+                //     {
+                //         title: 'Long Event',
+                //         start: '2022-02-07',
+                //         end: '2022-02-10'
+                //     },
+                //     {
+                //         groupId: '999',
+                //         title: 'Repeating Event',
+                //         start: '2022-02-09T16:00:00'
+                //     },
+                //     {
+                //         groupId: '999',
+                //         title: 'Repeating Event',
+                //         start: '2022-02-16T16:00:00'
+                //     },
+                //     {
+                //         title: 'Conference',
+                //         start: '2022-02-11',
+                //         end: '2022-02-13'
+                //     },
+                //     {
+                //         title: 'Meeting',
+                //         start: '2022-02-12T10:30:00',
+                //         end: '2022-02-12T12:30:00'
+                //     },
+                //     {
+                //         title: 'Lunch',
+                //         start: '2022-02-12T12:00:00'
+                //     },
+                //     {
+                //         title: 'Meeting',
+                //         start: '2022-02-12T14:30:00'
+                //     },
+                //     {
+                //         title: 'Birthday Party',
+                //         start: '2022-02-13T07:00:00'
+                //     },
+                //     {
+                //         title: 'Click for Google',
+                //         url: 'http://google.com/',
+                //         start: '2022-02-28'
+                //     }
+                // ]
             });
-            var testEvent = { // this object will be "parsed" into an Event Object
-                title: 'The Title', // a property!
-                start: '2022-02-16', // a property!
-                end: '2022-02-19' // a property! ** see important note below about 'end' **
+            calendar.render();
+
+            var testEvent = {
+                title: document.getElementById("createEventForm").elements["title"],
+                start: document.getElementById("createEventForm").elements["start"],
+                end: document.getElementById("createEventForm").elements["end"],
+                // title: 'The Title',
+                // start: '2022-02-16',
+                // end: '2022-02-19'
             }
+
             function makeEvent() {
-                console.log("im fucking here")
+                alert("Your event was saved!")
+                console.log(testEvent)
                 calendar.addEvent(testEvent)
             }
+            // });
 
             // document.addEventListener('DOMContentLoaded', function () {
             //     var calendarEl = document.getElementById('calendar');
