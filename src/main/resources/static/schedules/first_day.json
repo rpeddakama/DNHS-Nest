@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "name": "9th Grade - Link Crew Orientation",
+            "start": "8:00",
+            "end": "10:00"
+        },
+
+        {
+            "name": "9th & 10th Grade Assembly",
+            "start": "10:00",
+            "end": "10:30"
+        },
+
+        {
+            "name": "11th & 12th Grade Assembly",
+            "start": "10:40",
+            "end": "11:10"
+        },
+
+        {
+            "name": "Break",
+            "start": "11:10",
+            "end": "11:20"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "11:20",
+            "end": "12:01"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "12:06",
+            "end": "12:47"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "12:47",
+            "end": "13:17"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "13:22",
+            "end": "14:02"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "14:07",
+            "end": "14:47"
+        },
+
+        {
+            "name": "Period 5",
+            "start": "14:52",
+            "end": "15:32"
+        }
+    ]
+}

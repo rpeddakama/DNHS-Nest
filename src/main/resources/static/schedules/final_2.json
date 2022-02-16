@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:05"
+        },
+
+        {
+            "name": "Tutorial",
+            "start": "8:10",
+            "end": "8:35"
+        },
+
+        {
+            "name": "Period 1 Final",
+            "start": "8:40",
+            "end": "10:40"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "10:40",
+            "end": "11:10"
+        },
+
+        {
+            "name": "Period 2 Final",
+            "start": "11:15",
+            "end": "13:15"
+        }
+    ]
+}

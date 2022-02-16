@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:05"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "8:10",
+            "end": "9:17"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "9:22",
+            "end": "10:29"
+        },
+
+        {
+            "name": "Break",
+            "start": "10:29",
+            "end": "10:39"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "10:44",
+            "end": "12:00"
+        },
+
+        {
+            "name": "Parade",
+            "start": "12:00",
+            "end": "12:38"
+        },
+        
+        {
+            "name": "Lunch",
+            "start": "12:38",
+            "end": "13:08"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "13:13",
+            "end": "14:20"
+        },
+
+
+        {
+            "name": "Period 5",
+            "start": "14:25",
+            "end": "15:32"
+        }
+    ]
+}

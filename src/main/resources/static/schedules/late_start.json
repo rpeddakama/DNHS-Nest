@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:00"
+        },
+
+        {
+            "name": "Pro-Gro (No Students)",
+            "start": "8:00",
+            "end": "9:00"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "9:05",
+            "end": "10:10"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "10:15",
+            "end": "11:22"
+        },
+
+        {
+            "name": "Break",
+            "start": "11:22",
+            "end": "11:32"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "11:37",
+            "end": "12:42"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "12:42",
+            "end": "13:12"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "13:17",
+            "end": "14:22"
+        },
+
+        {
+            "name": "Period 5",
+            "start": "14:27",
+            "end": "15:32"
+        }
+    ]
+}
