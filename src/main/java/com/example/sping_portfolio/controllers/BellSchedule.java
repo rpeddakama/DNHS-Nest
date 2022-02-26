@@ -58,9 +58,52 @@ public class BellSchedule {
             }
         }
 
-        
+        for (String evt : events) {
+            if (evt.contains("no school"))
+                return "none";
 
-        return "";
+            if (evt.contains("finals")) {
+                switch (new Date().getDay()) {
+                    case 3:
+                        return "/schedules/final_1.json";
+
+                    case 4:
+                        return "/schedules/final_2.json";
+
+                    case 5:
+                        return "/schedules/final_3.json";
+
+                    default:
+                        break;
+                }
+            }
+
+            if (evt.contains("parade"))
+                return "/schedules/parade.json";
+
+            if (evt.contains("pep rally"))
+                return "/schedules/pep_rally.json";
+
+            if (evt.contains("conferences"))
+                return "/schedules/conferences.json";
+
+            if (evt.contains("first day"))
+                return "/schedules/first day.json";
+
+            if (evt.contains("minimum day"))
+                return "/schedules/minimum.json";
+        }
+
+        int cur_day = new Date().getDay();
+        if (cur_day == 1 || cur_day == 3 || cur_day == 4) {
+            return "/schedules/regular.json";
+        } else if (cur_day == 2) {
+            return "/schedules/late_start.json";
+        } else if (cur_day == 5) {
+            return "/schedules/homeroom.json";
+        }
+
+        return "none";
     }
 
     Period getPeriod() throws ParseException {
