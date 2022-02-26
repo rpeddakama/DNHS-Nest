@@ -568,8 +568,7 @@ LAST-MODIFIED:20210818T165853Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Asian American & Pacific Islander Month/Jewish American Heritage Mo
- nth
+SUMMARY:Asian American & Pacific Islander Month/Jewish American Heritage Month
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1223,8 +1222,7 @@ DTEND;VALUE=DATE:20210313
 DTSTAMP:20220226T020152Z
 UID:22il6g4e5hqv4l2et3hftdhn1q@google.com
 CREATED:20200929T153209Z
-DESCRIPTION:https://powayusd.com/PUSD/media/DNHS/Virtual%20Learning%20and%2
- 0Reopening%20Plans/Final-Exams-DNHS-Tri-2-2021-Virtual.pdf
+DESCRIPTION:https://powayusd.com/PUSD/media/DNHS/Virtual%20Learning%20and%20Reopening%20Plans/Final-Exams-DNHS-Tri-2-2021-Virtual.pdf
 LAST-MODIFIED:20210301T212246Z
 LOCATION:
 SEQUENCE:0
@@ -1644,8 +1642,7 @@ DTEND:20200521T233000Z
 DTSTAMP:20220226T020152Z
 UID:1aflaspu4j8hbgulhbkih2b7kc@google.com
 CREATED:20200113T213539Z
-DESCRIPTION:Please meet at the flagpole at 3:30 PM located at the front of 
- the school. Our Link Crew will be facilitating the tour.
+DESCRIPTION:Please meet at the flagpole at 3:30 PM located at the front of the school. Our Link Crew will be facilitating the tour.
 LAST-MODIFIED:20200113T213539Z
 LOCATION:Del Norte High School flagpole at front of the school 
 SEQUENCE:0
@@ -1659,8 +1656,7 @@ DTEND:20200423T233000Z
 DTSTAMP:20220226T020152Z
 UID:7soi4bv475n8g45hof034c97n1@google.com
 CREATED:20200113T213518Z
-DESCRIPTION:Please meet at the flagpole at 3:30 PM located at the front of 
- the school. Our Link Crew will be facilitating the tour. 
+DESCRIPTION:Please meet at the flagpole at 3:30 PM located at the front of the school. Our Link Crew will be facilitating the tour. 
 LAST-MODIFIED:20200113T213518Z
 LOCATION:Del Norte High School flagpole at front of the school 
 SEQUENCE:0
@@ -1702,13 +1698,7 @@ DTEND;VALUE=DATE:20200307
 DTSTAMP:20220226T020152Z
 UID:22bomfqkmhvf6i15tbudc2dnlb@google.com
 CREATED:20190722T213509Z
-DESCRIPTION:Finals Day 1 : 3/4\n\nPeriodBeginEnd\n18:10 AM9:01 AM\n29:06 AM
- 9:59 AM\nBreak9:59 AM10:09 AM\n310:14 AM11:05 AM\n411:10 AM12:01 PM\n512:06
-  PM12:57 PM\nLunch12:57 PM1:27 PM\nFinal Per 51:32 PM3:32 PM\n\nFinals - Da
- y 2 : 3/5 \n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n18:40 AM10:40 AM\nLun
- ch10:40 AM11:10 AM\n211:15 AM1:15 PM\n\nFinals - Day 3 : 3/6\n\nPeriodBegin
- End\nTutorial8:10 AM8:35 AM\n38:40 AM10:40 AM\nLunch10:40 AM11:10 AM\n411:1
- 5 AM1:15 PM
+DESCRIPTION:Finals Day 1 : 3/4\n\nPeriodBeginEnd\n18:10 AM9:01 AM\n29:06 AM9:59 AM\nBreak9:59 AM10:09 AM\n310:14 AM11:05 AM\n411:10 AM12:01 PM\n512:06 PM12:57 PM\nLunch12:57 PM1:27 PM\nFinal Per 51:32 PM3:32 PM\n\nFinals - Day 2 : 3/5 \n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n18:40 AM10:40 AM\nLunch10:40 AM11:10 AM\n211:15 AM1:15 PM\n\nFinals - Day 3 : 3/6\n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n38:40 AM10:40 AM\nLunch10:40 AM11:10 AM\n411:15 AM1:15 PM
 LAST-MODIFIED:20191218T164736Z
 LOCATION:
 SEQUENCE:0
@@ -1848,9 +1838,7 @@ DTEND;VALUE=DATE:20200125
 DTSTAMP:20220226T020152Z
 UID:5c87hpd1pbcmkhngo0eijpgnfl@google.com
 CREATED:20190722T213236Z
-DESCRIPTION:Parent ConferencesBell Schedule \n\nPeriodBeginEnd\n18:10 AM8:5
- 6 AM\n29:01 AM9:47 AM\nBreak9:47 AM9:57 AM\n310:02 AM10:48 AM\n410:53 AM11:
- 39 AM\nLunch11:39 AM12:09 PM\n512:14 PM1:00 PM\nConferences1:30 PM4:30 PM
+DESCRIPTION:Parent ConferencesBell Schedule \n\nPeriodBeginEnd\n18:10 AM8:56 AM\n29:01 AM9:47 AM\nBreak9:47 AM9:57 AM\n310:02 AM10:48 AM\n410:53 AM11:39 AM\nLunch11:39 AM12:09 PM\n512:14 PM1:00 PM\nConferences1:30 PM4:30 PM
 LAST-MODIFIED:20191218T164237Z
 LOCATION:
 SEQUENCE:0
@@ -1990,9 +1978,7 @@ DTEND:20191103T030000Z
 DTSTAMP:20220226T020152Z
 UID:03mjv45ntlrdmdncpedap064jq@google.com
 CREATED:20191017T201319Z
-DESCRIPTION:Please click here to order tickets online: <a id="ow673" href="
- http://www.tix.dntheatre.com/" __is_owner="true">http://www.tix.dntheatre.c
- om/</a>&nbsp\;
+DESCRIPTION:Please click here to order tickets online: <a id="ow673" href="http://www.tix.dntheatre.com/" __is_owner="true">http://www.tix.dntheatre.com/</a>&nbsp\;
 LAST-MODIFIED:20191018T192157Z
 LOCATION:PAC
 SEQUENCE:0
@@ -2006,9 +1992,7 @@ DTEND:20191027T030000Z
 DTSTAMP:20220226T020152Z
 UID:1ec2n6u46krec0u56cr4e6b2c7@google.com
 CREATED:20190924T180846Z
-DESCRIPTION:Please click here to order tickets online: <a id="ow432" href="
- http://www.tix.dntheatre.com/" __is_owner="true">http://www.tix.dntheatre.c
- om/</a>&nbsp\;
+DESCRIPTION:Please click here to order tickets online: <a id="ow432" href="http://www.tix.dntheatre.com/" __is_owner="true">http://www.tix.dntheatre.com/</a>&nbsp\;
 LAST-MODIFIED:20191018T192138Z
 LOCATION:PAC
 SEQUENCE:1
@@ -2316,13 +2300,7 @@ DTEND;VALUE=DATE:20200612
 DTSTAMP:20220226T020152Z
 UID:30ovm1m7cdm58lgtvt9gtkp2fr@google.com
 CREATED:20190924T182457Z
-DESCRIPTION:Finals Day 1 : 6/9\n\nPeriodBeginEnd\n18:10 AM9:01 AM\n29:06 AM
- 9:59 AM\nBreak9:59 AM10:09 AM\n310:14 AM11:05 AM\n411:10 AM12:01 PM\n512:06
-  PM12:57 PM\nLunch12:57 PM1:27 PM\nFinal Per 51:32 PM3:32 PM\n\n\nFinals - 
- Day 2 : 6/10\n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n18:40 AM10:40 AM\nL
- unch10:40 AM11:10 AM\n211:15 AM1:15 PM\n\nFinals - Day 3 Tri 3 (Graduation)
- 6/11\n\n  BeginEnd\n38:10 AM10:10 AM\nLunch10:10 AM10:40 AM\n410:45 AM12:45
-  PM
+DESCRIPTION:Finals Day 1 : 6/9\n\nPeriodBeginEnd\n18:10 AM9:01 AM\n29:06 AM9:59 AM\nBreak9:59 AM10:09 AM\n310:14 AM11:05 AM\n411:10 AM12:01 PM\n512:06 PM12:57 PM\nLunch12:57 PM1:27 PM\nFinal Per 51:32 PM3:32 PM\n\n\nFinals - Day 2 : 6/10\n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n18:40 AM10:40 AM\nLunch10:40 AM11:10 AM\n211:15 AM1:15 PM\n\nFinals - Day 3 Tri 3 (Graduation)6/11\n\n  BeginEnd\n38:10 AM10:10 AM\nLunch10:10 AM10:40 AM\n410:45 AM12:45 PM
 LAST-MODIFIED:20190924T182503Z
 LOCATION:
 SEQUENCE:0
@@ -2336,8 +2314,7 @@ DTEND;VALUE=DATE:20200612
 DTSTAMP:20220226T020152Z
 UID:4td0bqogscnqgosd1nl4j8re64@google.com
 CREATED:20190924T182339Z
-DESCRIPTION:Finals - Day 3 Tri 3 (Graduation)\n\n  \n38:10 AM10:10 AM\nLunc
- h10:10 AM10:40 AM\n410:45 AM12:45 PM
+DESCRIPTION:Finals - Day 3 Tri 3 (Graduation)\n\n  \n38:10 AM10:10 AM\nLunch10:10 AM10:40 AM\n410:45 AM12:45 PM
 LAST-MODIFIED:20190924T182339Z
 LOCATION:
 SEQUENCE:0
@@ -2379,9 +2356,7 @@ DTEND;VALUE=DATE:20200310
 DTSTAMP:20220226T020152Z
 UID:4d8r55p4r11qpidn7m8gtjc63b@google.com
 CREATED:20190722T213519Z
-DESCRIPTION:Minimum DayBell Schedule \n\nPeriodBeginEnd\n18:10 AM9:00 AM\n2
- 9:05 AM9:55 AM\n310:00 AM10:50 AM\nLunch10:50 AM11:15 AM\n411:20 AM12:10 PM
- \n512:15 PM1:05 PM
+DESCRIPTION:Minimum DayBell Schedule \n\nPeriodBeginEnd\n18:10 AM9:00 AM\n29:05 AM9:55 AM\n310:00 AM10:50 AM\nLunch10:50 AM11:15 AM\n411:20 AM12:10 PM\n512:15 PM1:05 PM
 LAST-MODIFIED:20190924T182153Z
 LOCATION:
 SEQUENCE:0
@@ -2409,9 +2384,7 @@ DTEND;VALUE=DATE:20191221
 DTSTAMP:20220226T020152Z
 UID:112r1jtf1c81sprtgsmfu1ojeo@google.com
 CREATED:20190722T212743Z
-DESCRIPTION:Minimum DayBell Schedule \n\nPeriodBeginEnd\n18:10 AM9:00 AM\n2
- 9:05 AM9:55 AM\n310:00 AM10:50 AM\nLunch10:50 AM11:15 AM\n411:20 AM12:10 PM
- \n512:15 PM1:05 PM
+DESCRIPTION:Minimum DayBell Schedule \n\nPeriodBeginEnd\n18:10 AM9:00 AM\n29:05 AM9:55 AM\n310:00 AM10:50 AM\nLunch10:50 AM11:15 AM\n411:20 AM12:10 PM\n512:15 PM1:05 PM
 LAST-MODIFIED:20190924T181910Z
 LOCATION:
 SEQUENCE:0
@@ -2425,9 +2398,7 @@ DTEND;VALUE=DATE:20191119
 DTSTAMP:20220226T020152Z
 UID:7mop846cllfk7eplqsb7jn2lbl@google.com
 CREATED:20190722T212641Z
-DESCRIPTION:Minimum DayBell Schedule\n\nPeriodBeginEnd\n18:10 AM9:00 AM\n29
- :05 AM9:55 AM\n310:00 AM10:50 AM\nLunch10:50 AM11:15 AM\n411:20 AM12:10 PM\
- n512:15 PM1:05 PM
+DESCRIPTION:Minimum DayBell Schedule\n\nPeriodBeginEnd\n18:10 AM9:00 AM\n29:05 AM9:55 AM\n310:00 AM10:50 AM\nLunch10:50 AM11:15 AM\n411:20 AM12:10 PM\n512:15 PM1:05 PM
 LAST-MODIFIED:20190924T181847Z
 LOCATION:
 SEQUENCE:0
@@ -2441,13 +2412,7 @@ DTEND;VALUE=DATE:20191116
 DTSTAMP:20220226T020152Z
 UID:1et0s31ngfslhb2jm3hb6hckcf@google.com
 CREATED:20190722T212628Z
-DESCRIPTION:Finals Day 1 : 11/13 \n\nPeriodBeginEnd\n18:10 AM9:01 AM\n29:06
-  AM9:59 AM\nBreak9:59 AM10:09 AM\n310:14 AM11:05 AM\n411:10 AM12:01 PM\n512
- :06 PM12:57 PM\nLunch12:57 PM1:27 PM\nFinal Per 51:32 PM3:32 PM\n\n\nFinals
-  - Day 2 : 11/14\n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n18:40 AM10:40 A
- M\nLunch10:40 AM11:10 AM\n211:15 AM1:15 PM\n\n\nFinals - Day 3: 11/15\n\nPe
- riodBeginEnd\nTutorial8:10 AM8:35 AM\n38:40 AM10:40 AM\nLunch10:40 AM11:10 
- AM\n411:15 AM1:15 PM
+DESCRIPTION:Finals Day 1 : 11/13 \n\nPeriodBeginEnd\n18:10 AM9:01 AM\n29:06 AM9:59 AM\nBreak9:59 AM10:09 AM\n310:14 AM11:05 AM\n411:10 AM12:01 PM\n512:06 PM12:57 PM\nLunch12:57 PM1:27 PM\nFinal Per 51:32 PM3:32 PM\n\n\nFinals - Day 2 : 11/14\n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n18:40 AM10:40 AM\nLunch10:40 AM11:10 AM\n211:15 AM1:15 PM\n\n\nFinals - Day 3: 11/15\n\nPeriodBeginEnd\nTutorial8:10 AM8:35 AM\n38:40 AM10:40 AM\nLunch10:40 AM11:10 AM\n411:15 AM1:15 PM
 LAST-MODIFIED:20190924T181830Z
 LOCATION:
 SEQUENCE:0
@@ -2461,10 +2426,7 @@ DTEND;VALUE=DATE:20191017
 DTSTAMP:20220226T020152Z
 UID:4ri4ff1khhss1c6faned66ik7a@google.com
 CREATED:20190722T212207Z
-DESCRIPTION:PSAT Bell Schedule \n\n*Please note: if you are NOT taking the 
- PSAT\, period 1 begins at 12:00 PM.  \n\nPeriodBeginEnd\nPSAT8:00 AM11:45 A
- M\nBreak11:45 AM11:55 AM\n112:00 PM12:32 PM\n212:37 PM1:11 PM\nLunch1:11 PM
- 1:41 PM\n31:46 PM2:18 PM\n42:23 PM2:55 PM\n53:00 PM3:32 PM
+DESCRIPTION:PSAT Bell Schedule \n\n*Please note: if you are NOT taking the PSAT\, period 1 begins at 12:00 PM.  \n\nPeriodBeginEnd\nPSAT8:00 AM11:45 AM\nBreak11:45 AM11:55 AM\n112:00 PM12:32 PM\n212:37 PM1:11 PM\nLunch1:11 PM1:41 PM\n31:46 PM2:18 PM\n42:23 PM2:55 PM\n53:00 PM3:32 PM
 LAST-MODIFIED:20190924T181723Z
 LOCATION:
 SEQUENCE:0
@@ -2478,9 +2440,7 @@ DTEND;VALUE=DATE:20191012
 DTSTAMP:20220226T020152Z
 UID:1jgj4ldp9a0ljf8r9h6vlh6c9l@google.com
 CREATED:20190722T212119Z
-DESCRIPTION:Parade Bell Schedule\n\nPeriodBeginEnd\n18:10 AM9:17 AM\n29:22 
- AM10:29 AM\nBreak10:29 AM10:39 AM\n310:44 AM12:00 PM\nParade 12:00 PM12:38 
- PM\nLunch12:38 PM1:08 PM\n41:13 PM2:20 PM\n52:25 PM3:32 PM
+DESCRIPTION:Parade Bell Schedule\n\nPeriodBeginEnd\n18:10 AM9:17 AM\n29:22 AM10:29 AM\nBreak10:29 AM10:39 AM\n310:44 AM12:00 PM\nParade 12:00 PM12:38 PM\nLunch12:38 PM1:08 PM\n41:13 PM2:20 PM\n52:25 PM3:32 PM
 LAST-MODIFIED:20190924T181530Z
 LOCATION:
 SEQUENCE:0
@@ -2494,9 +2454,7 @@ DTEND;VALUE=DATE:20191011
 DTSTAMP:20220226T020152Z
 UID:5d32m03oce52pfbfinjlmtv4kq@google.com
 CREATED:20190722T212220Z
-DESCRIPTION:Parent ConferencesBell Schedule \n\nPeriodBeginEnd\n18:10 AM8:5
- 6 AM\n29:01 AM9:47 AM\nBreak9:47 AM9:57 AM\n310:02 AM10:48 AM\n410:53 AM11:
- 39 AM\nLunch11:39 AM12:09 PM\n512:14 PM1:00 PM\nConferences1:30 PM4:30 PM
+DESCRIPTION:Parent ConferencesBell Schedule \n\nPeriodBeginEnd\n18:10 AM8:56 AM\n29:01 AM9:47 AM\nBreak9:47 AM9:57 AM\n310:02 AM10:48 AM\n410:53 AM11:39 AM\nLunch11:39 AM12:09 PM\n512:14 PM1:00 PM\nConferences1:30 PM4:30 PM
 LAST-MODIFIED:20190924T181431Z
 LOCATION:
 SEQUENCE:1
@@ -2568,8 +2526,7 @@ UID:0fcqqfq4iqts0j79ptmb016nld@google.com
 CREATED:20190924T180730Z
 DESCRIPTION:
 LAST-MODIFIED:20190924T180730Z
-LOCATION:Rancho Bernardo High School\, 13010 Paseo Lucido\, San Diego\, CA 
- 92128\, USA
+LOCATION:Rancho Bernardo High School\, 13010 Paseo Lucido\, San Diego\, CA 92128\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:PUSD College and Career Fair 
@@ -2611,8 +2568,7 @@ UID:4tpohest3skbehiat5ijt2i9d6@google.com
 CREATED:20190722T205236Z
 DESCRIPTION:
 LAST-MODIFIED:20190826T191353Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:1
 STATUS:CONFIRMED
 SUMMARY:Back to School Night
@@ -3256,8 +3212,7 @@ UID:56ttlou0jf1v5sa1c2uppu03g3@google.com
 CREATED:20190722T182508Z
 DESCRIPTION:
 LAST-MODIFIED:20190722T182508Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:Registration
@@ -3271,8 +3226,7 @@ UID:37mda1r3g0ac3ctsckpp64dbm8@google.com
 CREATED:20190516T224131Z
 DESCRIPTION:
 LAST-MODIFIED:20190516T224131Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:Night at the Museum
@@ -3283,13 +3237,9 @@ DTSTART;VALUE=DATE:20190611
 DTEND;VALUE=DATE:20190614
 DTSTAMP:20220226T020152Z
 UID:3al78548ifs851ipt9i03aj2tm@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3al78548ifs
- 851ipt9i03aj2tm
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3al78548ifs851ipt9i03aj2tm
 CREATED:20181005T190227Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3al78548ifs851ipt9i03aj2tm?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3al78548ifs851ipt9i03aj2tm?hs=121
 LAST-MODIFIED:20190502T180542Z
 LOCATION:
 SEQUENCE:0
@@ -3319,8 +3269,7 @@ UID:2ut1in65oprq6llgkem61b5uqc@google.com
 CREATED:20190501T214946Z
 DESCRIPTION:
 LAST-MODIFIED:20190501T214946Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:HOSA Blood Drive
@@ -3362,8 +3311,7 @@ UID:0avp8n49ah184u2f78kvlbp8it@google.com
 CREATED:20190409T191639Z
 DESCRIPTION:
 LAST-MODIFIED:20190409T191639Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:Physical Night (Tentative)
@@ -3402,13 +3350,9 @@ DTSTART;VALUE=DATE:20190422
 DTEND;VALUE=DATE:20190427
 DTSTAMP:20220226T020152Z
 UID:69k6ilkgahr2ldh02uivn18m5s@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.69k6ilkgahr
- 2ldh02uivn18m5s
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.69k6ilkgahr2ldh02uivn18m5s
 CREATED:20190409T191324Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.69k6ilkgahr2ldh02uivn18m5s?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.69k6ilkgahr2ldh02uivn18m5s?hs=121
 LAST-MODIFIED:20190409T191324Z
 LOCATION:
 SEQUENCE:0
@@ -3519,13 +3463,9 @@ DTSTART;VALUE=DATE:20190225
 DTEND;VALUE=DATE:20190302
 DTSTAMP:20220226T020152Z
 UID:0qe65tmrfs93s8vkpfllrbure3@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0qe65tmrfs9
- 3s8vkpfllrbure3
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0qe65tmrfs93s8vkpfllrbure3
 CREATED:20190226T200344Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0qe65tmrfs93s8vkpfllrbure3?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0qe65tmrfs93s8vkpfllrbure3?hs=121
 LAST-MODIFIED:20190226T200345Z
 LOCATION:
 SEQUENCE:0
@@ -3681,8 +3621,7 @@ UID:4gc0k2n0bbhg2ktadeh3njnblk@google.com
 CREATED:20190122T203422Z
 DESCRIPTION:
 LAST-MODIFIED:20190214T224430Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:2
 STATUS:CONFIRMED
 SUMMARY:8th Grade Family Night 
@@ -3735,13 +3674,9 @@ DTSTART;VALUE=DATE:20190306
 DTEND;VALUE=DATE:20190307
 DTSTAMP:20220226T020152Z
 UID:55qjl2t7eri7kfn237i1dkpvns@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.55qjl2t7eri
- 7kfn237i1dkpvns
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.55qjl2t7eri7kfn237i1dkpvns
 CREATED:20181005T190018Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.55qjl2t7eri7kfn237i1dkpvns?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.55qjl2t7eri7kfn237i1dkpvns?hs=121
 LAST-MODIFIED:20190213T171000Z
 LOCATION:
 SEQUENCE:0
@@ -3754,13 +3689,9 @@ DTSTART;VALUE=DATE:20190218
 DTEND;VALUE=DATE:20190223
 DTSTAMP:20220226T020152Z
 UID:1p47fen3m64hsp8kg6fe2pu9fh@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1p47fen3m64
- hsp8kg6fe2pu9fh
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1p47fen3m64hsp8kg6fe2pu9fh
 CREATED:20190213T170930Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1p47fen3m64hsp8kg6fe2pu9fh?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1p47fen3m64hsp8kg6fe2pu9fh?hs=121
 LAST-MODIFIED:20190213T170930Z
 LOCATION:
 SEQUENCE:0
@@ -3807,8 +3738,7 @@ LAST-MODIFIED:20190118T195201Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Trimester 2 Parent Conferences- Parent Conference Minimum Day Sched
- ule
+SUMMARY:Trimester 2 Parent Conferences- Parent Conference Minimum Day Schedule
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -3819,8 +3749,7 @@ UID:3eocha8v3an832nj803splic2j@google.com
 CREATED:20190114T230514Z
 DESCRIPTION:
 LAST-MODIFIED:20190114T230514Z
-LOCATION:Rancho Bernardo High School\, 13010 Paseo Lucido\, San Diego\, CA 
- 92128\, USA
+LOCATION:Rancho Bernardo High School\, 13010 Paseo Lucido\, San Diego\, CA 92128\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:What I wish my Parents Knew 
@@ -3887,13 +3816,9 @@ DTSTART;VALUE=DATE:20190126
 DTEND;VALUE=DATE:20190127
 DTSTAMP:20220226T020152Z
 UID:2qsaqaqv0kkopsf6tl5b4h9eur@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2qsaqaqv0kk
- opsf6tl5b4h9eur
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2qsaqaqv0kkopsf6tl5b4h9eur
 CREATED:20181113T212221Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2qsaqaqv0kkopsf6tl5b4h9eur?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2qsaqaqv0kkopsf6tl5b4h9eur?hs=121
 LAST-MODIFIED:20181113T212221Z
 LOCATION:
 SEQUENCE:0
@@ -3948,13 +3873,9 @@ DTSTART;VALUE=DATE:20190115
 DTEND;VALUE=DATE:20190116
 DTSTAMP:20220226T020152Z
 UID:5qntm99hs8gjsp5fb8tde95qho@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5qntm99hs8g
- jsp5fb8tde95qho
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5qntm99hs8gjsp5fb8tde95qho
 CREATED:20181113T211949Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5qntm99hs8gjsp5fb8tde95qho?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5qntm99hs8gjsp5fb8tde95qho?hs=121
 LAST-MODIFIED:20181113T211949Z
 LOCATION:
 SEQUENCE:0
@@ -3967,13 +3888,9 @@ DTSTART;VALUE=DATE:20190108
 DTEND;VALUE=DATE:20190109
 DTSTAMP:20220226T020152Z
 UID:33fhbhiv20db69aq8nhuv8a7tm@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.33fhbhiv20d
- b69aq8nhuv8a7tm
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.33fhbhiv20db69aq8nhuv8a7tm
 CREATED:20181113T211935Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.33fhbhiv20db69aq8nhuv8a7tm?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.33fhbhiv20db69aq8nhuv8a7tm?hs=121
 LAST-MODIFIED:20181113T211935Z
 LOCATION:
 SEQUENCE:0
@@ -3986,13 +3903,9 @@ DTSTART;VALUE=DATE:20190109
 DTEND;VALUE=DATE:20190110
 DTSTAMP:20220226T020152Z
 UID:6phk2l8bd7qrik2e6hebl460qk@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6phk2l8bd7q
- rik2e6hebl460qk
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6phk2l8bd7qrik2e6hebl460qk
 CREATED:20181113T211929Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6phk2l8bd7qrik2e6hebl460qk?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6phk2l8bd7qrik2e6hebl460qk?hs=121
 LAST-MODIFIED:20181113T211929Z
 LOCATION:
 SEQUENCE:0
@@ -4005,13 +3918,9 @@ DTSTART;VALUE=DATE:20190110
 DTEND;VALUE=DATE:20190111
 DTSTAMP:20220226T020152Z
 UID:1ohasj4ne1klm878a7cpl9sq47@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1ohasj4ne1k
- lm878a7cpl9sq47
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1ohasj4ne1klm878a7cpl9sq47
 CREATED:20181113T211920Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1ohasj4ne1klm878a7cpl9sq47?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1ohasj4ne1klm878a7cpl9sq47?hs=121
 LAST-MODIFIED:20181113T211920Z
 LOCATION:
 SEQUENCE:0
@@ -4024,13 +3933,9 @@ DTSTART;VALUE=DATE:20190111
 DTEND;VALUE=DATE:20190112
 DTSTAMP:20220226T020152Z
 UID:3osj3jkiifnods9c0gugdjmf4p@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3osj3jkiifn
- ods9c0gugdjmf4p
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3osj3jkiifnods9c0gugdjmf4p
 CREATED:20181113T211912Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3osj3jkiifnods9c0gugdjmf4p?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3osj3jkiifnods9c0gugdjmf4p?hs=121
 LAST-MODIFIED:20181113T211912Z
 LOCATION:
 SEQUENCE:0
@@ -4057,13 +3962,9 @@ DTSTART;VALUE=DATE:20181224
 DTEND;VALUE=DATE:20190105
 DTSTAMP:20220226T020152Z
 UID:2rkith444oao6acdl9b73bmi66@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2rkith444oa
- o6acdl9b73bmi66
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2rkith444oao6acdl9b73bmi66
 CREATED:20181113T211743Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2rkith444oao6acdl9b73bmi66?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.2rkith444oao6acdl9b73bmi66?hs=121
 LAST-MODIFIED:20181113T211743Z
 LOCATION:
 SEQUENCE:0
@@ -4118,13 +4019,9 @@ DTSTART;VALUE=DATE:20181114
 DTEND;VALUE=DATE:20181115
 DTSTAMP:20220226T020152Z
 UID:3tkku7ifgbmtrfbipqeb6bol3e@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3tkku7ifgbm
- trfbipqeb6bol3e
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3tkku7ifgbmtrfbipqeb6bol3e
 CREATED:20181005T185655Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3tkku7ifgbmtrfbipqeb6bol3e?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3tkku7ifgbmtrfbipqeb6bol3e?hs=121
 LAST-MODIFIED:20181113T041736Z
 LOCATION:
 SEQUENCE:0
@@ -4165,13 +4062,9 @@ DTSTART;VALUE=DATE:20181105
 DTEND;VALUE=DATE:20181110
 DTSTAMP:20220226T020152Z
 UID:4ot3313d49icccdqctie07pbff@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4ot3313d49i
- cccdqctie07pbff
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4ot3313d49icccdqctie07pbff
 CREATED:20181031T161505Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4ot3313d49icccdqctie07pbff?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4ot3313d49icccdqctie07pbff?hs=121
 LAST-MODIFIED:20181031T161505Z
 LOCATION:
 SEQUENCE:0
@@ -4184,13 +4077,9 @@ DTSTART;VALUE=DATE:20181102
 DTEND;VALUE=DATE:20181103
 DTSTAMP:20220226T020152Z
 UID:3dplej25l4kv538puqu0hn45pt@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3dplej25l4k
- v538puqu0hn45pt
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3dplej25l4kv538puqu0hn45pt
 CREATED:20181019T203715Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3dplej25l4kv538puqu0hn45pt?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3dplej25l4kv538puqu0hn45pt?hs=121
 LAST-MODIFIED:20181019T203715Z
 LOCATION:
 SEQUENCE:0
@@ -4203,13 +4092,9 @@ DTSTART;VALUE=DATE:20181022
 DTEND;VALUE=DATE:20181026
 DTSTAMP:20220226T020152Z
 UID:3ora2u83f5emmv02d6gh97uk21@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3ora2u83f5e
- mmv02d6gh97uk21
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3ora2u83f5emmv02d6gh97uk21
 CREATED:20181005T184922Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3ora2u83f5emmv02d6gh97uk21?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3ora2u83f5emmv02d6gh97uk21?hs=121
 LAST-MODIFIED:20181019T203658Z
 LOCATION:
 SEQUENCE:0
@@ -4278,13 +4163,9 @@ DTSTART;VALUE=DATE:20190311
 DTEND;VALUE=DATE:20190312
 DTSTAMP:20220226T020152Z
 UID:3re2445lmf3ia9i4930p58ahf8@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3re2445lmf3
- ia9i4930p58ahf8
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3re2445lmf3ia9i4930p58ahf8
 CREATED:20181005T190034Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3re2445lmf3ia9i4930p58ahf8?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3re2445lmf3ia9i4930p58ahf8?hs=121
 LAST-MODIFIED:20181009T173409Z
 LOCATION:
 SEQUENCE:0
@@ -4297,13 +4178,9 @@ DTSTART;VALUE=DATE:20181126
 DTEND;VALUE=DATE:20181127
 DTSTAMP:20220226T020152Z
 UID:4rtu3ron0t17addjh8lbqbt1kt@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4rtu3ron0t1
- 7addjh8lbqbt1kt
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4rtu3ron0t17addjh8lbqbt1kt
 CREATED:20181005T185742Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4rtu3ron0t17addjh8lbqbt1kt?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.4rtu3ron0t17addjh8lbqbt1kt?hs=121
 LAST-MODIFIED:20181009T173248Z
 LOCATION:
 SEQUENCE:0
@@ -4330,13 +4207,9 @@ DTSTART;VALUE=DATE:20190613
 DTEND;VALUE=DATE:20190614
 DTSTAMP:20220226T020152Z
 UID:6lvphnh3en0n8lq84ncfr9hrs3@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6lvphnh3en0
- n8lq84ncfr9hrs3
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6lvphnh3en0n8lq84ncfr9hrs3
 CREATED:20181005T190307Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6lvphnh3en0n8lq84ncfr9hrs3?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6lvphnh3en0n8lq84ncfr9hrs3?hs=121
 LAST-MODIFIED:20181005T190307Z
 LOCATION:
 SEQUENCE:0
@@ -4349,13 +4222,9 @@ DTSTART;VALUE=DATE:20190612
 DTEND;VALUE=DATE:20190613
 DTSTAMP:20220226T020152Z
 UID:3a3bp4bdjnu6efmvod6ihin42b@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3a3bp4bdjnu
- 6efmvod6ihin42b
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3a3bp4bdjnu6efmvod6ihin42b
 CREATED:20181005T190247Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3a3bp4bdjnu6efmvod6ihin42b?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3a3bp4bdjnu6efmvod6ihin42b?hs=121
 LAST-MODIFIED:20181005T190247Z
 LOCATION:
 SEQUENCE:0
@@ -4368,13 +4237,9 @@ DTSTART;VALUE=DATE:20190611
 DTEND;VALUE=DATE:20190612
 DTSTAMP:20220226T020152Z
 UID:72f0de14cdnkcre9tgem9j5hgg@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.72f0de14cdn
- kcre9tgem9j5hgg
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.72f0de14cdnkcre9tgem9j5hgg
 CREATED:20181005T190241Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.72f0de14cdnkcre9tgem9j5hgg?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.72f0de14cdnkcre9tgem9j5hgg?hs=121
 LAST-MODIFIED:20181005T190241Z
 LOCATION:
 SEQUENCE:0
@@ -4387,13 +4252,9 @@ DTSTART;VALUE=DATE:20190601
 DTEND;VALUE=DATE:20190602
 DTSTAMP:20220226T020152Z
 UID:1gs4veqngo1014jfs90lhnedl1@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1gs4veqngo1
- 014jfs90lhnedl1
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1gs4veqngo1014jfs90lhnedl1
 CREATED:20181005T190204Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1gs4veqngo1014jfs90lhnedl1?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1gs4veqngo1014jfs90lhnedl1?hs=121
 LAST-MODIFIED:20181005T190204Z
 LOCATION:
 SEQUENCE:0
@@ -4406,13 +4267,9 @@ DTSTART;VALUE=DATE:20190524
 DTEND;VALUE=DATE:20190525
 DTSTAMP:20220226T020152Z
 UID:6c0v2q61bvt4j63erpcetv87ag@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6c0v2q61bvt
- 4j63erpcetv87ag
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6c0v2q61bvt4j63erpcetv87ag
 CREATED:20181005T190152Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6c0v2q61bvt4j63erpcetv87ag?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.6c0v2q61bvt4j63erpcetv87ag?hs=121
 LAST-MODIFIED:20181005T190153Z
 LOCATION:
 SEQUENCE:0
@@ -4425,13 +4282,9 @@ DTSTART;VALUE=DATE:20190520
 DTEND;VALUE=DATE:20190525
 DTSTAMP:20220226T020152Z
 UID:77e864lfqf9lkneo7nfnhimp6a@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.77e864lfqf9
- lkneo7nfnhimp6a
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.77e864lfqf9lkneo7nfnhimp6a
 CREATED:20181005T190146Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.77e864lfqf9lkneo7nfnhimp6a?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.77e864lfqf9lkneo7nfnhimp6a?hs=121
 LAST-MODIFIED:20181005T190146Z
 LOCATION:
 SEQUENCE:0
@@ -4444,13 +4297,9 @@ DTSTART;VALUE=DATE:20190506
 DTEND;VALUE=DATE:20190518
 DTSTAMP:20220226T020152Z
 UID:5puni68l45qp87d9ljadppeis2@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5puni68l45q
- p87d9ljadppeis2
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5puni68l45qp87d9ljadppeis2
 CREATED:20181005T190137Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5puni68l45qp87d9ljadppeis2?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.5puni68l45qp87d9ljadppeis2?hs=121
 LAST-MODIFIED:20181005T190137Z
 LOCATION:
 SEQUENCE:0
@@ -4463,13 +4312,9 @@ DTSTART;VALUE=DATE:20190429
 DTEND;VALUE=DATE:20190504
 DTSTAMP:20220226T020152Z
 UID:3qmosaqbj5svg7gm2h83hk0r9g@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3qmosaqbj5s
- vg7gm2h83hk0r9g
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3qmosaqbj5svg7gm2h83hk0r9g
 CREATED:20181005T190125Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3qmosaqbj5svg7gm2h83hk0r9g?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.3qmosaqbj5svg7gm2h83hk0r9g?hs=121
 LAST-MODIFIED:20181005T190125Z
 LOCATION:
 SEQUENCE:0
@@ -4482,13 +4327,9 @@ DTSTART;VALUE=DATE:20181217
 DTEND;VALUE=DATE:20181222
 DTSTAMP:20220226T020152Z
 UID:7fbdu91j6o1in7vmgqsoh6qhog@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.7fbdu91j6o1
- in7vmgqsoh6qhog
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.7fbdu91j6o1in7vmgqsoh6qhog
 CREATED:20181005T185827Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.7fbdu91j6o1in7vmgqsoh6qhog?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.7fbdu91j6o1in7vmgqsoh6qhog?hs=121
 LAST-MODIFIED:20181005T185827Z
 LOCATION:
 SEQUENCE:0
@@ -4501,13 +4342,9 @@ DTSTART;VALUE=DATE:20181119
 DTEND;VALUE=DATE:20181124
 DTSTAMP:20220226T020152Z
 UID:1m9kt2jsso0va4ekj8g2083hkh@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1m9kt2jsso0
- va4ekj8g2083hkh
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1m9kt2jsso0va4ekj8g2083hkh
 CREATED:20181005T185731Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1m9kt2jsso0va4ekj8g2083hkh?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1m9kt2jsso0va4ekj8g2083hkh?hs=121
 LAST-MODIFIED:20181005T185731Z
 LOCATION:
 SEQUENCE:0
@@ -4520,13 +4357,9 @@ DTSTART;VALUE=DATE:20181020
 DTEND;VALUE=DATE:20181021
 DTSTAMP:20220226T020152Z
 UID:0b0bkuedjs7ijn7rjlfgpun5ri@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0b0bkuedjs7
- ijn7rjlfgpun5ri
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0b0bkuedjs7ijn7rjlfgpun5ri
 CREATED:20181005T184911Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0b0bkuedjs7ijn7rjlfgpun5ri?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.0b0bkuedjs7ijn7rjlfgpun5ri?hs=121
 LAST-MODIFIED:20181005T184911Z
 LOCATION:
 SEQUENCE:0
@@ -4539,13 +4372,9 @@ DTSTART;VALUE=DATE:20181019
 DTEND;VALUE=DATE:20181020
 DTSTAMP:20220226T020152Z
 UID:1kl9u0ao9imgrt1nprp6r9ajuj@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1kl9u0ao9im
- grt1nprp6r9ajuj
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1kl9u0ao9imgrt1nprp6r9ajuj
 CREATED:20181005T184901Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1kl9u0ao9imgrt1nprp6r9ajuj?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.1kl9u0ao9imgrt1nprp6r9ajuj?hs=121
 LAST-MODIFIED:20181005T184901Z
 LOCATION:
 SEQUENCE:0
@@ -4558,13 +4387,9 @@ DTSTART;VALUE=DATE:20181015
 DTEND;VALUE=DATE:20181019
 DTSTAMP:20220226T020152Z
 UID:007r1l7eg1jj4qsb30bi5179di@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.007r1l7eg1j
- j4qsb30bi5179di
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.007r1l7eg1jj4qsb30bi5179di
 CREATED:20181005T184845Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.007r1l7eg1jj4qsb30bi5179di?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.007r1l7eg1jj4qsb30bi5179di?hs=121
 LAST-MODIFIED:20181005T184845Z
 LOCATION:
 SEQUENCE:0
@@ -4577,13 +4402,9 @@ DTSTART;VALUE=DATE:20181019
 DTEND;VALUE=DATE:20181020
 DTSTAMP:20220226T020152Z
 UID:42uuhe9kser5653cgkkhosouko@google.com
-X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3Z
- pZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.42uuhe9kser
- 5653cgkkhosouko
+X-GOOGLE-CONFERENCE:https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.42uuhe9kser5653cgkkhosouko
 CREATED:20181005T183240Z
-DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://han
- gouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3
- JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.42uuhe9kser5653cgkkhosouko?hs=121
+DESCRIPTION:This event has a Google Hangouts video call.\nJoin: https://hangouts.google.com/hangouts/_/calendar/dXZtN3ZpZ291ZDlpNDUyczgxbDhuNnU0cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ.42uuhe9kser5653cgkkhosouko?hs=121
 LAST-MODIFIED:20181005T183240Z
 LOCATION:
 SEQUENCE:0
@@ -4599,8 +4420,7 @@ UID:6dgoplv9qu4dheo7c5gvpi3ohl@google.com
 CREATED:20180926T174653Z
 DESCRIPTION:
 LAST-MODIFIED:20180926T174653Z
-LOCATION:Rancho Bernardo High School\, 13010 Paseo Lucido\, San Diego\, CA 
- 92128\, USA
+LOCATION:Rancho Bernardo High School\, 13010 Paseo Lucido\, San Diego\, CA 92128\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:PUSD District College Fair 
@@ -4939,8 +4759,7 @@ LAST-MODIFIED:20180918T222114Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Lunar New Year- Year of the Pig (Chine\, Taiwan\, Vietnam\, Korea\,
-  Singapore) 
+SUMMARY:Lunar New Year- Year of the Pig (Chine\, Taiwan\, Vietnam\, Korea\, Singapore) 
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -5271,13 +5090,7 @@ DTEND:20180925T020000Z
 DTSTAMP:20220226T020152Z
 UID:52tdpp1hehh6i45f8ak7okc2tv@google.com
 CREATED:20180910T151548Z
-DESCRIPTION:Do you want to visit Peru in 2019?  Explore 2 weeks in Peru...s
- pend 1 week exploring Peru's natural highlights including Machu Picchu\, In
- ca civilizations\, and spend another week performing medical service at orp
- hanages\, teaching Nutrition in a women's clinic\, and performing hospital 
- rotations with medical staff and students.  Come to Mrs. Craig's Informatio
- n Meeting on Monday\, September 24th at 6pm in E101.  Bring your parents!  
- RSVP with Mrs. Craig in E101
+DESCRIPTION:Do you want to visit Peru in 2019?  Explore 2 weeks in Peru...spend 1 week exploring Peru's natural highlights including Machu Picchu\, Inca civilizations\, and spend another week performing medical service at orphanages\, teaching Nutrition in a women's clinic\, and performing hospital rotations with medical staff and students.  Come to Mrs. Craig's Information Meeting on Monday\, September 24th at 6pm in E101.  Bring your parents!  RSVP with Mrs. Craig in E101
 LAST-MODIFIED:20180910T151548Z
 LOCATION:Del Norte High School room E101
 SEQUENCE:0
@@ -5307,8 +5120,7 @@ UID:2a53gt4seocecblcnv3urg5b6m@google.com
 CREATED:20180625T233612Z
 DESCRIPTION:
 LAST-MODIFIED:20180904T165639Z
-LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\
- , USA
+LOCATION:Del Norte High School\, 16601 Nighthawk Ln\, San Diego\, CA 92127\, USA
 SEQUENCE:1
 STATUS:CONFIRMED
 SUMMARY:Back to School Night
@@ -5490,8 +5302,7 @@ UID:5lk9lobltk7ags9akhlnl2tp0e@google.com
 CREATED:20180827T225937Z
 DESCRIPTION:
 LAST-MODIFIED:20180827T225937Z
-LOCATION:Westview High School\, 13500\, Camino Del Sur\, San Diego\, CA 921
- 29\, USA
+LOCATION:Westview High School\, 13500\, Camino Del Sur\, San Diego\, CA 92129\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:"What I Wish My Parents Knew" 
@@ -5545,12 +5356,9 @@ DTEND:20180906T020000Z
 DTSTAMP:20220226T020152Z
 UID:7s45423pv1u9ig7ujncdsq9j93@google.com
 CREATED:20180827T223804Z
-DESCRIPTION:•DNHS Foundation Meeting\, 6:00 PM at Karl Strauss in the 4S Co
- mmons Town Center at 10448 Reserve Drive-This will be a great opportunity t
- o meet Mr. Schultz and learn more about Del Norte Foundation!
+DESCRIPTION:•DNHS Foundation Meeting\, 6:00 PM at Karl Strauss in the 4S Commons Town Center at 10448 Reserve Drive-This will be a great opportunity to meet Mr. Schultz and learn more about Del Norte Foundation!
 LAST-MODIFIED:20180827T224618Z
-LOCATION:Karl Strauss Brewing Company\, 10448 Reserve Dr\, San Diego\, CA 9
- 2127\, USA
+LOCATION:Karl Strauss Brewing Company\, 10448 Reserve Dr\, San Diego\, CA 92127\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:DNHS Foundation Meeting
@@ -5562,9 +5370,7 @@ DTEND:20180814T180000Z
 DTSTAMP:20220226T020152Z
 UID:7qmc7lakbiig4ss9nnoq7vn042@google.com
 CREATED:20180625T234149Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235625Z
 LOCATION:
 SEQUENCE:0
@@ -5578,9 +5384,7 @@ DTEND:20180814T230000Z
 DTSTAMP:20220226T020152Z
 UID:6ic46jsusvacsfbl7b9kmfgubc@google.com
 CREATED:20180625T234213Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235556Z
 LOCATION:
 SEQUENCE:0
@@ -5594,9 +5398,7 @@ DTEND:20180816T200000Z
 DTSTAMP:20220226T020152Z
 UID:4rq85f3s4nrjddsuj7dqhsuiv0@google.com
 CREATED:20180625T234419Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235536Z
 LOCATION:
 SEQUENCE:0
@@ -5610,9 +5412,7 @@ DTEND:20180815T230000Z
 DTSTAMP:20220226T020152Z
 UID:5aq3cbl57kmncomb33ooa0e2i9@google.com
 CREATED:20180625T234242Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235515Z
 LOCATION:
 SEQUENCE:0
@@ -5626,9 +5426,7 @@ DTEND;VALUE=DATE:20180815
 DTSTAMP:20220226T020152Z
 UID:4qenes2so2rlf84fh2tq7ifldh@google.com
 CREATED:20180625T234113Z
-DESCRIPTION:<br><a href="https://www.powayusd.com/PUSD/media/DNHS/documents
- /2018-19Resources/2018-19RegistrationInformation.pdf" target="_blank">REGIS
- TRATION INFORMATION</a>
+DESCRIPTION:<br><a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf" target="_blank">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235427Z
 LOCATION:
 SEQUENCE:0
@@ -5642,9 +5440,7 @@ DTEND;VALUE=DATE:20180815
 DTSTAMP:20220226T020152Z
 UID:2mpoq56bko96lamrcaodfsk5p8@google.com
 CREATED:20180625T234000Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235421Z
 LOCATION:
 SEQUENCE:0
@@ -5658,9 +5454,7 @@ DTEND;VALUE=DATE:20180816
 DTSTAMP:20220226T020152Z
 UID:07tuasl4219sq2skh2r3bnv4eb@google.com
 CREATED:20180625T234021Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235414Z
 LOCATION:
 SEQUENCE:0
@@ -5674,9 +5468,7 @@ DTEND;VALUE=DATE:20180817
 DTSTAMP:20220226T020152Z
 UID:1pfeqmo12co0e84jmvo1288bkh@google.com
 CREATED:20180625T234350Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235407Z
 LOCATION:
 SEQUENCE:0
@@ -5690,9 +5482,7 @@ DTEND:20180817T230000Z
 DTSTAMP:20220226T020152Z
 UID:0vi6tq49ke78a98ljp3bsvs8or@google.com
 CREATED:20180625T234511Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235400Z
 LOCATION:
 SEQUENCE:0
@@ -5706,9 +5496,7 @@ DTEND;VALUE=DATE:20180818
 DTSTAMP:20220226T020152Z
 UID:7i8q9d211npm8nck9vtbcne1md@google.com
 CREATED:20180625T234449Z
-DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/201
- 8-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION<
- /a>
+DESCRIPTION:<a href="https://www.powayusd.com/PUSD/media/DNHS/documents/2018-19Resources/2018-19RegistrationInformation.pdf">REGISTRATION INFORMATION</a>
 LAST-MODIFIED:20180625T235308Z
 LOCATION:
 SEQUENCE:0
@@ -6157,8 +5945,7 @@ RRULE:FREQ=WEEKLY;UNTIL=20110328T065959Z;BYDAY=MO,TU,WE
 DTSTAMP:20220226T020152Z
 UID:g1lgsrtjvs09jib9gs6gn2988o@google.com
 CREATED:20110308T224703Z
-DESCRIPTION:Counselors will meet with parents in the Staff lounge regarding
-  course request forms for next year
+DESCRIPTION:Counselors will meet with parents in the Staff lounge regarding course request forms for next year
 LAST-MODIFIED:20150911T105247Z
 LOCATION:DNHS - 16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -6368,8 +6155,7 @@ DTEND:20110930T230000Z
 DTSTAMP:20220226T020152Z
 UID:h2rmcvd15bpbht6n67hfq1j5g4@google.com
 CREATED:20110906T192533Z
-DESCRIPTION:9/29 Fire drill evacuation to Stadium\n9/30 Disaster preparedne
- ss drill evacuation to Stadium
+DESCRIPTION:9/29 Fire drill evacuation to Stadium\n9/30 Disaster preparedness drill evacuation to Stadium
 LAST-MODIFIED:20110906T192533Z
 LOCATION:
 SEQUENCE:0
@@ -6383,8 +6169,7 @@ DTEND:20110928T020000Z
 DTSTAMP:20220226T020152Z
 UID:v5f7u74c1hqhembvqsshbp16l0@google.com
 CREATED:20110906T192341Z
-DESCRIPTION:Senior families are invited to join DNHS Counselors' presentati
- on on navigating the college application process.
+DESCRIPTION:Senior families are invited to join DNHS Counselors' presentation on navigating the college application process.
 LAST-MODIFIED:20110906T192341Z
 LOCATION:Del Norte High School
 SEQUENCE:0
@@ -6398,8 +6183,7 @@ DTEND:20110914T030000Z
 DTSTAMP:20220226T020152Z
 UID:huiohdug9v5ge3ibodcjevv6mg@google.com
 CREATED:20110906T191932Z
-DESCRIPTION:5 to 6:15 - PTSA Meeting\, Cheer/Dance/Band Performance\, Princ
- ipal's Welcome\nFood for Sale\nClassroom visits - 6:30 to 8 p.m.
+DESCRIPTION:5 to 6:15 - PTSA Meeting\, Cheer/Dance/Band Performance\, Principal's Welcome\nFood for Sale\nClassroom visits - 6:30 to 8 p.m.
 LAST-MODIFIED:20110906T191932Z
 LOCATION:Del Norte High School
 SEQUENCE:0
@@ -6413,9 +6197,7 @@ DTEND:20110910T010000Z
 DTSTAMP:20220226T020152Z
 UID:uo5jm218nrtu1qjnfj9cvli81o@google.com
 CREATED:20110906T191551Z
-DESCRIPTION:STUDENTS Only - \nSudents with ASB Stickers - Free\, all others
-  $10.00\, dinner and entrance to game.\nMr. Taco Street Tacos.  Location - 
- grassy area by the pool
+DESCRIPTION:STUDENTS Only - \nSudents with ASB Stickers - Free\, all others $10.00\, dinner and entrance to game.\nMr. Taco Street Tacos.  Location - grassy area by the pool
 LAST-MODIFIED:20110906T191551Z
 LOCATION:Del Norte High School
 SEQUENCE:0
@@ -6542,8 +6324,7 @@ DTEND:20110531T160000Z
 DTSTAMP:20220226T020152Z
 UID:spmqk59g911h0qqbitmpgl3c9g@google.com
 CREATED:20110526T165140Z
-DESCRIPTION:DNHS Gymnasium\, Information on senior pictures\, letterman jac
- kets\, senior rings\, etc.  Breakfast will be served.
+DESCRIPTION:DNHS Gymnasium\, Information on senior pictures\, letterman jackets\, senior rings\, etc.  Breakfast will be served.
 LAST-MODIFIED:20110526T165140Z
 LOCATION:16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -6683,8 +6464,7 @@ DTEND:20110504T180000Z
 DTSTAMP:20220226T020152Z
 UID:hckg4co5nbiho6asn4po1f8pko@google.com
 CREATED:20110503T185600Z
-DESCRIPTION: AP Calculus AB in rooms K106\,K102\nAP Calculus AB/BC in Room 
- L101\,L103
+DESCRIPTION: AP Calculus AB in rooms K106\,K102\nAP Calculus AB/BC in Room L101\,L103
 LAST-MODIFIED:20110503T185754Z
 LOCATION:16601 Nighthawk lane\, San Diego\, Ca 92127
 SEQUENCE:0
@@ -6813,8 +6593,7 @@ DTEND:20110328T230000Z
 DTSTAMP:20220226T020152Z
 UID:5hhg6qgh23eca3fsprpq44theg@google.com
 CREATED:20110315T225107Z
-DESCRIPTION:Meeting with counselors in DNHS Staff Lounge with questions on 
- course requests for next year.
+DESCRIPTION:Meeting with counselors in DNHS Staff Lounge with questions on course requests for next year.
 LAST-MODIFIED:20110328T024620Z
 LOCATION:16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -6828,8 +6607,7 @@ DTEND:20110330T230000Z
 DTSTAMP:20220226T020152Z
 UID:ujfr0o7m5hc9jm1r517akbhjto@google.com
 CREATED:20110315T225445Z
-DESCRIPTION:Meet with counselors in DNHS Staff Lounge with questions on cou
- rse requests for next year.
+DESCRIPTION:Meet with counselors in DNHS Staff Lounge with questions on course requests for next year.
 LAST-MODIFIED:20110328T024620Z
 LOCATION:16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -6885,8 +6663,7 @@ DTEND:20110329T230000Z
 DTSTAMP:20220226T020152Z
 UID:9100bs36309rq9m6qnr0fqa5i0@google.com
 CREATED:20110315T225236Z
-DESCRIPTION:Meet in DNHS Staff Lounge with questions on course requests for
-  next year.
+DESCRIPTION:Meet in DNHS Staff Lounge with questions on course requests for next year.
 LAST-MODIFIED:20110328T024619Z
 LOCATION:16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:2
@@ -6970,8 +6747,7 @@ DTEND:20110304T000000Z
 DTSTAMP:20220226T020152Z
 UID:5ur4h67mvsasruc8f6a4naag0k@google.com
 CREATED:20110224T200553Z
-DESCRIPTION:Counselors will be available to answer questions regarding cour
- se requests for the 2011-2012 school year
+DESCRIPTION:Counselors will be available to answer questions regarding course requests for the 2011-2012 school year
 LAST-MODIFIED:20110302T031137Z
 LOCATION:DNHS 16601 Nighthawk Lane\, SD 92127 Nighthawk Center
 SEQUENCE:0
@@ -6985,8 +6761,7 @@ DTEND:20110305T000000Z
 DTSTAMP:20220226T020152Z
 UID:bc0j06qg8a1trd0hq1gf1jr3rs@google.com
 CREATED:20110224T200718Z
-DESCRIPTION:Counselors will be available to answer questions regarding cour
- se requests for 2011-2012 school year
+DESCRIPTION:Counselors will be available to answer questions regarding course requests for 2011-2012 school year
 LAST-MODIFIED:20110302T031137Z
 LOCATION:DNHS 16601 Nighthawk Lane\, SD 92127 Nighthawk Center
 SEQUENCE:0
@@ -7140,8 +6915,7 @@ DTEND:20110125T023000Z
 DTSTAMP:20220226T020152Z
 UID:qgtjuk0c4vravopegcvojtd33o@google.com
 CREATED:20110120T174015Z
-DESCRIPTION:Presented by the Counseling Department in the Performing Arts C
- enter
+DESCRIPTION:Presented by the Counseling Department in the Performing Arts Center
 LAST-MODIFIED:20110210T012548Z
 LOCATION:DNHS\, 16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -7155,8 +6929,7 @@ DTEND:20110201T023000Z
 DTSTAMP:20220226T020152Z
 UID:qhd2cba5mjg1hn7psrj1iifbt4@google.com
 CREATED:20110120T174411Z
-DESCRIPTION:Presented by the Counseling Department in the Performing Arts C
- enter
+DESCRIPTION:Presented by the Counseling Department in the Performing Arts Center
 LAST-MODIFIED:20110210T012548Z
 LOCATION:DNHS\, 16601 Nighthawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -7226,8 +6999,7 @@ DTEND:20110111T070000Z
 DTSTAMP:20220226T020152Z
 UID:gagjjbjltdnfa4fjonkqlu7f64@google.com
 CREATED:20110106T225811Z
-DESCRIPTION:Doors will open at 6 p.m. to give out transcripts.\nPerforming 
- Arts Center
+DESCRIPTION:Doors will open at 6 p.m. to give out transcripts.\nPerforming Arts Center
 LAST-MODIFIED:20110210T012547Z
 LOCATION:DNHS\, 16601 Night Hawk Lane\, San Diego\, CA 92127
 SEQUENCE:0
@@ -7427,8 +7199,7 @@ UID:tiocljmd99oisbc6irl6brcmes@google.com
 CREATED:00001231T000000Z
 DESCRIPTION:
 LAST-MODIFIED:20101206T213607Z
-LOCATION:Del Norte High School - 16601 Night Hawk Lane\, San Diego\, CA 921
- 27
+LOCATION:Del Norte High School - 16601 Night Hawk Lane\, San Diego\, CA 92127
 SEQUENCE:2
 STATUS:CONFIRMED
 SUMMARY:Dance Concert-Performing Arts Center
@@ -7565,8 +7336,7 @@ DTEND;VALUE=DATE:20101130
 DTSTAMP:20220226T020152Z
 UID:7mimhrrc7e3qmhrnnpkjto3q98@google.com
 CREATED:20101110T004957Z
-DESCRIPTION:2nd Trimester Schedules will be available for students starting
-  at 7:30 a.m. on November 29th in the Quad.
+DESCRIPTION:2nd Trimester Schedules will be available for students starting at 7:30 a.m. on November 29th in the Quad.
 LAST-MODIFIED:20101205T062733Z
 LOCATION:
 SEQUENCE:0
@@ -7734,9 +7504,7 @@ DTEND:20090823T010000Z
 DTSTAMP:20220226T020152Z
 UID:hitf7qaujs9ihlidbp9cbavv8g@google.com
 CREATED:20090810T221613Z
-DESCRIPTION:Community Open House: Saturday\, 8/22 from 2-6 p.m. All are wel
- come. Come tour the campus: enjoy food\, music\, family-friendly games\, an
- d more. 
+DESCRIPTION:Community Open House: Saturday\, 8/22 from 2-6 p.m. All are welcome. Come tour the campus: enjoy food\, music\, family-friendly games\, and more. 
 LAST-MODIFIED:20090810T221613Z
 LOCATION:DNHS 
 SEQUENCE:0
