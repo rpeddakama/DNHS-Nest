@@ -29,7 +29,8 @@
 
             .text .subtitle {
                 font-size: 18px !important;
-                margin-top: 1em;
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
             }
         </style>
     </div>
@@ -46,21 +47,14 @@
 
         <script>
             (async function () {
-                let tbl = document.createElement('table');
-
-                let cur_day = new Date().getDay();
-                let res = null;
-
-                if (cur_day == "1" || cur_day == "3" || cur_day == "4") {
-                    res = await axios('/schedules/regular.json');
-
-                } else if (cur_day == "2") {
-                    res = await axios('/schedules/late_start.json');
-
-                } else if (cur_day == "5") {
-                    res = await axios('/schedules/homeroom.json');
-
+                let url = await axios('/get-schedule');
+                if(url.data == "none") {
+                    document.getElementById('cur_period').innerText = 'No School Today.';
+                    return;
                 }
+
+                let tbl = document.createElement('table');
+                let res = await axios(url.data);
 
                 let periods = res.data.data;
                 let in_class = false;
