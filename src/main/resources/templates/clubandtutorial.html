@@ -24,7 +24,23 @@
 
             <br>
 
-            <input value="Password" type="password" name="title">
+            <div class="frq-content">
+                <form action="/clubandtutorial" method="GET"
+                      id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in your Password</p>
+                        <br/>
+                        <input style="background-color: lightblue;"
+                               name="password" id="frqField" type="password" value="Password">
+                        <br/>
+                        <button>Submit!</button>
+                        <br/>
+                        <p th:text="${passwordMessage}"></p>
+                    </div>
+                </form>
+            </div>
+
+            
             <button onclick="makeEvent()" class="buttons">Submit Password</button>
 
             <form id="createEventForm">
