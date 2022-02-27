@@ -29,25 +29,24 @@
                       id="frqForm">
                     <div class="frq-form">
                         <p for="frqField">Type in your Password</p>
-                        <br/>
                         <input style="background-color: lightblue;"
                                name="password" id="frqField" type="password" value="Password">
                         <br/>
-                        <button>Submit!</button>
+                        <button class="buttons">Submit</button>
                         <br/>
                         <p th:text="${passwordMessage}"></p>
                     </div>
                 </form>
             </div>
-
             
-            <button onclick="makeEvent()" class="buttons">Submit Password</button>
+            <br/>
 
-            <form id="createEventForm">
+            <form id="createEventForm" style="padding-top: 5px;">
                 <input value="Date" type="text" name="title">
                 <input value="Month" type="text" name="start">
                 <input value="Year" type="text" name="end">
             </form>
+
             <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
         </div>
 
