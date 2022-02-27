@@ -23,11 +23,30 @@
                 important details.</h3>
 
             <br>
-            <form id="createEventForm">
+
+            <div class="frq-content">
+                <form action="/clubandtutorial" method="GET"
+                      id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in your Password</p>
+                        <input style="background-color: lightblue;"
+                               name="password" id="frqField" type="password" value="Password">
+                        <br/>
+                        <button class="buttons">Submit</button>
+                        <br/>
+                        <p th:text="${passwordMessage}"></p>
+                    </div>
+                </form>
+            </div>
+            
+            <br/>
+
+            <form id="createEventForm" style="padding-top: 5px;">
                 <input value="Date" type="text" name="title">
                 <input value="Month" type="text" name="start">
                 <input value="Year" type="text" name="end">
             </form>
+
             <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
         </div>
 
