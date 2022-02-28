@@ -1,19 +1,49 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.w3.org/1999/xhtml"
   layout:decorate="~{fragments/layout}" lang="en">
 
-<head>
-  <div layout:fragment="metadata" th:remove="tag">
-    <title>The Nest - Calendar</title>
-  </div>
-</head>
+  <head>
+    <div layout:fragment="metadata" th:remove="tag">
+      <title>The Nest - Calendar</title>
+    </div>
+  </head>
 
-<body>
-  <div layout:fragment="content" th:remove="tag">
-    <div class="calendar" id='calendar'></div>
+  <body>
+    <div layout:fragment="content" th:remove="tag">
+      <div>
+        <form action="/exams" method="GET" id="addEvent">
+          <div class="frq-form">
+            <br />
+            <input name="examNameField" id="addEvent" placeholder="Exam Name (ex. Unit 2 Exam)">
+            <br />
+            <input name="classNameField" id="addEvent" placeholder="Class Name (ex. AP Calculus BC)">
+            <br />
+            <input name="teacherField" id="addEvent" placeholder="Teacher (ex. Mr. Smith)">
+            <br />
+            <input name="classPeriodField" id="addEvent" placeholder="Class Period (ex. 2)">
+            <br />
+            <!-- <button onclick="addExam()">Add Event</button> -->
+            <!-- <button th:onclick="addExam('${examName}', '${className}',
+              '${classPeriod}',
+              '${teacherField}')">Add Event</button> -->
+            <button th:attr="onclick=|addExam('${examName}', '${className}',
+              '${classPeriod}',
+              '${teacher}')|">Add Event</button>
+          </div>
+        </form>
+            <!-- <button th:attr="onclick=|addExam('${examName}', '${className}',
+              '${classPeriod}',
+              '${teacher}')|">Add Event</button> -->
+        <!-- <button th:onclick="addExam('${examName}', '${className}',
+          '${classPeriod}',
+          '${teacherField}')">Add Event</button> -->
+      </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
+      <div class="calendar" id='calendar'></div>
+
+      <script>
+      // document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -24,6 +54,7 @@
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
           },
+
           // events: [
           //   {
           //     title: 'All Day Event',
@@ -71,21 +102,35 @@
           //     url: 'http://google.com/',
           //     start: '2022-02-28'
           //   }
-          // ]
+          // ],
+
+          eventDidMount: function(info) {
+            console.log(info.event._def.title)
+          },
+
+          eventMouseEnter: function(calEvent, jsEvent) {
+            console.log("hover enter")
+          },
+
+          eventMouseLeave: function() {
+            console.log("hover leave")
+          },
         });
+
+        function addExam(examName, className, classPeriod, teacher) {
+          console.log("add exam")
+          calendar.addEvent( 
+            {
+              title: "Period " + classPeriod + " " + examName + " for " + teacher + "'s " + className + " Class",
+              start: '2022-02-04',
+            },
+          );
+        }
+
         calendar.render();
-      });
-
-            //   document.addEventListener('DOMContentLoaded', function() {
-            //     var calendarEl = document.getElementById('calendar');
-            //     var calendar = new FullCalendar.Calendar(calendarEl, {
-            //       initialView: 'dayGridMonth'
-            //     });
-            //     calendar.render();
-            //   });
-
+      // });
     </script>
-  </div>
-</body>
+    </div>
+  </body>
 
 </html>
