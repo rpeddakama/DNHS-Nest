@@ -24,30 +24,30 @@
 
             <br>
 
-            <div class="frq-content">
-                <form action="/clubandtutorial" method="GET"
-                      id="frqForm">
+            <div id="authorizationForm" class="frq-content">
+                <form action="/clubandtutorial" method="GET" id="frqForm">
                     <div class="frq-form">
                         <p for="frqField">Type in your Password</p>
-                        <input style="background-color: lightblue;"
-                               name="password" id="frqField" type="password" value="Password">
-                        <br/>
+                        <input style="background-color: lightblue;" name="password" id="frqField" type="password"
+                            value="Password">
+                        <br />
                         <button class="buttons">Submit</button>
-                        <br/>
-                        <p th:text="${passwordMessage}"></p>
+                        <br />
                     </div>
                 </form>
             </div>
-            
-            <br/>
 
-            <form id="createEventForm" style="padding-top: 5px;">
-                <input value="Date" type="text" name="title">
-                <input value="Month" type="text" name="start">
-                <input value="Year" type="text" name="end">
-            </form>
+            <br />
 
-            <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
+            <div id="createEventDiv">
+                <form id="createEventForm" style="padding-top: 5px;">
+                    <input value="Date" type="text" name="title">
+                    <input value="Month" type="text" name="start">
+                    <input value="Year" type="text" name="end">
+                </form>
+
+                <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
+            </div>
         </div>
 
         <br>
@@ -55,9 +55,20 @@
 
         <div id='calendar' class="calendar"></div>
 
-        <script>
+        <script th:inline="javascript">
+            /*<![CDATA[*/
+            var authorized = /*[[${passwordMessage}]]*/ false
+            /*]]>*/
+            console.log(authorized)
+            if (authorized) {
+                document.getElementById("createEventDiv").style.display = "block"
+                document.getElementById("authorizationForm").style.display = "none"
+            }
+            else {
+                document.getElementById("createEventDiv").style.display = "none"
+                document.getElementById("authorizationForm").style.display = "block"
+            }
 
-            // document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -119,19 +130,23 @@
             });
             calendar.render();
 
-            var testEvent = {
+            var calendarEvent = {
                 title: document.getElementById("createEventForm").elements["title"],
                 start: document.getElementById("createEventForm").elements["start"],
                 end: document.getElementById("createEventForm").elements["end"],
-                // title: 'The Title',
-                // start: '2022-02-16',
-                // end: '2022-02-19'
+            }
+
+            var debugEvent = {
+                title: 'The Title',
+                start: '2022-02-16',
+                end: '2022-02-19'
             }
 
             function makeEvent() {
                 alert("Your event was saved!")
-                console.log(testEvent)
-                calendar.addEvent(testEvent)
+                console.log(calendarEvent)
+                console.log(debugEvent)
+                calendar.addEvent(debugEvent)
             }
             // });
 
