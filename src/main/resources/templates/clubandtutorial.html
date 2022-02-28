@@ -41,9 +41,8 @@
 
             <div id="createEventDiv">
                 <form id="createEventForm" style="padding-top: 5px;">
-                    <input value="Date" type="text" name="title">
-                    <input value="Month" type="text" name="start">
-                    <input value="Year" type="text" name="end">
+                    <input id="titleId" placeholder="Title" type="text" name="title">
+                    <input id="dateId" placeholder="Data" type="text" name="start">
                 </form>
 
                 <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
@@ -59,8 +58,9 @@
             /*<![CDATA[*/
             var authorized = /*[[${passwordMessage}]]*/ false
             /*]]>*/
-            console.log(authorized)
+            console.log("authorized:", authorized)
             if (authorized) {
+                alert("You are granted admin permissions")
                 document.getElementById("createEventDiv").style.display = "block"
                 document.getElementById("authorizationForm").style.display = "none"
             }
@@ -130,11 +130,6 @@
             });
             calendar.render();
 
-            var calendarEvent = {
-                title: document.getElementById("createEventForm").elements["title"],
-                start: document.getElementById("createEventForm").elements["start"],
-                end: document.getElementById("createEventForm").elements["end"],
-            }
 
             var debugEvent = {
                 title: 'The Title',
@@ -144,9 +139,13 @@
 
             function makeEvent() {
                 alert("Your event was saved!")
+                var calendarEvent = {
+                    title: document.getElementById("titleId").value,
+                    start: document.getElementById("dateId").value,
+                    end: document.getElementById("dateId").value
+                }
                 console.log(calendarEvent)
-                console.log(debugEvent)
-                calendar.addEvent(debugEvent)
+                calendar.addEvent(calendarEvent)
             }
             // });
 
