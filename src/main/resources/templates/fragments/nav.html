@@ -87,10 +87,10 @@
         pList = mainDiv.getElementsByTagName("p");
 
         temp = ""
-        elementList = mainDiv.innerHTML.split("\n")
-        elementList.shift();
-        elementList.pop()
-
+        elementList = mainDiv.innerHTML.split("</p>")
+        console.log(elementList)
+        // elementList.shift();
+        // elementList.pop()
         for (i = 0; i < aList.length; i++) {
           a = aList[i]
           txtValue = a.textContent || a.innerText;
