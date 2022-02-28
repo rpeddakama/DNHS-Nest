@@ -30,6 +30,22 @@ public class Exams {
                     "VALUES ('" + examNameField + "', '" + classNameField + "', '" + teacherField + "', '"
                     + classPeriodField + "', '" + examDateField + "');";
             stmt.executeUpdate(sql);
+
+            ResultSet rs = stmt.executeQuery("SELECT * FROM EXAM;");
+
+            while (rs.next()) {
+                String examName = rs.getString("examName");
+                String className = rs.getString("className");
+                String teacher = rs.getString("teacher");
+                String classPeriod = rs.getString("classPeriod");
+                String examDate = rs.getString("examDate");
+
+                System.out.println(examName + " " + className + " " + teacher + " " + classPeriod + " " + examDate);
+            }
+
+            rs.close();
+            stmt.close();
+            c.close();
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
