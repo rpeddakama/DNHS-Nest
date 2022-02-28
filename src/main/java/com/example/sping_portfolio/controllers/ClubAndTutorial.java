@@ -15,21 +15,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ClubAndTutorial {
     @GetMapping("/clubandtutorial")
     public String ClubAndTutorialString(
-        @RequestParam(name="password", required=false, defaultValue="") String password,
+            @RequestParam(name = "password", required = false, defaultValue = "") String password,
 
-        Model model
+            Model model
 
     ) {
-        boolean approved = false;
-
-        if(password.equals("password")){
-            String passwordMessage = "This has been approved";
-            approved = true;
-            model.addAttribute("passwordMessage", passwordMessage);
-        }
-        else{
-            String passwordMessage = "This has been not approved";
-            model.addAttribute("passwordMessage", passwordMessage);
+        if (password.equals("password")) {
+            model.addAttribute("passwordMessage", true);
+        } else {
+            model.addAttribute("passwordMessage", false);
         }
 
         return "clubandtutorial";
