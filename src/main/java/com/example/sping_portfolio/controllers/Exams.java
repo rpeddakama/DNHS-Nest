@@ -16,6 +16,7 @@ public class Exams {
             @RequestParam(name = "classNameField", required = false, defaultValue = "") String classNameField,
             @RequestParam(name = "teacherField", required = false, defaultValue = "") String teacherField,
             @RequestParam(name = "classPeriodField", required = false, defaultValue = "") String classPeriodField,
+            @RequestParam(name = "examDateField", required = false, defaultValue = "") String examDateField,
             Model model) {
         Connection c = null;
         Statement stmt = null;
@@ -25,9 +26,9 @@ public class Exams {
             c = DriverManager.getConnection("jdbc:sqlite:exams.db");
 
             stmt = c.createStatement();
-            String sql = "INSERT INTO EXAM (examName,className,teacher,classPeriod) " +
+            String sql = "INSERT INTO EXAM (examName,className,teacher,classPeriod,examDate) " +
                     "VALUES ('" + examNameField + "', '" + classNameField + "', '" + teacherField + "', '"
-                    + classPeriodField + "');";
+                    + classPeriodField + "', '" + examDateField + "');";
             stmt.executeUpdate(sql);
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
@@ -40,6 +41,7 @@ public class Exams {
         model.addAttribute("className", classNameField);
         model.addAttribute("teacher", teacherField);
         model.addAttribute("classPeriod", classPeriodField);
+        model.addAttribute("examDate", examDateField);
 
         return "exams";
     }

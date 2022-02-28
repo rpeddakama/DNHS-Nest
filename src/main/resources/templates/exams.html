@@ -23,13 +23,15 @@
             <br />
             <input name="classPeriodField" id="addEvent" placeholder="Class Period (ex. 2)">
             <br />
+            <input name="examDateField" id="addEvent" placeholder="Exam Date (ex. 2022-02-04)">
+            <br />
             <!-- <button onclick="addExam()">Add Event</button> -->
             <!-- <button th:onclick="addExam('${examName}', '${className}',
               '${classPeriod}',
               '${teacherField}')">Add Event</button> -->
             <button th:attr="onclick=|addExam('${examName}', '${className}',
               '${classPeriod}',
-              '${teacher}')|">Add Event</button>
+              '${teacher}', '${examDate}')|">Add Event</button>
           </div>
         </form>
             <!-- <button th:attr="onclick=|addExam('${examName}', '${className}',
@@ -117,12 +119,12 @@
           },
         });
 
-        function addExam(examName, className, classPeriod, teacher) {
+        function addExam(examName, className, classPeriod, teacher, examDate) {
           console.log("add exam")
           calendar.addEvent( 
             {
               title: "Period " + classPeriod + " " + examName + " for " + teacher + "'s " + className + " Class",
-              start: '2022-02-04',
+              start: examDate,
             },
           );
         }
