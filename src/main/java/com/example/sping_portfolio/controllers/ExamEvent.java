@@ -11,6 +11,15 @@ public class ExamEvent {
     private String className;
     private String teacher;
     private String classPeriod;
+    private String examDate;
+
+    public ExamEvent(String examName, String className, String teacher, String classPeriod, String examDate) {
+        this.examName = examName;
+        this.className = className;
+        this.teacher = teacher;
+        this.classPeriod = classPeriod;
+        this.examDate = examDate;
+    }
 
     public String getExamName() {
         return this.examName;
@@ -42,5 +51,13 @@ public class ExamEvent {
 
     public void setClassPeriod(String classPeriod) {
         this.classPeriod = classPeriod;
+    }
+
+    public String getExamDate() {
+        return this.examDate;
+    }
+
+    public void setExamDate(String ExamEvent) {
+        this.examDate = ExamEvent;
     }
 }
