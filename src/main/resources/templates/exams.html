@@ -11,25 +11,25 @@
 
   <body>
     <div layout:fragment="content" th:remove="tag">
-      <div>
-        <form action="/exams" method="GET" id="addEvent">
-          <div class="frq-form">
-            <br />
-            <input name="examNameField" id="addEvent" placeholder="Exam Name (ex. Unit 2 Exam)">
-            <br />
-            <input name="classNameField" id="addEvent" placeholder="Class Name (ex. AP Calculus BC)">
-            <br />
-            <input name="teacherField" id="addEvent" placeholder="Teacher (ex. Mr. Smith)">
-            <br />
-            <input name="classPeriodField" id="addEvent" placeholder="Class Period (ex. 2)">
-            <br />
-            <input name="examDateField" id="addEvent" placeholder="Exam Date (ex. 2022-02-04)">
-            <br />
-            <button th:attr="onclick=|addExam('${examName}', '${className}',
-              '${classPeriod}',
-              '${teacher}', '${examDate}')|">Add Event</button>
-          </div>
-        </form>
+      <div class="w-full flex justify-center">
+        <div class="w-3/12 mb-3 text-center">
+          <p class="text-2xl my-3 font-bold">Add an Exam</p>
+          <form class="text-center" action="/exams" method="GET" id="addEvent">
+              <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg" name="examNameField" id="addEvent" placeholder="Exam Name (ex. Unit 2 Exam)">
+              <br />
+              <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg" name="classNameField" id="addEvent" placeholder="Class Name (ex. AP Calculus BC)">
+              <br />
+              <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg" name="teacherField" id="addEvent" placeholder="Teacher (ex. Mr. Smith)">
+              <br />
+              <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg" name="classPeriodField" id="addEvent" placeholder="Class Period (ex. 2)">
+              <br />
+              <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg" name="examDateField" id="addEvent" placeholder="Exam Date (ex. 2022-02-04)">
+              <br />
+              <button class="blue-dcurve-btn my-2 text-lg" th:attr="onclick=|addExam('${examName}', '${className}',
+                '${classPeriod}',
+                '${teacher}', '${examDate}')|">Add Exam</button>
+          </form>
+        </div>
       </div>
 
       <div class="calendar" id='calendar'></div>
