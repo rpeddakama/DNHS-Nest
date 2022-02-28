@@ -34,7 +34,7 @@
 
       <div class="calendar" id='calendar'></div>
 
-      <script>
+      <script th:inline="javascript">
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -70,6 +70,14 @@
         }
 
         calendar.render();
+
+        eventList = /*[[${eventList}]]*/
+        null
+
+        console.log(eventList.length)
+        for (let i = 0; i < eventList.length; i++) {
+          addExam(eventList[i].examName, eventList[i].className, eventList[i].classPeriod, eventList[i].teacher, eventList[i].examDate)
+        }
       </script>
     </div>
   </body>
