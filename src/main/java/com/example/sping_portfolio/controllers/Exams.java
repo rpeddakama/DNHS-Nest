@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 // import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 @Controller
 public class Exams {
@@ -18,6 +19,8 @@ public class Exams {
             @RequestParam(name = "classPeriodField", required = false, defaultValue = "") String classPeriodField,
             @RequestParam(name = "examDateField", required = false, defaultValue = "") String examDateField,
             Model model) {
+        ArrayList<ExamEvent> eventList = new ArrayList<ExamEvent>();
+
         Connection c = null;
         Statement stmt = null;
 
@@ -41,6 +44,8 @@ public class Exams {
                 String examDate = rs.getString("examDate");
 
                 System.out.println(examName + " " + className + " " + teacher + " " + classPeriod + " " + examDate);
+            
+                eventList.add(new ExamEvent(examName, className, teacher, classPeriod, examDate));
             }
 
             rs.close();
@@ -53,11 +58,7 @@ public class Exams {
 
         System.out.println("Opened database successfully");
 
-        model.addAttribute("examName", examNameField);
-        model.addAttribute("className", classNameField);
-        model.addAttribute("teacher", teacherField);
-        model.addAttribute("classPeriod", classPeriodField);
-        model.addAttribute("examDate", examDateField);
+        model.addAttribute("eventList", eventList);
 
         return "exams";
     }
