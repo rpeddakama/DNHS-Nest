@@ -23,10 +23,37 @@
                 important details.</h3>
 
             <br>
+<<<<<<< HEAD
             <input type="text" id="title">
             <input type="text" id="start">
             <input type="text" id="end">
             <button onclick="makeEvent()">Click here to add an event</button>
+=======
+
+            <div id="authorizationForm" class="frq-content">
+                <form action="/clubandtutorial" method="GET" id="frqForm">
+                    <div class="frq-form">
+                        <p for="frqField">Type in your Password</p>
+                        <input style="background-color: lightblue;" name="password" id="frqField" type="password"
+                            value="Password">
+                        <br />
+                        <button class="buttons">Submit</button>
+                        <br />
+                    </div>
+                </form>
+            </div>
+
+            <br />
+
+            <div id="createEventDiv">
+                <form id="createEventForm" style="padding-top: 5px;">
+                    <input id="titleId" placeholder="Title" type="text" name="title">
+                    <input id="dateId" placeholder="Date" type="text" name="start">
+                </form>
+
+                <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
+            </div>
+>>>>>>> 4e31de9d379792f216a54968e9081ecac5ab0560
         </div>
 
         <br>
@@ -34,10 +61,21 @@
 
         <div id='calendar' class="calendar"></div>
 
+        <script th:inline="javascript">
+            /*<![CDATA[*/
+            var authorized = /*[[${passwordMessage}]]*/ false
+            /*]]>*/
+            console.log("authorized:", authorized)
+            if (authorized) {
+                alert("You are granted admin permissions")
+                document.getElementById("createEventDiv").style.display = "block"
+                document.getElementById("authorizationForm").style.display = "none"
+            }
+            else {
+                document.getElementById("createEventDiv").style.display = "none"
+                document.getElementById("authorizationForm").style.display = "block"
+            }
 
-        <script>
-
-            // document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -99,6 +137,7 @@
             });
             calendar.render();
 
+<<<<<<< HEAD
             var dynamicEvent = {
                 // title: document.getElementById("createEventForm").elements["title"].value,
                 // start: document.getElementById("createEventForm").elements["start"],
@@ -108,26 +147,38 @@
                 end: document.getElementById("end").value,
             }
             var testEvent = {
+=======
+
+            var debugEvent = {
+>>>>>>> 4e31de9d379792f216a54968e9081ecac5ab0560
                 title: 'The Title',
                 start: '2022-02-16',
                 end: '2022-02-19'
             }
 
             function makeEvent() {
+<<<<<<< HEAD
                 console.log(document.getElementById("title").value.toString())
                 console.log("at make event")
                 // alert("Your event was saved!")
                 console.log(dynamicEvent)
                 calendar.addEvent(dynamicEvent)
+=======
+                alert("Your event was saved!")
+                var calendarEvent = {
+                    title: document.getElementById().value,
+                    start: document.getElementById("dateId").value,
+                    end: document.getElementById("dateId").value
+                }
+                console.log(calendarEvent)
+                calendar.addEvent(calendarEvent)
+>>>>>>> 4e31de9d379792f216a54968e9081ecac5ab0560
             }
-            // });
-
+            // })
             // document.addEventListener('DOMContentLoaded', function () {
             //     var calendarEl = document.getElementById('calendar');
             //     var calendar = new FullCalendar.Calendar(calendarEl, {
-            //         initialView: 'dayGridMonth'
-            //     });
-            //     calendar.render();
+            //         initialView: 'dayGridMonth'alendar.render();
             // });
 
         </script>

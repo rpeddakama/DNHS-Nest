@@ -21,3 +21,27 @@
       text-align: center;
 
   }
+
+  .blue-dcurve-btn {
+    background-color: var(--blue);
+    padding: 7px 25px;
+    color: white;
+    border-radius: 30px 5px;
+    font-size: 20px;
+  }
+
+.buttons {
+    background-color: var(--blue);
+    padding: 7px 25px;
+    color: black;
+    border-radius: 12px 5px;
+    font-size: 10x;
+  }
+
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgba(238, 238, 238, 0.5);
+}

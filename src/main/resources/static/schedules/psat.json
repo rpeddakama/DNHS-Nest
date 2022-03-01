@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "name": "Period 0",
+            "start": "6:55",
+            "end": "8:05"
+        },
+
+        {
+            "name": "PSAT",
+            "start": "8:00",
+            "end": "11:45"
+        },
+
+        {
+            "name": "Break",
+            "start": "11:45",
+            "end": "11:55"
+        },
+
+        {
+            "name": "Period 1",
+            "start": "12:00",
+            "end": "12:32"
+        },
+
+        {
+            "name": "Period 2",
+            "start": "12:37",
+            "end": "13:11"
+        },
+
+        {
+            "name": "Lunch",
+            "start": "13:11",
+            "end": "13:41"
+        },
+
+        {
+            "name": "Period 3",
+            "start": "13:46",
+            "end": "14:18"
+        },
+
+        {
+            "name": "Period 4",
+            "start": "14:23",
+            "end": "14:55"
+        },
+
+        {
+            "name": "Period 5",
+            "start": "15:00",
+            "end": "15:32"
+        }
+    ]
+}
