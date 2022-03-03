@@ -1,28 +1,28 @@
 # 🐦The Nest
 
-## 📢About The Project
+## 📢 About The Project
 
 Campus resources suck. The Nest is built by Del Norte students who understand the needs and wants of all Nighthawks. We hope to make this project a centralized repository of resources that all Del Norte students are looking for but they are not found or very hard to get to on Del Norte's website.
 
-### 🔧Built With
+### 🔧 Built With
 
-### 🪄Features
+### 🪄 Features
 
-### 📺In Action
+### 📺 In Action
 
-## 🔥Getting Started
+## 🔥 Getting Started
 
-### 💻Prerequisites
+### 💻 Prerequisites
 
-### ⬇️Installation
+### ⬇️ Installation
 
-## 🚀Usage
+## 🚀 Usage
 
-## 🧨Coming Soon
+## 🧨 Coming Soon
 
-## 📋License
+## 📋 License
 
-## 💯Creators
+## 💯 Creators
 
 - Rishi Peddakama
 - Raadwan Masum
