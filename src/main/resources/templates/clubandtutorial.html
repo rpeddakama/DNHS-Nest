@@ -23,6 +23,12 @@
                 important details.</h3>
 
             <br>
+<<<<<<< HEAD
+            <input type="text" id="title">
+            <input type="text" id="start">
+            <input type="text" id="end">
+            <button onclick="makeEvent()">Click here to add an event</button>
+=======
 
             <div id="authorizationForm" class="frq-content">
                 <form action="/clubandtutorial" method="GET" id="frqForm">
@@ -47,6 +53,7 @@
 
                 <button onclick="makeEvent()" class="blue-dcurve-btn my-2.5">Click here to add an event</button>
             </div>
+>>>>>>> 4e31de9d379792f216a54968e9081ecac5ab0560
         </div>
 
         <br>
@@ -130,14 +137,33 @@
             });
             calendar.render();
 
+<<<<<<< HEAD
+            var dynamicEvent = {
+                // title: document.getElementById("createEventForm").elements["title"].value,
+                // start: document.getElementById("createEventForm").elements["start"],
+                // end: document.getElementById("createEventForm").elements["end"],
+                title: document.getElementById("title").value.toString(),
+                start: document.getElementById("start").value,
+                end: document.getElementById("end").value,
+            }
+            var testEvent = {
+=======
 
             var debugEvent = {
+>>>>>>> 4e31de9d379792f216a54968e9081ecac5ab0560
                 title: 'The Title',
                 start: '2022-02-16',
                 end: '2022-02-19'
             }
 
             function makeEvent() {
+<<<<<<< HEAD
+                console.log(document.getElementById("title").value.toString())
+                console.log("at make event")
+                // alert("Your event was saved!")
+                console.log(dynamicEvent)
+                calendar.addEvent(dynamicEvent)
+=======
                 alert("Your event was saved!")
                 var calendarEvent = {
                     title: document.getElementById("titleId").value,
@@ -146,6 +172,7 @@
                 }
                 console.log(calendarEvent)
                 calendar.addEvent(calendarEvent)
+>>>>>>> 4e31de9d379792f216a54968e9081ecac5ab0560
             }
             // })
             // document.addEventListener('DOMContentLoaded', function () {

@@ -1,19 +1,46 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.w3.org/1999/xhtml"
   layout:decorate="~{fragments/layout}" lang="en">
 
-<head>
-  <div layout:fragment="metadata" th:remove="tag">
-    <title>The Nest - Calendar</title>
-  </div>
-</head>
+  <head>
+    <div layout:fragment="metadata" th:remove="tag">
+      <title>The Nest - Exams</title>
+    </div>
+  </head>
 
-<body>
-  <div layout:fragment="content" th:remove="tag">
-    <div class="calendar" id='calendar'></div>
+  <body>
+    <div layout:fragment="content" th:remove="tag">
+      <div class="w-full flex justify-center">
+        <div class="w-3/12 mb-3 text-center">
+          <p class="text-2xl my-3 font-bold">Add an Exam</p>
+          <form class="text-center" action="/exams" method="GET" id="addEvent">
+            <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg"
+              name="examNameField" id="addEvent" placeholder="Exam Name (ex. Unit 2 Exam)">
+            <br />
+            <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg"
+              name="classNameField" id="addEvent" placeholder="Class Name (ex. AP Calculus BC)">
+            <br />
+            <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg"
+              name="teacherField" id="addEvent" placeholder="Teacher (ex. Mr. Smith)">
+            <br />
+            <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg"
+              name="classPeriodField" id="addEvent" placeholder="Class Period (ex. 2)">
+            <br />
+            <input class="w-full my-1.5 p-1.5 rounded-xl text-black text-lg"
+              name="examDateField" id="addEvent" placeholder="Exam Date (ex. 2022-02-04)">
+            <br />
+            <button class="blue-dcurve-btn my-2 text-lg"
+              th:attr="onclick=|addExam('${examName}', '${className}',
+              '${classPeriod}',
+              '${teacher}', '${examDate}')|">Add Exam</button>
+          </form>
+        </div>
+      </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
+      <div class="calendar" id='calendar'></div>
+
+      <script th:inline="javascript">
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -24,68 +51,41 @@
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
           },
-          // events: [
-          //   {
-          //     title: 'All Day Event',
-          //     start: '2022-02-01'
-          //   },
-          //   {
-          //     title: 'Long Event',
-          //     start: '2022-02-07',
-          //     end: '2022-02-10'
-          //   },
-          //   {
-          //     groupId: '999',
-          //     title: 'Repeating Event',
-          //     start: '2022-02-09T16:00:00'
-          //   },
-          //   {
-          //     groupId: '999',
-          //     title: 'Repeating Event',
-          //     start: '2022-02-16T16:00:00'
-          //   },
-          //   {
-          //     title: 'Conference',
-          //     start: '2022-02-11',
-          //     end: '2022-02-13'
-          //   },
-          //   {
-          //     title: 'Meeting',
-          //     start: '2022-02-12T10:30:00',
-          //     end: '2022-02-12T12:30:00'
-          //   },
-          //   {
-          //     title: 'Lunch',
-          //     start: '2022-02-12T12:00:00'
-          //   },
-          //   {
-          //     title: 'Meeting',
-          //     start: '2022-02-12T14:30:00'
-          //   },
-          //   {
-          //     title: 'Birthday Party',
-          //     start: '2022-02-13T07:00:00'
-          //   },
-          //   {
-          //     title: 'Click for Google',
-          //     url: 'http://google.com/',
-          //     start: '2022-02-28'
-          //   }
-          // ]
+
+          eventDidMount: function(info) {
+            console.log(info.event._def.title)
+          },
+
+          eventMouseEnter: function(calEvent, jsEvent) {
+            console.log("hover enter")
+          },
+
+          eventMouseLeave: function() {
+            console.log("hover leave")
+          },
         });
+
+        function addExam(examName, className, classPeriod, teacher, examDate) {
+          console.log("add exam")
+          calendar.addEvent( 
+            {
+              title: "Period " + classPeriod + " " + examName + " for " + teacher + "'s " + className + " Class",
+              start: examDate,
+            },
+          );
+        }
+
         calendar.render();
-      });
 
-            //   document.addEventListener('DOMContentLoaded', function() {
-            //     var calendarEl = document.getElementById('calendar');
-            //     var calendar = new FullCalendar.Calendar(calendarEl, {
-            //       initialView: 'dayGridMonth'
-            //     });
-            //     calendar.render();
-            //   });
+        eventList = /*[[${eventList}]]*/
+        null
 
-    </script>
-  </div>
-</body>
+        console.log(eventList.length)
+        for (let i = 0; i < eventList.length; i++) {
+          addExam(eventList[i].examName, eventList[i].className, eventList[i].classPeriod, eventList[i].teacher, eventList[i].examDate)
+        }
+      </script>
+    </div>
+  </body>
 
 </html>
